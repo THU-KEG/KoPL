@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KoPL的元函数 &mdash; KoPL 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="安装" href="install.html" />
+    <link rel="prev" title="KoPL面向的知识元素" href="knowledge.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html#id1">设计理念</a></li>
+<li class="toctree-l1"><a class="reference internal" href="knowledge.html">KoPL面向的知识元素</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KoPL的元函数</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">操作函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">查询函数</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">快速开始</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="service.html">查询服务</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">更多KoPL样例</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example.html">简单样例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html#id7">复杂样例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API文档</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kopl.html">KoPL引擎</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">KoPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>KoPL的元函数</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/function.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="kopl">
+<h1>KoPL的元函数<a class="headerlink" href="#kopl" title="Permalink to this headline"></a></h1>
+<p>用 KoPL 编程可以看作对元函数进行组合操作。
+元函数有两种:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>操作函数（Operation Functions）</p></li>
+<li><p>查询函数（Query Functions）</p></li>
+</ul>
+</div></blockquote>
+<p>KoPL 通过对这些元函数的组合实现查询操作。
+本教程将详细介绍这些元函数各自的 <strong>功能</strong> 和 <strong>参数</strong> 格式。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl class="simple">
+<dt>我们定义函数参数的格式为:</dt><dd><p>(函数输入) <span class="math notranslate nohighlight">\(\times\)</span> (文本输入) <span class="math notranslate nohighlight">\(\mapsto\)</span> (输出)</p>
+</dd>
+</dl>
+<p>函数输入是之前的 function 的输出</p>
+<p>文本输入是由问题推断得到的</p>
+</div>
+<section id="id1">
+<h2>操作函数<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<dl class="glossary">
+<dt id="term-FindAll-Null-times-Null-mapsto-Entities">FindAll: (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-FindAll-Null-times-Null-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>返回知识库中的所有实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Null</cite>: 空</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Null</cite>: 空</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FindAll</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-Find-Null-times-Name-mapsto-Entities">Find: (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Name</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-Find-Null-times-Name-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>返回知识库中所有名字为 <cite>Name</cite> 的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Null</cite>: 空</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Name</cite>: 实体名称</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 所有名称为 <cite>Name</cite> 的实体的集合</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Find</span><span class="p">(</span><span class="n">Kobe</span> <span class="n">Bryant</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-FilterConcept-Entities-times-Name-mapsto-Entities">FilterConcept: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Name</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-FilterConcept-Entities-times-Name-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体，要求属于给定的概念</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Name</cite>: 概念名称</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FilterConcept</span><span class="p">(</span><span class="n">athlete</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-FilterStr-Entities-times-Key-Value-mapsto-Entities-Facts">FilterStr: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterStr-Entities-times-Key-Value-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>字符串</strong> 属性，且该属性的属性值等于给定的属性值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 筛选的目标属性
+<cite>Value</cite>: 筛选的目标属性的属性值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FilterStr</span><span class="p">(</span><span class="n">gender</span><span class="p">,</span> <span class="n">male</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-FilterNum-Entities-times-Key-Value-Op-mapsto-Entities-Facts">FilterNum: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterNum-Entities-times-Key-Value-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>数值</strong> 属性，且该属性的属性值满足和给定的属性值的某种关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 筛选的目标属性
+<cite>Value</cite>: 筛选的目标属性用于比较的属性值
+<cite>Op</cite>: 比较方法</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FilterNum</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="mi">200</span> <span class="n">centimetres</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-FilterYear-Entities-times-Key-Value-Op-mapsto-Entities-Facts">FilterYear: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterYear-Entities-times-Key-Value-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>年份</strong> 属性，且该属性的属性值满足和给定的属性值的某种关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 筛选的目标属性
+<cite>Value</cite>: 筛选的目标属性用于比较的属性值
+<cite>Op</cite>: 比较方法</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FilterYear</span><span class="p">(</span><span class="n">birthday</span><span class="p">,</span> <span class="mi">1980</span><span class="p">,</span> <span class="o">=</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-FilterDate-Entities-times-Key-Value-Op-mapsto-Entities-Facts">FilterDate: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterDate-Entities-times-Key-Value-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>日期</strong> 属性，且该属性的属性值满足和给定的属性值的某种关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 筛选的目标属性
+<cite>Value</cite>: 筛选的目标属性用于比较的属性值
+<cite>Op</cite>: 比较方法</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FilterDate</span><span class="p">(</span><span class="n">birthday</span><span class="p">,</span> <span class="mi">1980</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QFilterStr-Entities-Facts-times-QKey-QValue-mapsto-Entities-Facts">QFilterStr: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterStr-Entities-Facts-times-QKey-QValue-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>字符</strong> 类型的限定条件，且该限定条件符合给定的值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合
+<cite>Facts</cite>: 筛选的事实集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>QKey</cite>: 筛选的目标限定词
+<cite>QValue</cite>: 筛选的限定词满足的值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QFilterStr</span><span class="p">(</span><span class="n">language</span><span class="p">,</span> <span class="n">English</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QFilterNum-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts">QFilterNum: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterNum-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>数值</strong> 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合
+<cite>Facts</cite>: 筛选的事实集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>QKey</cite>: 筛选的目标限定词
+<cite>QValue</cite>: 给定的值用来和限定条件比较
+<cite>Op</cite>: 用来比较的方法</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QFilterNum</span><span class="p">(</span><span class="n">bonus</span><span class="p">,</span> <span class="mi">20000</span> <span class="n">dollars</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QFilterYear-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts">QFilterYear: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterYear-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>年份</strong> 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合
+<cite>Facts</cite>: 筛选的事实集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>QKey</cite>: 筛选的目标限定词
+<cite>QValue</cite>: 给定的值用来和限定条件比较
+<cite>Op</cite>: 用来比较的方法</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QFilterYear</span><span class="p">(</span><span class="n">start</span> <span class="n">time</span><span class="p">,</span> <span class="mi">1980</span><span class="p">,</span> <span class="o">=</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QFilterDate-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts">QFilterDate: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterDate-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>日期</strong> 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合
+<cite>Facts</cite>: 筛选的事实集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>QKey</cite>: 筛选的目标限定词
+<cite>QValue</cite>: 给定的值用来和限定条件比较
+<cite>Op</cite>: 用来比较的方法</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QFilterDate</span><span class="p">(</span><span class="n">start</span> <span class="n">time</span> <span class="mi">1980</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-Relate-Entities-times-Rel-Dir-mapsto-Entities-Facts">Relate: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Rel</cite>, <cite>Dir</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-Relate-Entities-times-Rel-Dir-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>筛选出实体，要求实体和给定的实体之间具有某种关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 筛选的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Rel</cite>: 表示关系
+<cite>Dir</cite>: 目标实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 满足筛选条件的实体集合
+<cite>Facts</cite>: 满足筛选条件的事实</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Relate</span><span class="p">(</span><span class="n">capital</span><span class="p">,</span> <span class="n">forward</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-And-Entities-Entities-times-Null-mapsto-Entities">And: (<cite>Entities</cite>, <cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-And-Entities-Entities-times-Null-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>描述</dt><dd><p>计算两个实体集合的 <strong>交集</strong></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 实体的集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Null</cite></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 实体交集</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-Or-Entities-Entities-times-Null-mapsto-Entities">Or: (<cite>Entities</cite>, <cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-Or-Entities-Entities-times-Null-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>描述</dt><dd><p>计算两个实体集合的 <strong>并集</strong></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 实体的集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Null</cite></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Entities</cite>: 实体交集</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="id2">
+<h2>查询函数<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<dl class="glossary">
+<dt id="term-QueryName-Entity-times-Null-mapsto-string">QueryName: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>string</cite>)<a class="headerlink" href="#term-QueryName-Entity-times-Null-mapsto-string" title="Permalink to this term"></a></dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>描述</dt><dd><p>查询实体的名称</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entity</cite>: 待查询的实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Null</cite></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>string</cite>: 实体名称</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-Count-Entities-times-Null-mapsto-number">Count: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>number</cite>)<a class="headerlink" href="#term-Count-Entities-times-Null-mapsto-number" title="Permalink to this term"></a></dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>描述</dt><dd><p>计算实体的数量</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 待统计的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Null</cite></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>number</cite>: 集合中的实体数量</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QueryAttr-Entity-times-Key-mapsto-Value">QueryAttr: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Value</cite>)<a class="headerlink" href="#term-QueryAttr-Entity-times-Key-mapsto-Value" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>查询实体的属性的值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entity</cite>: 待查询的实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 待查询的属性</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Value</cite>: 查询结果</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QueryAttr</span><span class="p">(</span><span class="n">height</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QueryAttrUnderCondition-Entity-times-Key-QKey-QValue-mapsto-Value">QueryAttrUnderCondition: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>QKey</cite>, <cite>QValue</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Value</cite>)<a class="headerlink" href="#term-QueryAttrUnderCondition-Entity-times-Key-QKey-QValue-mapsto-Value" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>查询实体的属性的值，要求这条事实类型的知识满足给定的限定条件</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entity</cite>: 待查询的实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 待查询的属性
+<cite>QKey</cite>: 待查询的属性要求满足的限定词
+<cite>QValue</cite>: 限定条件要求的值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Value</cite>: 查询出的属性值</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QueryAttrUnderCondition</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">time</span><span class="p">,</span> <span class="mi">2016</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QueryRelation-Entity-Entity-times-Null-mapsto-Rel">QueryRelation: (<cite>Entity</cite>, <cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Rel</cite>)<a class="headerlink" href="#term-QueryRelation-Entity-Entity-times-Null-mapsto-Rel" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>查询两个实体之间的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entity</cite>: 待查询的属性</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Null</cite></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>Rel</cite>: 查询的两个实体的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QueryRelation</span><span class="p">(</span><span class="n">Kobe</span> <span class="n">Bryant</span><span class="p">,</span> <span class="n">America</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-SelectBetween-Entity-Entity-times-Key-Op-mapsto-string">SelectBetween: (<cite>Entity</cite>, <cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>string</cite>)<a class="headerlink" href="#term-SelectBetween-Entity-Entity-times-Key-Op-mapsto-string" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>对于两个实体，给出它们在某个属性上谁大谁小</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entity</cite>: 待比较的两个实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 比较的属性
+<cite>Op</cite>: 比较操作的条件</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>string</cite>: 比较结果</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SelectBetween</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">greater</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-SelectAmong-Entities-times-Key-Op-mapsto-string">SelectAmong: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>string</cite>)<a class="headerlink" href="#term-SelectAmong-Entities-times-Key-Op-mapsto-string" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>对一个实体集合，给出这个集合中某个属性值最大或者最小的那个实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entities</cite>: 待比较的实体集合</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 比较的属性
+<cite>Op</cite>: 比较操作的条件</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>string</cite>: 比较结果</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SelectAmong</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">largest</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-VerifyStr-Value-times-Value-mapsto-boolean">VerifyStr: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyStr-Value-times-Value-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>判断输入的 <strong>字符串</strong> 是否和给定的值相同</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Value</cite>: 待比较的字符串</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Value</cite>: 给定的字符串的值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>boolean</cite>: 是否相同</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">VerifyStr</span><span class="p">(</span><span class="n">male</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-VerifyNum-Value-times-Value-Op-mapsto-boolean">VerifyNum: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyNum-Value-times-Value-Op-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>判断输入的 <strong>数值</strong> 是否和给定的值具有某种关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Value</cite>: 待比较的数值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Value</cite>: 给定的数值
+<cite>Op</cite>: 比较操作</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>boolean</cite>: 是否具有给定的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">VerifyNum</span><span class="p">(</span><span class="mi">20000</span> <span class="n">dollars</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-VerifyYear-Value-times-Value-Op-mapsto-boolean">VerifyYear: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyYear-Value-times-Value-Op-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>判断输入的 <strong>年份</strong> 是否和给定的年份具有某种关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Value</cite>: 待比较的年份</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Value</cite>: 给定的年份
+<cite>Op</cite>: 比较操作</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>boolean</cite>: 是否具有该给定的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">VerifyYear</span><span class="p">(</span><span class="mi">1980</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-VerifyDate-Value-times-Value-Op-mapsto-boolean">VerifyDate: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyDate-Value-times-Value-Op-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>判断输入的 <strong>日期</strong> 是否和给定的日期具有某种关系</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Value</cite>: 待比较的日期</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Value</cite>: 给定的日期
+<cite>Op</cite>: 比较操作</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>boolean</cite>: 是否具有该给定的关系</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">VerifyYear</span><span class="p">(</span><span class="mi">1980</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QueryAttrQualifier-Entity-times-Key-Value-QKey-mapsto-QValue">QueryAttrQualifier: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>QKey</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>QValue</cite>)<a class="headerlink" href="#term-QueryAttrQualifier-Entity-times-Key-Value-QKey-mapsto-QValue" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>查询给定的 <strong>属性</strong> 类型事实的限定条件的值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entity</cite>: 待查询的事实的参与实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Key</cite>: 待查询的事实的属性
+<cite>Value</cite>: 待查询的事实的属性值
+<cite>QKey</cite>: 待查询的限定条件</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>QValue</cite>: 查询到的限定条件的值</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QueryAttrQualifier</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span><span class="mi">390</span><span class="p">,</span><span class="mi">000</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">time</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt id="term-QueryRelationQualifier-Entity-Entity-times-Rel-QKey-mapsto-QValue">QueryRelationQualifier: (<cite>Entity</cite>, <cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Rel</cite>, <cite>QKey</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>QValue</cite>)<a class="headerlink" href="#term-QueryRelationQualifier-Entity-Entity-times-Rel-QKey-mapsto-QValue" title="Permalink to this term"></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>描述</dt><dd><p>查询给定的 <strong>关系</strong> 类型事实的限定条件的值</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>函数输入</dt><dd><p><cite>Entity</cite>: 两个 <cite>Entity</cite> 分别为关系的头实体和尾实体</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>文本输入</dt><dd><p><cite>Rel</cite>: 实体的关系
+<cite>QKey</cite>: 待查询的限定条件</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>输出</dt><dd><p><cite>QValue</cite>: 限定条件的值</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QueryRelationQualifier</span><span class="p">(</span><span class="n">spouse</span><span class="p">,</span> <span class="n">start</span> <span class="n">time</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="knowledge.html" class="btn btn-neutral float-left" title="KoPL面向的知识元素" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="install.html" class="btn btn-neutral float-right" title="安装" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, KEG.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

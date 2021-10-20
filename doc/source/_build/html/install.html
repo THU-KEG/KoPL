@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安装 &mdash; KoPL 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="使用示例" href="quick_start.html" />
+    <link rel="prev" title="KoPL的元函数" href="function.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html#id1">设计理念</a></li>
+<li class="toctree-l1"><a class="reference internal" href="knowledge.html">KoPL面向的知识元素</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function.html">KoPL的元函数</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">快速开始</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="service.html">查询服务</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">更多KoPL样例</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example.html">简单样例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html#id7">复杂样例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API文档</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kopl.html">KoPL引擎</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">KoPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>安装</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/install.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>安装<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h1>
+<p>KoPL支持Linux (e.g., Ubuntu/CentOS)，macOS，Windows。</p>
+<p>其中Linux和macOS的依赖为：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">&gt;=</span> <span class="mf">3.6</span>
+
+<span class="n">tqdm</span> <span class="o">&gt;=</span> <span class="mf">4.62</span>
+</pre></div>
+</div>
+<p>Windows对环境的要求为：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="o">&gt;=</span> <span class="mf">3.6</span>
+
+<span class="n">tqdm</span> <span class="o">&gt;=</span> <span class="mf">4.62</span>
+
+<span class="n">x86_64处理器</span>
+
+<span class="n">Windows10及以上</span>
+</pre></div>
+</div>
+<p>KoPL提供pip安装, 下面将展示Ubuntu的安装命令:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3.7-dev
+
+$ python3.7 -m pip install KoPL
+</pre></div>
+</div>
+<p>运行下面的代码</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">kopl</span>
+<span class="kn">from</span> <span class="nn">kopl.test.test_example</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">run_test</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>如果测试运行通过，恭喜您已经安装成功。</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="function.html" class="btn btn-neutral float-left" title="KoPL的元函数" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="quick_start.html" class="btn btn-neutral float-right" title="使用示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, KEG.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

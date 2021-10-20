@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KoPL引擎 &mdash; KoPL 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="简单样例" href="example.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html#id1">设计理念</a></li>
+<li class="toctree-l1"><a class="reference internal" href="knowledge.html">KoPL面向的知识元素</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function.html">KoPL的元函数</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">快速开始</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">使用示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="service.html">查询服务</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">更多KoPL样例</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example.html">简单样例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html#id7">复杂样例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API文档</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KoPL引擎</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">KoPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>KoPL引擎</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/kopl.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-kopl.kopl">
+<span id="kopl"></span><h1>KoPL引擎<a class="headerlink" href="#module-kopl.kopl" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">kopl.kopl.</span></span><span class="sig-name descname"><span class="pre">KoPLEngine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kb</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.And">
+<span class="sig-name descname"><span class="pre">And</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l_entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r_entities</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.And"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.And" title="Permalink to this definition"></a></dt>
+<dd><p>返回两个实体集合的交集</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>l_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>r_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是输入实体集合的交集，第二个成员是None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.Count">
+<span class="sig-name descname"><span class="pre">Count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.Count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.Count" title="Permalink to this definition"></a></dt>
+<dd><p>查询实体集合的数量</p>
+<dl class="simple">
+<dt>Args：</dt><dd><p>entities (tuple): 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>返回输入实体列表的大小</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.FilterConcept">
+<span class="sig-name descname"><span class="pre">FilterConcept</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concept_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.FilterConcept"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.FilterConcept" title="Permalink to this definition"></a></dt>
+<dd><p>找出属于特定概念的所有实体</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>concept_name</strong> (<em>string</em>) – 给定的概念标签</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是输入实体集合的交集，第二个成员是None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.FilterDate">
+<span class="sig-name descname"><span class="pre">FilterDate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.FilterDate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.FilterDate" title="Permalink to this definition"></a></dt>
+<dd><p>针对日期类型的属性，key和value指定键值，op指定比较运算符，返回实体与对应的属性型三元组</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性键</p></li>
+<li><p><strong>value</strong> (<em>string</em>) – 属性值，为日期类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.FilterNum">
+<span class="sig-name descname"><span class="pre">FilterNum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.FilterNum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.FilterNum" title="Permalink to this definition"></a></dt>
+<dd><p>针对数值类型的属性，key和value指定键值，op指定比较运算符，返回实体与对应的属性型三元组</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性键</p></li>
+<li><p><strong>value</strong> (<em>string</em>) – 属性值，为数值类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.FilterStr">
+<span class="sig-name descname"><span class="pre">FilterStr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.FilterStr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.FilterStr" title="Permalink to this definition"></a></dt>
+<dd><p>针对字符串类型的属性，根据key和value筛选出满足该条件的所有实体，返回实体与对应的属性型三元组</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性键</p></li>
+<li><p><strong>value</strong> (<em>string</em>) – 属性值</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.FilterYear">
+<span class="sig-name descname"><span class="pre">FilterYear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.FilterYear"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.FilterYear" title="Permalink to this definition"></a></dt>
+<dd><p>针对年份类型的属性，key和value指定键值，op指定比较运算符，返回实体与对应的属性型三元组</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性键</p></li>
+<li><p><strong>value</strong> (<em>string</em>) – 属性值，为年份类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.Find">
+<span class="sig-name descname"><span class="pre">Find</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.Find"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.Find" title="Permalink to this definition"></a></dt>
+<dd><p>找出具有特定名字的所有实体</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>string</em>) – 实体的名字</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个成员是None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.FindAll">
+<span class="sig-name descname"><span class="pre">FindAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.FindAll"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.FindAll" title="Permalink to this definition"></a></dt>
+<dd><p>返回知识库中所有实体</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>返回一个二元组，第一个成员是实体列表，第二个成员是None</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.Or">
+<span class="sig-name descname"><span class="pre">Or</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l_entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r_entities</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.Or"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.Or" title="Permalink to this definition"></a></dt>
+<dd><p>返回两个实体集合的并集</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>l_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>r_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是输入实体集合的并集，第二个成员是None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QFilterDate">
+<span class="sig-name descname"><span class="pre">QFilterDate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qkey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qvalue</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QFilterDate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QFilterDate" title="Permalink to this definition"></a></dt>
+<dd><p>与 QFilterStr 类似，但针对数值类型的修饰值，op指定比较运算符</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>qkey</strong> (<em>string</em>) – 修饰键</p></li>
+<li><p><strong>qvalue</strong> (<em>string</em>) – 修饰值，为日期类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QFilterNum">
+<span class="sig-name descname"><span class="pre">QFilterNum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qkey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qvalue</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QFilterNum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QFilterNum" title="Permalink to this definition"></a></dt>
+<dd><p>与 QFilterStr 类似，但针对数值类型的修饰值，op指定比较运算符</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>qkey</strong> (<em>string</em>) – 修饰键</p></li>
+<li><p><strong>qvalue</strong> (<em>string</em>) – 修饰值，为数值类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QFilterStr">
+<span class="sig-name descname"><span class="pre">QFilterStr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qkey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qvalue</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QFilterStr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QFilterStr" title="Permalink to this definition"></a></dt>
+<dd><p>使用修饰键qkey和修饰值qvalue对三元组进行过滤，筛选出符合条件的三元组与对应的实体</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>qkey</strong> (<em>string</em>) – 修饰键</p></li>
+<li><p><strong>qvalue</strong> (<em>string</em>) – 修饰值，为字符串类型</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QFilterYear">
+<span class="sig-name descname"><span class="pre">QFilterYear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qkey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qvalue</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QFilterYear"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QFilterYear" title="Permalink to this definition"></a></dt>
+<dd><p>与 QFilterStr 类似，但针对数值类型的修饰值，op指定比较运算符</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是三元组列表</p></li>
+<li><p><strong>qkey</strong> (<em>string</em>) – 修饰键</p></li>
+<li><p><strong>qvalue</strong> (<em>string</em>) – 修饰值，为年份类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是实体列表，第二个是三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QueryAttr">
+<span class="sig-name descname"><span class="pre">QueryAttr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QueryAttr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QueryAttr" title="Permalink to this definition"></a></dt>
+<dd><p>查询实体的特定属性值</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回属性值列表，每个元素是string，是对应实体指定属性的属性值</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QueryAttrQualifier">
+<span class="sig-name descname"><span class="pre">QueryAttrQualifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qkey</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QueryAttrQualifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QueryAttrQualifier" title="Permalink to this definition"></a></dt>
+<dd><p>查询给定实体某个属性的特定修饰值</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性标签</p></li>
+<li><p><strong>value</strong> (<em>string</em>) – 属性值</p></li>
+<li><p><strong>qkey</strong> (<em>string</em>) – 修饰符标签</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回修饰值列表，每个修饰值是string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QueryAttrUnderCondition">
+<span class="sig-name descname"><span class="pre">QueryAttrUnderCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qkey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qvalue</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QueryAttrUnderCondition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QueryAttrUnderCondition" title="Permalink to this definition"></a></dt>
+<dd><p>返回输入实体在特定修饰条件下的属性值</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性键</p></li>
+<li><p><strong>qkey</strong> (<em>string</em>) – 修饰键</p></li>
+<li><p><strong>qvalue</strong> (<em>string</em>) – 修饰值</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回满足条件的属性值列表，每个属性值是 ValueClass</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QueryName">
+<span class="sig-name descname"><span class="pre">QueryName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QueryName"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QueryName" title="Permalink to this definition"></a></dt>
+<dd><p>查询实体的名字</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个成员是None或者三元组列表</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个列表，每个元素是string，对应输入实体的名字</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QueryRelation">
+<span class="sig-name descname"><span class="pre">QueryRelation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s_entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_entities</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QueryRelation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QueryRelation" title="Permalink to this definition"></a></dt>
+<dd><p>查询实体之间的关系</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>t_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回关系列表，每个关系是string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.QueryRelationQualifier">
+<span class="sig-name descname"><span class="pre">QueryRelationQualifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s_entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qkey</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.QueryRelationQualifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.QueryRelationQualifier" title="Permalink to this definition"></a></dt>
+<dd><p>查询给定实体之间关系三元组的特定修饰值</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>t_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>relation</strong> (<em>string</em>) – 关系标签</p></li>
+<li><p><strong>qkey</strong> (<em>string</em>) – 修饰符标签</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回修饰值列表，每个修饰值是string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.Relate">
+<span class="sig-name descname"><span class="pre">Relate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.Relate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.Relate" title="Permalink to this definition"></a></dt>
+<dd><p>找出与输入实体有特定关系的所有实体及对应的三元组</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是实体列表，第二个是None或三元组列表</p></li>
+<li><p><strong>relation</strong> (<em>string</em>) – 关系标签</p></li>
+<li><p><strong>direction</strong> (<em>string</em>) – “forward” 或者 “backward”，代表输入实体是关系的头实体或者尾实体</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回一个二元组，第一个成员是与输入实体有特定关系的实体列表，第二个成员是对应的三元组列表</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.SelectAmong">
+<span class="sig-name descname"><span class="pre">SelectAmong</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.SelectAmong"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.SelectAmong" title="Permalink to this definition"></a></dt>
+<dd><p>在一个实体集合中，查询特定属性值最大/最小的实体</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性，要求其属性值为数值类型，如”height”</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较符，”smallest”或者”largest”，代表查询属性值最小或最大的实体</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回实体名字列表，每个元素是string（可以有多个最大/最小值）</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.SelectBetween">
+<span class="sig-name descname"><span class="pre">SelectBetween</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l_entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r_entities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.SelectBetween"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.SelectBetween" title="Permalink to this definition"></a></dt>
+<dd><p>在两个实体中，查询特定属性值更大/更小的实体</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>l_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>r_entities</strong> (<em>tuple</em>) – 二元组，第一个成员是一个实体列表，第二个成员是None或者三元组列表</p></li>
+<li><p><strong>key</strong> (<em>string</em>) – 属性，要求其属性值为数值类型，如”height”</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较符，”less”或者”greater”，代表查询属性值更小或更大的实体</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返回实体的名字</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.VerifyDate">
+<span class="sig-name descname"><span class="pre">VerifyDate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.VerifyDate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.VerifyDate" title="Permalink to this definition"></a></dt>
+<dd><p>s
+与 VerifyStr 类似，但针对日期类型</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s_value</strong> (<em>list</em>) – 一个 ValueClass 实例列表，为 QueryAttr 或 QueryAttrUnderCondition 函数的输出</p></li>
+<li><p><strong>t_value</strong> (<em>string</em>) – 给定的属性值, 为日期类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>“yes”, 或 “no” 或 “not sure” 代表属性值与给定的字符串相同，不同，或不确定</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.VerifyNum">
+<span class="sig-name descname"><span class="pre">VerifyNum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.VerifyNum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.VerifyNum" title="Permalink to this definition"></a></dt>
+<dd><p>与 VerifyStr 类似，但针对数值类型，验证属性值是否满足特定条件，Op指定比较运算符</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s_value</strong> (<em>list</em>) – 一个 ValueClass 实例列表，为 QueryAttr 或 QueryAttrUnderCondition 函数的输出</p></li>
+<li><p><strong>t_value</strong> (<em>string</em>) – 给定的属性值, 为数值类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>“yes”, 或 “no” 或 “not sure” 代表属性值与给定的字符串相同，不同，或不确定</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.VerifyStr">
+<span class="sig-name descname"><span class="pre">VerifyStr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.VerifyStr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.VerifyStr" title="Permalink to this definition"></a></dt>
+<dd><p>验证 QueryAttr 或 QueryAttrUnderCondition 函数的输出是否等于给定的字符串</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s_value</strong> (<em>list</em>) – 一个 ValueClass 实例列表，为 QueryAttr 或 QueryAttrUnderCondition 函数的输出</p></li>
+<li><p><strong>t_value</strong> (<em>string</em>) – 给定的属性值，为字符串类型</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>“yes”, 或 “no” 或 “not sure” 代表属性值与给定的字符串相同，不同，或不确定</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="kopl.kopl.KoPLEngine.VerifyYear">
+<span class="sig-name descname"><span class="pre">VerifyYear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kopl/kopl.html#KoPLEngine.VerifyYear"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kopl.kopl.KoPLEngine.VerifyYear" title="Permalink to this definition"></a></dt>
+<dd><p>与 VerifyStr 类似，但针对年份类型</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s_value</strong> (<em>list</em>) – 一个 ValueClass 实例列表，为 QueryAttr 或 QueryAttrUnderCondition 函数的输出</p></li>
+<li><p><strong>t_value</strong> (<em>string</em>) – 给定的属性值, 为年份类型</p></li>
+<li><p><strong>op</strong> (<em>string</em>) – 比较运算符，”=”, “!=”, “&lt;”, “&gt;”中的一个</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>“yes”, 或 “no” 或 “not sure” 代表属性值与给定的字符串相同，不同，或不确定</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="example.html" class="btn btn-neutral float-left" title="简单样例" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, KEG.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

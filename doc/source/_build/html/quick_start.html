@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第一个KoPL程序 &mdash; KoPL 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="查询服务" href="service.html" />
+    <link rel="prev" title="安装" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html#id1">设计理念</a></li>
+<li class="toctree-l1"><a class="reference internal" href="knowledge.html">KoPL面向的知识元素</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function.html">KoPL的元函数</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">快速开始</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第一个KoPL程序</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">准备知识库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">KoPL编程问答</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="service.html">查询服务</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">更多KoPL样例</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example.html">简单问答</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html#id7">复杂问答</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API文档</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kopl.html">KoPL引擎</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">KoPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>第一个KoPL程序</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/quick_start.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="kopl">
+<h1>第一个KoPL程序<a class="headerlink" href="#kopl" title="Permalink to this headline"></a></h1>
+<section id="id1">
+<h2>准备知识库<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>目前，我们支持JSON格式的知识库，其形式为:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="c1"># 概念</span>
+        <span class="s1">&#39;concepts&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;subclassOf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;&lt;concept_id&gt;&#39;</span><span class="p">],</span>
+                <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="c1"># 实体，确保与概念是不相交的</span>
+        <span class="s1">&#39;entities&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;entity_name&gt;&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;instanceOf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;&lt;concept_id&gt;&#39;</span><span class="p">],</span>
+                        <span class="s1">&#39;attributes&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;key&gt;&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;string&#39;</span><span class="o">/</span><span class="s1">&#39;quantity&#39;</span><span class="o">/</span><span class="s1">&#39;date&#39;</span><span class="o">/</span><span class="s1">&#39;year&#39;</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span>  <span class="c1"># quantity类型为float或int, year类型为int, date类型为&#39;yyyy/mm/dd&#39;</span>
+                                                <span class="s1">&#39;unit&#39;</span><span class="p">:</span>   <span class="c1"># 针对quantity类型，为str, 如&#39;height&#39;的unit可以是&#39;centimetre&#39;, ‘population’的unit是‘1’</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;&lt;qk&gt;&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                                        <span class="o">&lt;</span><span class="n">qv</span><span class="o">&gt;</span><span class="p">,</span> <span class="c1"># 每个qv都是像&#39;value&#39;一样的字典，包括&#39;type&#39;, &#39;value&#39;和&#39;int&#39;</span>
+                                                <span class="p">]</span>
+                                        <span class="p">}</span>
+                                <span class="p">}</span>
+                        <span class="p">]</span>
+                        <span class="s1">&#39;relations&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;relation&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;relation&gt;&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;forward&#39;</span> <span class="ow">or</span> <span class="s1">&#39;backward&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;object&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;object_id&gt;&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;&lt;qk&gt;&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                                        <span class="o">&lt;</span><span class="n">qv</span><span class="o">&gt;</span><span class="p">,</span> <span class="c1"># 每个qv都是像&#39;value&#39;一样的字典，包括&#39;type&#39;, &#39;value&#39;和&#39;int&#39;</span>
+                                                <span class="p">]</span>
+                                        <span class="p">}</span>
+                                <span class="p">}</span>
+                        <span class="p">]</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/knowledge_element.jpg"><img alt="Alternative text" src="_images/knowledge_element.jpg" style="width: 600px;" /></a>
+<p>例如，对于上图中的知识库，知识库为:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">example_kb</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;concepts&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;Q13393265&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;basketball team&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;subclassOf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Q12973014&#39;</span><span class="p">]</span>
+                <span class="p">},</span>
+                <span class="s1">&#39;Q12973014&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;sports team&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;subclassOf&#39;</span><span class="p">:</span> <span class="p">[]</span>
+                <span class="p">},</span>
+                <span class="s1">&#39;Q3665646&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;basketball player&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;subclassOf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Q2066131&#39;</span><span class="p">]</span>
+                <span class="p">},</span>
+                <span class="s1">&#39;Q2066131&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;athlete&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;subclassOf&#39;</span><span class="p">:</span> <span class="p">[]</span>
+                <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="s1">&#39;entities&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;Q36159&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;LeBron James&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;instanceOf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Q3665646&#39;</span><span class="p">],</span>
+                        <span class="s1">&#39;attributes&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;height&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;quantity&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="mi">206</span><span class="p">,</span>
+                                                <span class="s1">&#39;unit&#39;</span><span class="p">:</span> <span class="s1">&#39;centimetre&#39;</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;work period (start)&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="mi">2003</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;sex or gender&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;male&#39;</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;date of birth&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;1984-12-30&#39;</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">}</span>
+                        <span class="p">],</span>
+                        <span class="s1">&#39;relations&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;relation&#39;</span><span class="p">:</span> <span class="s1">&#39;place of birth&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;forward&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;object&#39;</span><span class="p">:</span> <span class="s1">&#39;Q163132&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;relation&#39;</span><span class="p">:</span> <span class="s1">&#39;drafted by&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;forward&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;object&#39;</span><span class="p">:</span> <span class="s1">&#39;Q162990&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;point in time&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                                        <span class="p">{</span>
+                                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span>
+                                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;2003-06-26&#39;</span>
+                                                        <span class="p">}</span>
+                                                <span class="p">]</span>
+                                        <span class="p">}</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;relation&#39;</span><span class="p">:</span> <span class="s1">&#39;child&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;forward&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;object&#39;</span><span class="p">:</span> <span class="s1">&#39;Q22302425&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;relation&#39;</span><span class="p">:</span> <span class="s1">&#39;member of sports team&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;forward&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;object&#39;</span><span class="p">:</span> <span class="s1">&#39;Q162990&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;position played on team/speciality&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                                        <span class="p">{</span>
+                                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+                                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;small forward&#39;</span>
+                                                        <span class="p">}</span>
+                                                <span class="p">],</span>
+                                                <span class="s1">&#39;sport number&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                                        <span class="p">{</span>
+                                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;quantity&#39;</span><span class="p">,</span>
+                                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+                                                                <span class="s1">&#39;unit&#39;</span><span class="p">:</span> <span class="s1">&#39;1&#39;</span>
+                                                        <span class="p">}</span>
+                                                <span class="p">]</span>
+                                        <span class="p">}</span>
+                                <span class="p">}</span>
+                        <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="s1">&#39;Q163132&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Akron&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;instanceOf&#39;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="s1">&#39;attributes&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;population&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;quantity&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="mi">199110</span><span class="p">,</span>
+                                                <span class="s1">&#39;unit&#39;</span><span class="p">:</span> <span class="s1">&#39;1&#39;</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;point in time&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                                        <span class="p">{</span>
+                                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span>
+                                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="mi">2010</span>
+                                                        <span class="p">}</span>
+                                                <span class="p">]</span>
+                                        <span class="p">}</span>
+                                <span class="p">}</span>
+                        <span class="p">],</span>
+                        <span class="s1">&#39;relations&#39;</span><span class="p">:</span> <span class="p">[]</span>
+                <span class="p">},</span>
+                <span class="s1">&#39;Q162990&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Cleveland Cavaliers&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;instanceOf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Q13393265&#39;</span><span class="p">],</span>
+                        <span class="s1">&#39;attributes&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;inception&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span>
+                                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="mi">1970</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">}</span>
+                        <span class="p">],</span>
+                        <span class="s1">&#39;relations&#39;</span><span class="p">:</span> <span class="p">[]</span>
+                <span class="p">},</span>
+                <span class="s1">&#39;Q22302425&#39;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;LeBron James Jr.&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;instanceOf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Q3665646&#39;</span><span class="p">],</span>
+                        <span class="s1">&#39;attributes&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;height&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;quantity&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="mi">188</span><span class="p">,</span>
+                                                <span class="s1">&#39;unit&#39;</span><span class="p">:</span> <span class="s1">&#39;centimetre&#39;</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;sex or gender&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;male&#39;</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;date of birth&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="p">{</span>
+                                                <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;2004-10-06&#39;</span>
+                                        <span class="p">},</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">}</span>
+                        <span class="p">],</span>
+                        <span class="s1">&#39;relations&#39;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s1">&#39;relation&#39;</span><span class="p">:</span> <span class="s1">&#39;father&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;forward&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;object&#39;</span><span class="p">:</span> <span class="s1">&#39;Q36159&#39;</span><span class="p">,</span>
+                                        <span class="s1">&#39;qualifiers&#39;</span><span class="p">:</span> <span class="p">{}</span>
+                                <span class="p">}</span>
+                        <span class="p">]</span>
+
+                <span class="p">}</span>
+        <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>KoPL编程问答<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<p>KoPL的实现基于python，此处演示一个示例。更多API请参考API文档
+<a class="reference internal" href="kopl.html"><span class="doc">KoPL引擎</span></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kopl</span> <span class="kn">import</span> <span class="n">kopl</span>
+<span class="kn">from</span> <span class="nn">kopl</span> <span class="kn">import</span> <span class="n">util</span>
+
+<span class="n">engine</span> <span class="o">=</span> <span class="n">kopl</span><span class="o">.</span><span class="n">KoPLEngine</span><span class="p">(</span><span class="n">example_kb</span><span class="p">)</span> <span class="c1"># 需要先把上面的example_kb复制在代码里</span>
+
+<span class="n">ans</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">SelectBetween</span><span class="p">(</span>
+        <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s1">&#39;LeBron James Jr.&#39;</span><span class="p">),</span>
+        <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s1">&#39;LeBron James Jr.&#39;</span><span class="p">),</span>
+                <span class="n">relation</span> <span class="o">=</span> <span class="s1">&#39;father&#39;</span><span class="p">,</span>
+                <span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;forward&#39;</span>
+        <span class="p">),</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="s1">&#39;height&#39;</span><span class="p">,</span>
+        <span class="n">op</span> <span class="o">=</span> <span class="s1">&#39;greater&#39;</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>在这个示例里，我们查询LeBron James Jr.和他的父亲谁更高，KoPL程序给出了正确的答案: LeBron James！</p>
+<p>更多KoPL样例请参考
+<a class="reference internal" href="example.html"><span class="doc">简单问答</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="安装" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="service.html" class="btn btn-neutral float-right" title="查询服务" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, KEG.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

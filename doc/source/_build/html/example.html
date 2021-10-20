@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>知识库下载 &mdash; KoPL 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="KoPL引擎" href="kopl.html" />
+    <link rel="prev" title="查询服务" href="service.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html#id1">设计理念</a></li>
+<li class="toctree-l1"><a class="reference internal" href="knowledge.html">KoPL面向的知识元素</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function.html">KoPL的元函数</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">快速开始</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="helloworld.html">第一个KoPL程序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="service.html">查询服务</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">更多KoPL样例</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">知识库下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">简单问答</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">查询属性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">查询在修饰符限定下的属性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">查询关系</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">查询属性的修饰值</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">查询关系的修饰值</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id8">复杂问答</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id9">多跳查询</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">比较</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">逻辑操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">事实验证</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API文档</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kopl.html">KoPL引擎</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">KoPL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>知识库下载</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/example.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>知识库下载<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h1>
+<p>我们从Wikidata中抽取了一个高质量的稠密子集 <a class="reference external" href="https://drive.google.com/file/d/1WJyA4xMCjk4JSEVWSOG10vDcMxdJu3Qh/view?usp=sharing">Wikidata15k</a>，包含794个概念，16,960个实体，363个关系，846个属性。以下的样例都基于这个知识库。</p>
+</section>
+<section id="id2">
+<h1>简单问答<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h1>
+<section id="id3">
+<h2>查询属性<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-When-did-the-1985-Major-League-Baseball-season-take-place">查询例句：When did the 1985 Major League Baseball season take place?<a class="headerlink" href="#term-When-did-the-1985-Major-League-Baseball-season-take-place" title="Permalink to this term"></a></dt><dt id="term-1985">1985年美国职业棒球大联盟赛季是什么时候开始的？<a class="headerlink" href="#term-1985" title="Permalink to this term"></a></dt><dt id="term-0">查询结果：1985<a class="headerlink" href="#term-0" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryAttr</span><span class="p">(</span>
+    <span class="n">entities</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;1985 Major League Baseball season&quot;</span><span class="p">),</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="s2">&quot;point in time&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>查询在修饰符限定下的属性<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-Of-New-Jersey-cities-with-under-350000-in-population-which-is-biggest-in-terms-of-area">查询例句：Of New Jersey cities with under 350000 in population, which is biggest in terms of area?<a class="headerlink" href="#term-Of-New-Jersey-cities-with-under-350000-in-population-which-is-biggest-in-terms-of-area" title="Permalink to this term"></a></dt><dt id="term-35">在人口不到35万的新泽西州城市中，哪一个城市面积最大？<a class="headerlink" href="#term-35" title="Permalink to this term"></a></dt><dt id="term-1998-06-25">查询结果：1998-06-25<a class="headerlink" href="#term-1998-06-25" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryAttrUnderCondition</span><span class="p">(</span>
+    <span class="n">entities</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Oscar and Lucinda&quot;</span><span class="p">),</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="s2">&quot;publication date&quot;</span><span class="p">,</span>
+    <span class="n">qkey</span> <span class="o">=</span> <span class="s2">&quot;place of publication&quot;</span><span class="p">,</span>
+    <span class="n">qvalue</span> <span class="o">=</span> <span class="s2">&quot;Germany&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>查询关系<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-When-did-Will-Grace-have-8-seasons">查询例句：When did Will &amp; Grace have 8 seasons?<a class="headerlink" href="#term-When-did-Will-Grace-have-8-seasons" title="Permalink to this term"></a></dt><dt id="term-Will-Grace8">Will &amp; Grace什么时候有了第8季？<a class="headerlink" href="#term-Will-Grace8" title="Permalink to this term"></a></dt><dt id="term-2006-05-18">查询结果：2006-05-18<a class="headerlink" href="#term-2006-05-18" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryAttrQualifier</span><span class="p">(</span>
+    <span class="n">entities</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Will &amp; Grace&quot;</span><span class="p">),</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="s2">&quot;number of seasons&quot;</span><span class="p">,</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;8&quot;</span><span class="p">,</span>
+    <span class="n">qkey</span> <span class="o">=</span> <span class="s2">&quot;point in time&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h2>查询属性的修饰值<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-How-is-Viggo-Mortensen-releated-to-the-10th-Screen-Actors-Guild-Awards">查询例句：How is Viggo Mortensen releated to the 10th Screen Actors Guild Awards?<a class="headerlink" href="#term-How-is-Viggo-Mortensen-releated-to-the-10th-Screen-Actors-Guild-Awards" title="Permalink to this term"></a></dt><dt id="term-Viggo-Mortensen">Viggo Mortensen是如何获得第十届银幕演员协会奖的？<a class="headerlink" href="#term-Viggo-Mortensen" title="Permalink to this term"></a></dt><dt id="term-award-received">查询结果：award received<a class="headerlink" href="#term-award-received" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryRelation</span><span class="p">(</span>
+    <span class="n">s_entities</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Viggo Mortensen&quot;</span><span class="p">),</span>
+    <span class="n">t_entities</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;10th Screen Actors Guild Awards&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h2>查询关系的修饰值<a class="headerlink" href="#id7" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-When-did-Mitchell-Hurwitz-end-his-education-at-Georgetown-University">查询例句：When did Mitchell Hurwitz end his education at Georgetown University?<a class="headerlink" href="#term-When-did-Mitchell-Hurwitz-end-his-education-at-Georgetown-University" title="Permalink to this term"></a></dt><dt id="term-Mitchell-Hurwitz">Mitchell Hurwitz什么时候结束了在乔治敦大学的学业？<a class="headerlink" href="#term-Mitchell-Hurwitz" title="Permalink to this term"></a></dt><dt id="term-1">查询结果：1985<a class="headerlink" href="#term-1" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryRelationQualifier</span><span class="p">(</span>
+    <span class="n">s_entities</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Mitchell Hurwitz&quot;</span><span class="p">),</span>
+    <span class="n">t_entities</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Georgetown University&quot;</span><span class="p">),</span>
+    <span class="n">predicate</span> <span class="o">=</span> <span class="s2">&quot;educated at&quot;</span><span class="p">,</span>
+    <span class="n">qkey</span> <span class="o">=</span> <span class="s2">&quot;end time&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id8">
+<h1>复杂问答<a class="headerlink" href="#id8" title="Permalink to this headline"></a></h1>
+<section id="id9">
+<h2>多跳查询<a class="headerlink" href="#id9" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-How-many-industry-computer-languages-are-related-to-UNIX">查询例句：How many industry computer languages are related to UNIX?<a class="headerlink" href="#term-How-many-industry-computer-languages-are-related-to-UNIX" title="Permalink to this term"></a></dt><dt id="term-UNIX">有多少种工业计算机语言与UNIX相关？？<a class="headerlink" href="#term-UNIX" title="Permalink to this term"></a></dt><dt id="term-22">查询结果：22<a class="headerlink" href="#term-22" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">Count</span><span class="p">(</span>
+            <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                    <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                            <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                                    <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                                            <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Unix&quot;</span><span class="p">),</span>
+                                            <span class="s2">&quot;relative&quot;</span><span class="p">,</span>
+                                            <span class="s2">&quot;backward&quot;</span>
+                                    <span class="p">),</span>
+                                    <span class="s2">&quot;industry&quot;</span>
+                            <span class="p">),</span>
+                            <span class="s2">&quot;language of work or name&quot;</span><span class="p">,</span>
+                            <span class="s2">&quot;forward&quot;</span>
+                    <span class="p">),</span>
+                    <span class="s2">&quot;programming language&quot;</span>
+            <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<dl class="glossary simple">
+<dt id="term-Who-is-known-for-the-new-wave-of-European-origin">查询例句：Who is known for the new wave of European origin?<a class="headerlink" href="#term-Who-is-known-for-the-new-wave-of-European-origin" title="Permalink to this term"></a></dt><dt id="term-2">谁因欧洲起源的新浪潮而闻名？<a class="headerlink" href="#term-2" title="Permalink to this term"></a></dt><dt id="term-Gary-Numan">查询结果：Gary Numan<a class="headerlink" href="#term-Gary-Numan" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryName</span><span class="p">(</span>
+            <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                    <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                            <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                                    <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                                            <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Europe&quot;</span><span class="p">),</span>
+                                            <span class="s2">&quot;country of origin&quot;</span><span class="p">,</span>
+                                            <span class="s2">&quot;backward&quot;</span>
+                                    <span class="p">),</span>
+                                    <span class="s2">&quot;new wave&quot;</span>
+                            <span class="p">),</span>
+                            <span class="s2">&quot;famous people&quot;</span><span class="p">,</span>
+                            <span class="s2">&quot;forward&quot;</span>
+                    <span class="p">),</span>
+                    <span class="s2">&quot;human&quot;</span>
+            <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id10">
+<h2>比较<a class="headerlink" href="#id10" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-Which-show-produced-by-Dreamworks-is-the-longest">查询例句：Which show produced by Dreamworks is the longest?<a class="headerlink" href="#term-Which-show-produced-by-Dreamworks-is-the-longest" title="Permalink to this term"></a></dt><dt id="term-3">梦工厂制作的哪个节目最长？<a class="headerlink" href="#term-3" title="Permalink to this term"></a></dt><dt id="term-Into-the-West">查询结果：Into the West<a class="headerlink" href="#term-Into-the-West" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">SelectAmong</span><span class="p">(</span>
+                    <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                            <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                                    <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;DreamWorks&quot;</span><span class="p">),</span>
+                                    <span class="s2">&quot;production company&quot;</span><span class="p">,</span>
+                                    <span class="s2">&quot;backward&quot;</span>
+                            <span class="p">),</span>
+                            <span class="s2">&quot;miniseries&quot;</span>
+                    <span class="p">),</span>
+                    <span class="s2">&quot;duration&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;largest&quot;</span>
+            <span class="p">)</span>
+</pre></div>
+</div>
+<dl class="glossary simple">
+<dt id="term-Who-is-taller-Kobe-Bryant-or-LeBron-James">查询例句：Who is taller, Kobe Bryant or LeBron James?<a class="headerlink" href="#term-Who-is-taller-Kobe-Bryant-or-LeBron-James" title="Permalink to this term"></a></dt><dt id="term-Kobe-Bryant-LeBron-James">谁更高,Kobe Bryant 还是 LeBron James?<a class="headerlink" href="#term-Kobe-Bryant-LeBron-James" title="Permalink to this term"></a></dt><dt id="term-LeBron-James">查询结果：LeBron James<a class="headerlink" href="#term-LeBron-James" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">SelectBetween</span><span class="p">(</span>
+            <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Kobe Bryant&quot;</span><span class="p">),</span>
+            <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;LeBron James&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;height&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;greater&quot;</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id11">
+<h2>逻辑操作<a class="headerlink" href="#id11" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-What-feature-film-was-nominated-for-an-Academy-Award-for-Best-Supporting-Actor-and-an-Academy-Award-for-Best-Actor">查询例句：What feature film was nominated for an Academy Award for Best Supporting Actor and an Academy Award for Best Actor?<a class="headerlink" href="#term-What-feature-film-was-nominated-for-an-Academy-Award-for-Best-Supporting-Actor-and-an-Academy-Award-for-Best-Actor" title="Permalink to this term"></a></dt><dt id="term-4">哪部故事片获得奥斯卡最佳男配角奖和最佳男主角奖提名？<a class="headerlink" href="#term-4" title="Permalink to this term"></a></dt><dt id="term-Fiddler-on-the-Roof-Pirates-of-the-Caribbean-The-Curse-of-the-Black-Pearl-The-Straight-Story">查询结果：Fiddler on the Roof, Pirates of the Caribbean: The Curse of the Black Pearl, The Straight Story<a class="headerlink" href="#term-Fiddler-on-the-Roof-Pirates-of-the-Caribbean-The-Curse-of-the-Black-Pearl-The-Straight-Story" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryName</span><span class="p">(</span>
+        <span class="n">engine</span><span class="o">.</span><span class="n">And</span><span class="p">(</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                        <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                                <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Academy Award for Best Actor&quot;</span><span class="p">),</span>
+                                <span class="s2">&quot;nominated for&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;backward&quot;</span>
+                        <span class="p">),</span>
+                        <span class="s2">&quot;feature film&quot;</span>
+                <span class="p">),</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                        <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                                <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Academy Award for Best Actor&quot;</span><span class="p">),</span>
+                                <span class="s2">&quot;nominated for&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;backward&quot;</span>
+                        <span class="p">),</span>
+                        <span class="s2">&quot;feature film&quot;</span>
+                <span class="p">)</span>
+        <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<dl class="glossary simple">
+<dt id="term-How-many-symptoms-indicate-lung-cancer-or-have-obesity-as-a-risk-factor">查询例句：How many symptoms indicate lung cancer or have obesity as a risk factor?<a class="headerlink" href="#term-How-many-symptoms-indicate-lung-cancer-or-have-obesity-as-a-risk-factor" title="Permalink to this term"></a></dt><dt id="term-5">有多少症状表明肺癌或肥胖是一个危险因素？<a class="headerlink" href="#term-5" title="Permalink to this term"></a></dt><dt id="term-6">查询结果：4<a class="headerlink" href="#term-6" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">Count</span><span class="p">(</span>
+        <span class="n">engine</span><span class="o">.</span><span class="n">Or</span><span class="p">(</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                        <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                                <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;lung cancer&quot;</span><span class="p">),</span>
+                                <span class="s2">&quot;symptoms&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;forward&quot;</span>
+                        <span class="p">),</span>
+                        <span class="s2">&quot;symptom&quot;</span>
+                <span class="p">),</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                        <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                                <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;obesity&quot;</span><span class="p">),</span>
+                                <span class="s2">&quot;risk factor&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;forward&quot;</span>
+                        <span class="p">),</span>
+                        <span class="s2">&quot;symptom&quot;</span>
+                <span class="p">)</span>
+        <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id12">
+<h2>事实验证<a class="headerlink" href="#id12" title="Permalink to this headline"></a></h2>
+<dl class="glossary simple">
+<dt id="term-Are-there-less-than-30000-households-on-the-date-2011-01-01-in-the-big-city-that-is-an-administrative-division-of-North-Brabant">查询例句：Are there less than 30000 households on the date 2011-01-01 in the big city that is an administrative division of North Brabant?<a class="headerlink" href="#term-Are-there-less-than-30000-households-on-the-date-2011-01-01-in-the-big-city-that-is-an-administrative-division-of-North-Brabant" title="Permalink to this term"></a></dt><dt id="term-201111-30000">在2011年1月1日，北布拉班特行政区的大城市的住户是否少于30000户？<a class="headerlink" href="#term-201111-30000" title="Permalink to this term"></a></dt><dt id="term-yes">查询结果：yes<a class="headerlink" href="#term-yes" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">QueryName</span><span class="p">(</span>
+        <span class="n">engine</span><span class="o">.</span><span class="n">QFilterStr</span><span class="p">(</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">Relate</span><span class="p">(</span>
+                        <span class="n">engine</span><span class="o">.</span><span class="n">Find</span><span class="p">(</span><span class="s2">&quot;Academy Award for Best Costume Design&quot;</span><span class="p">),</span>
+                        <span class="s2">&quot;winner&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;forward&quot;</span>
+                <span class="p">),</span>
+                <span class="s2">&quot;for work&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Topsy-Turvy&quot;</span>
+        <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<dl class="glossary simple">
+<dt id="term-Did-the-television-series-titled-All-in-the-Family-start-on-1971-01-12">查询例句：Did the television series titled All in the Family start on 1971-01-12?<a class="headerlink" href="#term-Did-the-television-series-titled-All-in-the-Family-start-on-1971-01-12" title="Permalink to this term"></a></dt><dt id="term-All-in-the-Family1971112">这部名为《All in the Family》的电视连续剧是从1971年1月12日开始的吗？<a class="headerlink" href="#term-All-in-the-Family1971112" title="Permalink to this term"></a></dt><dt id="term-7">查询结果：yes<a class="headerlink" href="#term-7" title="Permalink to this term"></a></dt><dd></dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span><span class="o">.</span><span class="n">VerifyDate</span><span class="p">(</span>
+        <span class="n">engine</span><span class="o">.</span><span class="n">QueryAttr</span><span class="p">(</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">FilterConcept</span><span class="p">(</span>
+                        <span class="n">engine</span><span class="o">.</span><span class="n">FilterStr</span><span class="p">(</span>
+                                <span class="n">engine</span><span class="o">.</span><span class="n">FindAll</span><span class="p">(),</span>
+                                <span class="s2">&quot;title&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;All in the Family&quot;</span>
+                        <span class="p">),</span>
+                        <span class="s2">&quot;television series&quot;</span>
+                <span class="p">),</span>
+                <span class="s2">&quot;start time&quot;</span>
+        <span class="p">),</span>
+        <span class="s2">&quot;1971-01-12&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;=&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="service.html" class="btn btn-neutral float-left" title="查询服务" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="kopl.html" class="btn btn-neutral float-right" title="KoPL引擎" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, KEG.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

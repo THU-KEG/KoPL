@@ -1,0 +1,291 @@
+
+
+知识库下载
+=====================================================================================================================================================================================
+我们从Wikidata中抽取了一个高质量的稠密子集 `Wikidata15k <https://drive.google.com/file/d/1WJyA4xMCjk4JSEVWSOG10vDcMxdJu3Qh/view?usp=sharing>`_，包含794个概念，16,960个实体，363个关系，846个属性。以下的样例都基于这个知识库。
+
+
+
+简单问答
+====================================================================================================================================================
+
+查询属性
+----------------------------------------------------------------
+.. glossary::
+
+    查询例句：When did the 1985 Major League Baseball season take place?
+    1985年美国职业棒球大联盟赛季是什么时候开始的？
+    查询结果：1985
+
+::
+
+    engine.QueryAttr(
+        entities = engine.Find("1985 Major League Baseball season"),
+        key = "point in time"
+    )
+
+查询在修饰符限定下的属性
+----------------------------------------------------------------
+.. glossary::
+
+    查询例句：Of New Jersey cities with under 350000 in population, which is biggest in terms of area?
+    在人口不到35万的新泽西州城市中，哪一个城市面积最大？
+    查询结果：1998-06-25
+
+::
+
+    engine.QueryAttrUnderCondition(
+        entities = engine.Find("Oscar and Lucinda"),
+        key = "publication date",
+        qkey = "place of publication",
+        qvalue = "Germany"
+    )
+
+查询关系
+----------------------------------------------------------------
+.. glossary::
+
+    查询例句：When did Will & Grace have 8 seasons?
+    Will & Grace什么时候有了第8季？
+    查询结果：2006-05-18
+
+::
+
+    engine.QueryAttrQualifier(
+        entities = engine.Find("Will & Grace"),
+        key = "number of seasons",
+        value = "8",
+        qkey = "point in time"
+    )
+
+查询属性的修饰值
+----------------------------------------------------------------
+.. glossary::
+    
+    查询例句：How is Viggo Mortensen releated to the 10th Screen Actors Guild Awards?
+    Viggo Mortensen是如何获得第十届银幕演员协会奖的？
+    查询结果：award received
+
+::
+
+    engine.QueryRelation(
+        s_entities = engine.Find("Viggo Mortensen"),
+        t_entities = engine.Find("10th Screen Actors Guild Awards")
+    )
+
+查询关系的修饰值
+----------------------------------------------------------------
+.. glossary::
+
+    查询例句：When did Mitchell Hurwitz end his education at Georgetown University?
+    Mitchell Hurwitz什么时候结束了在乔治敦大学的学业？
+    查询结果：1985
+
+::
+
+    engine.QueryRelationQualifier(
+        s_entities = engine.Find("Mitchell Hurwitz"),
+        t_entities = engine.Find("Georgetown University"),
+        predicate = "educated at",
+        qkey = "end time"
+    )
+
+复杂问答
+====================================================================================================================================================
+多跳查询
+----------------------------------------------------------------
+.. glossary::
+
+    查询例句：How many industry computer languages are related to UNIX?
+    有多少种工业计算机语言与UNIX相关？？
+    查询结果：22
+
+::
+
+    engine.Count(
+		engine.FilterConcept(
+			engine.Relate(
+				engine.FilterConcept(
+					engine.Relate(
+						engine.Find("Unix"),
+						"relative",
+						"backward"
+					),
+					"industry"
+				),
+				"language of work or name",
+				"forward"
+			),
+			"programming language"
+		)
+	)
+
+.. glossary::
+
+    查询例句：Who is known for the new wave of European origin?
+    谁因欧洲起源的新浪潮而闻名？
+    查询结果：Gary Numan
+
+::
+
+    engine.QueryName(
+		engine.FilterConcept(
+			engine.Relate(
+				engine.FilterConcept(
+					engine.Relate(
+						engine.Find("Europe"),
+						"country of origin",
+						"backward"
+					),
+					"new wave"
+				),
+				"famous people",
+				"forward"
+			),
+			"human"
+		)
+	)
+
+比较
+----------------------------------------------------------------
+.. glossary::
+
+    查询例句：Which show produced by Dreamworks is the longest?
+    梦工厂制作的哪个节目最长？
+    查询结果：Into the West
+
+::
+
+    engine.SelectAmong(
+			engine.FilterConcept(
+				engine.Relate(
+					engine.Find("DreamWorks"),
+					"production company",
+					"backward"
+				),
+				"miniseries"
+			),
+			"duration",
+			"largest"
+		)
+
+.. glossary::
+
+    查询例句：Who is taller, Kobe Bryant or LeBron James?
+    谁更高,Kobe Bryant 还是 LeBron James?
+    查询结果：LeBron James
+
+::
+
+    engine.SelectBetween(
+		engine.Find("Kobe Bryant"),
+		engine.Find("LeBron James"),
+		"height",
+		"greater"
+	)
+
+逻辑操作
+----------------------------------------------------------------    
+.. glossary::
+
+    查询例句：What feature film was nominated for an Academy Award for Best Supporting Actor and an Academy Award for Best Actor?
+    哪部故事片获得奥斯卡最佳男配角奖和最佳男主角奖提名？
+    查询结果：Fiddler on the Roof, Pirates of the Caribbean: The Curse of the Black Pearl, The Straight Story
+
+::
+
+	engine.QueryName(
+		engine.And(
+			engine.FilterConcept(
+				engine.Relate(
+					engine.Find("Academy Award for Best Actor"),
+					"nominated for",
+					"backward"
+				),
+				"feature film"
+			),
+			engine.FilterConcept(
+				engine.Relate(
+					engine.Find("Academy Award for Best Actor"),
+					"nominated for",
+					"backward"
+				),
+				"feature film"
+			)
+		)
+	)
+
+.. glossary::
+
+    查询例句：How many symptoms indicate lung cancer or have obesity as a risk factor?
+    有多少症状表明肺癌或肥胖是一个危险因素？
+    查询结果：4
+
+::
+
+	engine.Count(
+		engine.Or(
+			engine.FilterConcept(
+				engine.Relate(
+					engine.Find("lung cancer"),
+					"symptoms",
+					"forward"
+				),
+				"symptom"
+			),
+			engine.FilterConcept(
+				engine.Relate(
+					engine.Find("obesity"),
+					"risk factor",
+					"forward"
+				),
+				"symptom"
+			)
+		)
+	)
+
+事实验证
+----------------------------------------------------------------    
+.. glossary::
+
+    查询例句：Are there less than 30000 households on the date 2011-01-01 in the big city that is an administrative division of North Brabant?
+    在2011年1月1日，北布拉班特行政区的大城市的住户是否少于30000户？
+    查询结果：yes
+
+::
+
+	engine.QueryName(
+		engine.QFilterStr(
+			engine.Relate(
+				engine.Find("Academy Award for Best Costume Design"),
+				"winner",
+				"forward"
+			),
+			"for work",
+			"Topsy-Turvy"
+		)
+	)
+
+.. glossary::
+
+    查询例句：Did the television series titled All in the Family start on 1971-01-12?
+    这部名为《All in the Family》的电视连续剧是从1971年1月12日开始的吗？
+    查询结果：yes
+
+::
+
+	engine.VerifyDate(
+		engine.QueryAttr(
+			engine.FilterConcept(
+				engine.FilterStr(
+					engine.FindAll(),
+					"title",
+					"All in the Family"
+				),
+				"television series"
+			),
+			"start time"
+		),
+		"1971-01-12",
+		"="
+	)
