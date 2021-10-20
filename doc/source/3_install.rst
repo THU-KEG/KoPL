@@ -3,7 +3,7 @@
 
 KoPL支持Linux (e.g., Ubuntu/CentOS)，macOS，Windows。
 
-其中Linux和macOS的依赖为：
+其依赖为：
 
 ::
 
@@ -11,26 +11,12 @@ KoPL支持Linux (e.g., Ubuntu/CentOS)，macOS，Windows。
 
   tqdm >= 4.62
 
-Windows对环境的要求为：
-
-::
-
-  Python >= 3.6
-
-  tqdm >= 4.62
-
-  x86_64处理器
-
-  Windows10及以上
-
 
 KoPL提供pip安装, 下面将展示Ubuntu的安装命令:
 
 ::
 
-  $ sudo apt install python3.7-dev
-
-  $ python3.7 -m pip install KoPL
+  $ pip install KoPL
 
 运行下面的代码
 

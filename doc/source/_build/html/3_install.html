@@ -19,7 +19,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="第一个KoPL程序" href="4_helloworld.html" />
-    <link rel="prev" title="KoPL的元函数" href="2_function.html" /> 
+    <link rel="prev" title="KoPL的基本函数" href="2_function.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,9 +41,8 @@
               <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="0_intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0_intro.html#id1">设计理念</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_knowledge.html">KoPL面向的知识元素</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_function.html">KoPL的元函数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_function.html">KoPL的基本函数</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">快速开始</span></p>
 <ul class="current">
@@ -56,6 +55,10 @@
 <li class="toctree-l1"><a class="reference internal" href="5_example.html#id2">简单问答</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5_example.html#id8">复杂问答</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6_service.html">查询服务</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API文档</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="7_kopl.html">KoPL引擎</a></li>
 </ul>
 
         </div>
@@ -85,26 +88,14 @@
   <section id="id1">
 <h1>安装<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h1>
 <p>KoPL支持Linux (e.g., Ubuntu/CentOS)，macOS，Windows。</p>
-<p>其中Linux和macOS的依赖为：</p>
+<p>其依赖为：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">&gt;=</span> <span class="mf">3.6</span>
 
 <span class="n">tqdm</span> <span class="o">&gt;=</span> <span class="mf">4.62</span>
 </pre></div>
 </div>
-<p>Windows对环境的要求为：</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="o">&gt;=</span> <span class="mf">3.6</span>
-
-<span class="n">tqdm</span> <span class="o">&gt;=</span> <span class="mf">4.62</span>
-
-<span class="n">x86_64处理器</span>
-
-<span class="n">Windows10及以上</span>
-</pre></div>
-</div>
 <p>KoPL提供pip安装, 下面将展示Ubuntu的安装命令:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3.7-dev
-
-$ python3.7 -m pip install KoPL
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install KoPL
 </pre></div>
 </div>
 <p>运行下面的代码</p>
@@ -120,7 +111,7 @@ $ python3.7 -m pip install KoPL
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="2_function.html" class="btn btn-neutral float-left" title="KoPL的元函数" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2_function.html" class="btn btn-neutral float-left" title="KoPL的基本函数" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="4_helloworld.html" class="btn btn-neutral float-right" title="第一个KoPL程序" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

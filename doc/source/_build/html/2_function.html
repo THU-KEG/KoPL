@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KoPL的元函数 &mdash; KoPL 1.0.0 documentation</title>
+  <title>KoPL的基本函数 &mdash; KoPL 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,9 +42,8 @@
               <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="0_intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0_intro.html#id1">设计理念</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_knowledge.html">KoPL面向的知识元素</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">KoPL的元函数</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KoPL的基本函数</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">操作函数</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">查询函数</a></li>
 </ul>
@@ -62,6 +61,10 @@
 <li class="toctree-l1"><a class="reference internal" href="5_example.html#id8">复杂问答</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6_service.html">查询服务</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">API文档</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="7_kopl.html">KoPL引擎</a></li>
+</ul>
 
         </div>
       </div>
@@ -77,7 +80,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>KoPL的元函数</li>
+      <li>KoPL的基本函数</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/2_function.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -88,17 +91,17 @@
            <div itemprop="articleBody">
              
   <section id="kopl">
-<h1>KoPL的元函数<a class="headerlink" href="#kopl" title="Permalink to this headline"></a></h1>
-<p>用 KoPL 编程可以看作对元函数进行组合操作。
-元函数有两种:</p>
+<h1>KoPL的基本函数<a class="headerlink" href="#kopl" title="Permalink to this headline"></a></h1>
+<p>用 KoPL 编程可以看作对基本函数进行组合操作。
+基本函数有两种:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>操作函数（Operation Functions）</p></li>
 <li><p>查询函数（Query Functions）</p></li>
 </ul>
 </div></blockquote>
-<p>KoPL 通过对这些元函数的组合实现查询操作。
-本教程将详细介绍这些元函数各自的 <strong>功能</strong> 和 <strong>参数</strong> 格式。</p>
+<p>KoPL 通过对这些基本函数的组合实现查询操作。
+本教程将详细介绍这些基本函数各自的 <strong>功能</strong> 和 <strong>参数</strong> 格式。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <dl class="simple">

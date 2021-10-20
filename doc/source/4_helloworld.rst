@@ -255,7 +255,7 @@ KoPL编程问答
 ----------------------------
 
 KoPL的实现基于python，此处演示一个示例。更多API请参考API文档
-:doc:`7_kopl`，关于KoPL元函数的介绍可以参考
+:doc:`7_kopl`，关于KoPL基本函数的介绍可以参考
 :doc:`2_function`。
 
 ::
@@ -282,5 +282,5 @@ KoPL的实现基于python，此处演示一个示例。更多API请参考API文�
 
 
 更多KoPL样例请参考
-:doc:`更多KoPL样例 <5_example>`
+:doc:`更多KoPL样例 <5_example>`。
 
