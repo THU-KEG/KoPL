@@ -12,6 +12,7 @@ from kopl.test.test_example import example_kb
 
 engine = KoPLEngine(example_kb)
 
+# Who is taller, LeBron James Jr. or his father?
 ans = engine.SelectBetween(
   engine.Find('LeBron James Jr.'),
   engine.Relate(
