@@ -10,21 +10,21 @@ KoPL全称 Knowledge oriented Programing Language, 是一个为复杂推理问�
 from kopl.kopl import KoPLEngine
 from kopl.test.test_example import example_kb
 
-engine = KoPLEngine(example_kb)
+engine = KoPLEngine(example_kb) # 创建可以在example_kb这个知识库上进行操作的engine示例
 
-# Who is taller, LeBron James Jr. or his father?
-ans = engine.SelectBetween(
-  engine.Find('LeBron James Jr.'),
-  engine.Relate(
-    engine.Find('LeBron James Jr.'),
-    'father',
-    'forward'
+# 查询问题：Who is taller, LeBron James Jr. or his father?
+ans = engine.SelectBetween( # 在两个实体中，查询'height'更大的实体
+  engine.Find('LeBron James Jr.'), # 找到实体'LeBron James Jr'
+  engine.Relate( # 找到与'LeBron James Jr'的'father
+    engine.Find('LeBron James Jr.'), # 找到实体'LeBron James Jr'
+    'father', # 关系标签
+    'forward' # ’forward‘代表'LeBron James Jr'为头实体
   ),
-  'height',
-  'greater'
+  'height', # 属性标签
+  'greater' # 查询属性值更大的实体
 )
 
-print(ans)
+print(ans) # ans是实体名字列表
 
 ```
 
