@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KoPL的基本函数 &mdash; KoPL 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -90,7 +89,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="kopl">
+  <div class="section" id="kopl">
 <h1>KoPL的基本函数<a class="headerlink" href="#kopl" title="Permalink to this headline"></a></h1>
 <p>用 KoPL 编程可以看作对基本函数进行组合操作。
 基本函数有两种:</p>
@@ -111,7 +110,7 @@
 <p>函数输入是之前的 function 的输出</p>
 <p>文本输入是由问题推断得到的</p>
 </div>
-<section id="id1">
+<div class="section" id="id1">
 <h2>操作函数<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
 <dl class="glossary">
 <dt id="term-FindAll-Null-times-Null-mapsto-Entities">FindAll: (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-FindAll-Null-times-Null-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul>
@@ -327,7 +326,7 @@
 </dl>
 </li>
 <li><dl>
-<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FilterDate</span><span class="p">(</span><span class="n">birthday</span><span class="p">,</span> <span class="mi">1980</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">)</span>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FilterDate</span><span class="p">(</span><span class="n">birthday</span><span class="p">,</span> <span class="mi">1980</span><span class="o">-</span><span class="mo">06</span><span class="o">-</span><span class="mo">01</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
@@ -462,7 +461,7 @@
 </dl>
 </li>
 <li><dl>
-<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QFilterDate</span><span class="p">(</span><span class="n">start</span> <span class="n">time</span> <span class="mi">1980</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">)</span>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QFilterDate</span><span class="p">(</span><span class="n">start</span> <span class="n">time</span> <span class="mi">1980</span><span class="o">-</span><span class="mo">06</span><span class="o">-</span><span class="mo">01</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
@@ -549,8 +548,8 @@
 </ul>
 </dd>
 </dl>
-</section>
-<section id="id2">
+</div>
+<div class="section" id="id2">
 <h2>查询函数<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
 <dl class="glossary">
 <dt id="term-QueryName-Entity-times-Null-mapsto-string">QueryName: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>string</cite>)<a class="headerlink" href="#term-QueryName-Entity-times-Null-mapsto-string" title="Permalink to this term"></a></dt><dd><ul class="simple">
@@ -868,7 +867,7 @@
 </dl>
 </li>
 <li><dl>
-<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">VerifyYear</span><span class="p">(</span><span class="mi">1980</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">)</span>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">VerifyYear</span><span class="p">(</span><span class="mi">1980</span><span class="o">-</span><span class="mo">06</span><span class="o">-</span><span class="mo">01</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
@@ -900,7 +899,7 @@
 </dl>
 </li>
 <li><dl>
-<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QueryAttrQualifier</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span><span class="mi">390</span><span class="p">,</span><span class="mi">000</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">time</span><span class="p">)</span>
+<dt>示例</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">QueryAttrQualifier</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span><span class="mi">390</span><span class="p">,</span><span class="mo">000</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">time</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
@@ -940,8 +939,8 @@
 </ul>
 </dd>
 </dl>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

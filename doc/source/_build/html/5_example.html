@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>知识库下载 &mdash; KoPL 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -41,9 +40,8 @@
               <p class="caption" role="heading"><span class="caption-text">KoPL入门</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="0_intro.html">面向复杂推理问答的程序表示——KoPL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0_intro.html#id1">设计理念</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1_knowledge.html">KoPL面向的知识元素</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_function.html">KoPL的元函数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_function.html">KoPL的基本函数</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">快速开始</span></p>
 <ul>
@@ -99,13 +97,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
+  <div class="section" id="id1">
 <h1>知识库下载<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h1>
 <p>我们从Wikidata中抽取了一个高质量的稠密子集 <a class="reference external" href="https://cloud.tsinghua.edu.cn/f/ea83c57d262b4a09ab92/?dl=1">Wikidata15k</a>，包含794个概念，16,960个实体，363个关系，846个属性。以下的样例都基于这个知识库。</p>
-</section>
-<section id="id2">
+</div>
+<div class="section" id="id2">
 <h1>简单问答<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h1>
-<section id="id3">
+<div class="section" id="id3">
 <h2>查询属性<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-When-did-the-1985-Major-League-Baseball-season-take-place">查询例句：When did the 1985 Major League Baseball season take place?<a class="headerlink" href="#term-When-did-the-1985-Major-League-Baseball-season-take-place" title="Permalink to this term"></a></dt><dt id="term-1985">1985年美国职业棒球大联盟赛季是什么时候开始的？<a class="headerlink" href="#term-1985" title="Permalink to this term"></a></dt><dt id="term-0">查询结果：1985<a class="headerlink" href="#term-0" title="Permalink to this term"></a></dt><dd></dd>
@@ -116,8 +114,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="id4">
+</div>
+<div class="section" id="id4">
 <h2>查询在修饰符限定下的属性<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-Of-New-Jersey-cities-with-under-350000-in-population-which-is-biggest-in-terms-of-area">查询例句：Of New Jersey cities with under 350000 in population, which is biggest in terms of area?<a class="headerlink" href="#term-Of-New-Jersey-cities-with-under-350000-in-population-which-is-biggest-in-terms-of-area" title="Permalink to this term"></a></dt><dt id="term-35">在人口不到35万的新泽西州城市中，哪一个城市面积最大？<a class="headerlink" href="#term-35" title="Permalink to this term"></a></dt><dt id="term-1998-06-25">查询结果：1998-06-25<a class="headerlink" href="#term-1998-06-25" title="Permalink to this term"></a></dt><dd></dd>
@@ -130,8 +128,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="id5">
+</div>
+<div class="section" id="id5">
 <h2>查询关系<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-When-did-Will-Grace-have-8-seasons">查询例句：When did Will &amp; Grace have 8 seasons?<a class="headerlink" href="#term-When-did-Will-Grace-have-8-seasons" title="Permalink to this term"></a></dt><dt id="term-Will-Grace8">Will &amp; Grace什么时候有了第8季？<a class="headerlink" href="#term-Will-Grace8" title="Permalink to this term"></a></dt><dt id="term-2006-05-18">查询结果：2006-05-18<a class="headerlink" href="#term-2006-05-18" title="Permalink to this term"></a></dt><dd></dd>
@@ -144,8 +142,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="id6">
+</div>
+<div class="section" id="id6">
 <h2>查询属性的修饰值<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-How-is-Viggo-Mortensen-releated-to-the-10th-Screen-Actors-Guild-Awards">查询例句：How is Viggo Mortensen releated to the 10th Screen Actors Guild Awards?<a class="headerlink" href="#term-How-is-Viggo-Mortensen-releated-to-the-10th-Screen-Actors-Guild-Awards" title="Permalink to this term"></a></dt><dt id="term-Viggo-Mortensen">Viggo Mortensen是如何获得第十届银幕演员协会奖的？<a class="headerlink" href="#term-Viggo-Mortensen" title="Permalink to this term"></a></dt><dt id="term-award-received">查询结果：award received<a class="headerlink" href="#term-award-received" title="Permalink to this term"></a></dt><dd></dd>
@@ -156,8 +154,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="id7">
+</div>
+<div class="section" id="id7">
 <h2>查询关系的修饰值<a class="headerlink" href="#id7" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-When-did-Mitchell-Hurwitz-end-his-education-at-Georgetown-University">查询例句：When did Mitchell Hurwitz end his education at Georgetown University?<a class="headerlink" href="#term-When-did-Mitchell-Hurwitz-end-his-education-at-Georgetown-University" title="Permalink to this term"></a></dt><dt id="term-Mitchell-Hurwitz">Mitchell Hurwitz什么时候结束了在乔治敦大学的学业？<a class="headerlink" href="#term-Mitchell-Hurwitz" title="Permalink to this term"></a></dt><dt id="term-1">查询结果：1985<a class="headerlink" href="#term-1" title="Permalink to this term"></a></dt><dd></dd>
@@ -170,11 +168,11 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-</section>
-<section id="id8">
+</div>
+</div>
+<div class="section" id="id8">
 <h1>复杂问答<a class="headerlink" href="#id8" title="Permalink to this headline"></a></h1>
-<section id="id9">
+<div class="section" id="id9">
 <h2>多跳查询<a class="headerlink" href="#id9" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-How-many-industry-computer-languages-are-related-to-UNIX">查询例句：How many industry computer languages are related to UNIX?<a class="headerlink" href="#term-How-many-industry-computer-languages-are-related-to-UNIX" title="Permalink to this term"></a></dt><dt id="term-UNIX">有多少种工业计算机语言与UNIX相关？？<a class="headerlink" href="#term-UNIX" title="Permalink to this term"></a></dt><dt id="term-22">查询结果：22<a class="headerlink" href="#term-22" title="Permalink to this term"></a></dt><dd></dd>
@@ -220,8 +218,8 @@
     <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="id10">
+</div>
+<div class="section" id="id10">
 <h2>比较<a class="headerlink" href="#id10" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-Which-show-produced-by-Dreamworks-is-the-longest">查询例句：Which show produced by Dreamworks is the longest?<a class="headerlink" href="#term-Which-show-produced-by-Dreamworks-is-the-longest" title="Permalink to this term"></a></dt><dt id="term-3">梦工厂制作的哪个节目最长？<a class="headerlink" href="#term-3" title="Permalink to this term"></a></dt><dt id="term-Into-the-West">查询结果：Into the West<a class="headerlink" href="#term-Into-the-West" title="Permalink to this term"></a></dt><dd></dd>
@@ -251,8 +249,8 @@
     <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="id11">
+</div>
+<div class="section" id="id11">
 <h2>逻辑操作<a class="headerlink" href="#id11" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-What-feature-film-was-nominated-for-an-Academy-Award-for-Best-Supporting-Actor-and-an-Academy-Award-for-Best-Actor">查询例句：What feature film was nominated for an Academy Award for Best Supporting Actor and an Academy Award for Best Actor?<a class="headerlink" href="#term-What-feature-film-was-nominated-for-an-Academy-Award-for-Best-Supporting-Actor-and-an-Academy-Award-for-Best-Actor" title="Permalink to this term"></a></dt><dt id="term-4">哪部故事片获得奥斯卡最佳男配角奖和最佳男主角奖提名？<a class="headerlink" href="#term-4" title="Permalink to this term"></a></dt><dt id="term-Fiddler-on-the-Roof-Pirates-of-the-Caribbean-The-Curse-of-the-Black-Pearl-The-Straight-Story">查询结果：Fiddler on the Roof, Pirates of the Caribbean: The Curse of the Black Pearl, The Straight Story<a class="headerlink" href="#term-Fiddler-on-the-Roof-Pirates-of-the-Caribbean-The-Curse-of-the-Black-Pearl-The-Straight-Story" title="Permalink to this term"></a></dt><dd></dd>
@@ -304,8 +302,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="id12">
+</div>
+<div class="section" id="id12">
 <h2>事实验证<a class="headerlink" href="#id12" title="Permalink to this headline"></a></h2>
 <dl class="glossary simple">
 <dt id="term-Are-there-less-than-30000-households-on-the-date-2011-01-01-in-the-big-city-that-is-an-administrative-division-of-North-Brabant">查询例句：Are there less than 30000 households on the date 2011-01-01 in the big city that is an administrative division of North Brabant?<a class="headerlink" href="#term-Are-there-less-than-30000-households-on-the-date-2011-01-01-in-the-big-city-that-is-an-administrative-division-of-North-Brabant" title="Permalink to this term"></a></dt><dt id="term-201111-30000">在2011年1月1日，北布拉班特行政区的大城市的住户是否少于30000户？<a class="headerlink" href="#term-201111-30000" title="Permalink to this term"></a></dt><dt id="term-yes">查询结果：yes<a class="headerlink" href="#term-yes" title="Permalink to this term"></a></dt><dd></dd>
@@ -343,8 +341,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

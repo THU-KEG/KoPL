@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>第一个KoPL程序 &mdash; KoPL 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -89,9 +88,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="kopl">
+  <div class="section" id="kopl">
 <h1>第一个KoPL程序<a class="headerlink" href="#kopl" title="Permalink to this headline"></a></h1>
-<section id="id1">
+<div class="section" id="id1">
 <h2>准备知识库<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
 <p>目前，我们支持JSON格式的知识库，其形式为:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -331,14 +330,14 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-<section id="id2">
+</div>
+<div class="section" id="id2">
 <h2>KoPL编程问答<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
 <p>KoPL的实现基于python，此处演示一个示例。更多API请参考API文档
 <a class="reference internal" href="7_kopl.html"><span class="doc">KoPL引擎</span></a>，关于KoPL基本函数的介绍可以参考
 <a class="reference internal" href="2_function.html"><span class="doc">KoPL的基本函数</span></a>。</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kopl.kopl</span> <span class="kn">import</span> <span class="n">KoPLEngine</span>
-<span class="kn">from</span> <span class="nn">kopl.test.test_example</span> <span class="kn">import</span> <span class="n">example_kb</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kopl.kopl</span> <span class="k">import</span> <span class="n">KoPLEngine</span>
+<span class="kn">from</span> <span class="nn">kopl.test.test_example</span> <span class="k">import</span> <span class="n">example_kb</span>
 
 <span class="n">engine</span> <span class="o">=</span> <span class="n">KoPLEngine</span><span class="p">(</span><span class="n">example_kb</span><span class="p">)</span>
 
@@ -359,8 +358,8 @@
 <p>在这个示例里，我们查询LeBron James Jr.和他的父亲谁更高，KoPL程序给出了正确的答案: LeBron James！</p>
 <p>更多KoPL样例请参考
 <a class="reference internal" href="5_example.html"><span class="doc">更多KoPL样例</span></a>。</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

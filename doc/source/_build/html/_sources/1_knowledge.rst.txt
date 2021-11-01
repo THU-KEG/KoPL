@@ -32,7 +32,7 @@ KoPL面向的知识元素
 
 .. glossary::
 
-    表示一个实体集合。
+    一组具有相同特征的实体组成的集合。
 
 .. admonition:: 例子 
     
@@ -43,11 +43,11 @@ KoPL面向的知识元素
 
 .. glossary::
 
-    表示两个实体之间的关系。特殊地，实体通过 *instance of* 关系链接到相应的概念上，概念之间通过 *subclass of* 关系来组织成层次结构。
+    表示两个实体之间的关系。特殊地，实体通过 instance of 关系链接到相应的概念上，概念之间通过 subclass of 关系来组织成层次结构。
 
 .. admonition:: 例子 
     
-    父亲（*father*）和出生地（*place of birth*）都是关系。
+    父亲（father）和出生地（place of birth）都是关系。
 
 属性
 -----------------
