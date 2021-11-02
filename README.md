@@ -44,7 +44,7 @@ KoPL支持Linux (e.g., Ubuntu/CentOS)，macOS，Windows。
 KoPL提供pip安装, 下面将展示Ubuntu的安装命令:
 
 ```bash
-  $ pip install KoPL
+  $ pip install KoPL tqdm
 ```
 
 运行下面的代码
