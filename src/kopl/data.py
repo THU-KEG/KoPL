@@ -6,7 +6,10 @@ from datetime import date
 from tqdm import tqdm
 from kopl.util import ValueClass, comp
 
-
+def lambda_list():
+	return defaultdict(list)
+def lambda_set():
+	return defaultdict(set)
 
 class KB(object):
 	def __init__(self, kb):
@@ -42,7 +45,7 @@ class KB(object):
 		}
 		'''
 		
-		self.attribute_inv_index = defaultdict(lambda: defaultdict(list))
+		self.attribute_inv_index = defaultdict(lambda_list)
 		# self.attribute_inv_index = {}
 		'''
 		{
@@ -51,7 +54,7 @@ class KB(object):
 			}
 		}
 		'''
-		self.relation_inv_index = defaultdict(lambda: defaultdict(list))
+		self.relation_inv_index = defaultdict(lambda_list)
 		# self.relation_inv_index = {}
 		'''
 		{
@@ -118,8 +121,8 @@ class KB(object):
 
 		print('extract seen values')
 		self.key_values = defaultdict(set)
-		self.concept_key_values = defaultdict(lambda: defaultdict(set)) # not include qualifier values
-		self.concept_relations = defaultdict(lambda: defaultdict(list))
+		self.concept_key_values = defaultdict(lambda_set) # not include qualifier values
+		self.concept_relations = defaultdict(lambda_list)
 
 		for ent_id, ent_info in tqdm(self.entities.items()):
 			for attr_info in ent_info['attributes']:
