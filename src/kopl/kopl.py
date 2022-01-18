@@ -448,7 +448,7 @@ class KoPLEngine(object):
 				match.append(1)
 			else:
 				match.append(0)
-		if sum(match) == len(match):
+		if sum(match) >= 1 and sum(match) == len(match):
 			answer = 'yes'
 		elif sum(match) == 0:
 			answer = 'no'
