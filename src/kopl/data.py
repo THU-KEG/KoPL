@@ -43,39 +43,39 @@ class KB(object):
 						}
 					if rel_info_for_con not in self.entities[obj_id]['relations']:
 						self.entities[obj_id]['relations'].append(rel_info_for_con)
-		print('convert encoding')
-        # 后续都要注意这个编码问题
-		for ent_id, ent_info in tqdm(self.entities.items()):
-			ent_info['name'] = conv_enc(ent_info['name'])
-			for attr_info in ent_info['attributes']:
-				attr_info['key'] = conv_enc(attr_info['key'])
-				if attr_info['value']['type'] == 'string':
-					attr_info['value']['value'] = conv_enc(attr_info['value']['value'])
-				replace_pair = []
-				for qk in attr_info['qualifiers']:
-					cqk = conv_enc(qk)
-					if cqk != qk:
-						replace_pair.append((qk, cqk))
-				for old_k, new_k in replace_pair:
-					attr_info['qualifiers'][new_k] = attr_info['qualifiers'].pop(old_k)
-				for qk, qvs in attr_info['qualifiers'].items():
-					for qv in qvs:
-						if qv['type'] == 'string':
-							qv['value'] = conv_enc(qv['value'])
+		# print('convert encoding')
+        # # 后续都要注意这个编码问题
+		# for ent_id, ent_info in tqdm(self.entities.items()):
+		# 	ent_info['name'] = conv_enc(ent_info['name'])
+		# 	for attr_info in ent_info['attributes']:
+		# 		attr_info['key'] = conv_enc(attr_info['key'])
+		# 		if attr_info['value']['type'] == 'string':
+		# 			attr_info['value']['value'] = conv_enc(attr_info['value']['value'])
+		# 		replace_pair = []
+		# 		for qk in attr_info['qualifiers']:
+		# 			cqk = conv_enc(qk)
+		# 			if cqk != qk:
+		# 				replace_pair.append((qk, cqk))
+		# 		for old_k, new_k in replace_pair:
+		# 			attr_info['qualifiers'][new_k] = attr_info['qualifiers'].pop(old_k)
+		# 		for qk, qvs in attr_info['qualifiers'].items():
+		# 			for qv in qvs:
+		# 				if qv['type'] == 'string':
+		# 					qv['value'] = conv_enc(qv['value'])
 
-		for rel_info in ent_info['relations']:
-			rel_info['relation'] = conv_enc(rel_info['relation'])
-			replace_pair = []
-			for qk in rel_info['qualifiers']:
-				cqk = conv_enc(qk)
-				if cqk != qk:
-					replace_pair.append((qk, cqk))
-			for old_k, new_k in replace_pair:
-				rel_info['qualifiers'][new_k] = rel_info['qualifiers'].pop(old_k)
-			for qk, qvs in rel_info['qualifiers'].items():
-				for qv in qvs:
-					if qv['type'] == 'string':
-						qv['value'] = conv_enc(qv['value'])
+		# for rel_info in ent_info['relations']:
+		# 	rel_info['relation'] = conv_enc(rel_info['relation'])
+		# 	replace_pair = []
+		# 	for qk in rel_info['qualifiers']:
+		# 		cqk = conv_enc(qk)
+		# 		if cqk != qk:
+		# 			replace_pair.append((qk, cqk))
+		# 	for old_k, new_k in replace_pair:
+		# 		rel_info['qualifiers'][new_k] = rel_info['qualifiers'].pop(old_k)
+		# 	for qk, qvs in rel_info['qualifiers'].items():
+		# 		for qv in qvs:
+		# 			if qv['type'] == 'string':
+		# 				qv['value'] = conv_enc(qv['value'])
 		print('process concept')
 		self.name_to_id = defaultdict(list) # id 包含 concept 和 entity
 		self.concept_to_entity = defaultdict(set)
