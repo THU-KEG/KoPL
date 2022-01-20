@@ -79,7 +79,7 @@ class KoPLEngine(object):
 				if show_details:
 					print(p, dep, inp)
 					print(res)
-			return [str(_) for _ in memory[-1]] if isinstance(memory[-1], list) else memory[-1]
+			return [str(_) for _ in memory[-1]] if isinstance(memory[-1], list) else str(memory[-1])
 		except Exception as e:
 			if ignore_error:
 				return None
