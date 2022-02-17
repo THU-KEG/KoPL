@@ -1,6 +1,6 @@
-===========
+==============
 KoPL的基本函数
-===========
+==============
 
 用 KoPL 编程可以看作对基本函数进行组合操作。
 基本函数有两种:
@@ -41,7 +41,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     FindAll: (`Null`) :math:`\times` (`Null`) :math:`\mapsto` (`Entities`)
 
         - 描述
-            返回知识库中的所有实体
+            返回知识库中所有实体
         - 函数输入
             `Null`: 空
 
@@ -61,7 +61,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     Find: (`Null`) :math:`\times` (`Name`) :math:`\mapsto` (`Entities`) 
 
         - 描述
-            返回知识库中所有名字为 `Name` 的实体集合
+            找出具有特定名字的所有实体
         - 函数输入
             `Null`: 空
 
@@ -79,7 +79,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     FilterConcept: (`Entities`) :math:`\times` (`Name`) :math:`\mapsto` (`Entities`)
 
         - 描述
-            筛选出实体，要求属于给定的概念
+            在给定的实体集合中找出属于特定概念的所有实体
         - 函数输入
             `Entities`: 筛选的实体集合
         - 文本输入
@@ -94,8 +94,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     FilterStr: (`Entities`) :math:`\times` (`Key`, `Value`) :math:`\mapsto` (`Entities`, `Facts`)
 
         - 描述
-            筛选出实体和对应的事实，要求选出的 **实体** 具有 **字符串** 属性，且该属性的属性值等于给定的属性值
-
+            针对 **字符** 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组
         - 函数输入
             `Entities`: 筛选的实体集合
 
@@ -115,7 +114,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     FilterNum: (`Entities`) :math:`\times` (`Key`, `Value`, `Op`) :math:`\mapsto` (`Entities`, `Facts`)
         
         - 描述
-            筛选出实体和对应的事实，要求选出的 **实体** 具有 **数值** 属性，且该属性的属性值满足和给定的属性值的某种关系
+            针对 **数值** 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -137,7 +136,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     FilterYear: (`Entities`) :math:`\times` (`Key`, `Value`, `Op`) :math:`\mapsto` (`Entities`, `Facts`)
         
         - 描述
-            筛选出实体和对应的事实，要求选出的 **实体** 具有 **年份** 属性，且该属性的属性值满足和给定的属性值的某种关系
+            针对 **年份** 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -159,7 +158,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     FilterDate: (`Entities`) :math:`\times` (`Key`, `Value`, `Op`) :math:`\mapsto` (`Entities`, `Facts`)
         
         - 描述
-            筛选出实体和对应的事实，要求选出的 **实体** 具有 **日期** 属性，且该属性的属性值满足和给定的属性值的某种关系
+            针对 **日期** 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -181,7 +180,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QFilterStr: (`Entities`, `Facts`) :math:`\times` (`QKey`, `QValue`) :math:`\mapsto` (`Entities`, `Facts`)
         
         - 描述
-            筛选出实体和对应的事实，要求对应的 **事实** 具有 **字符** 类型的限定条件，且该限定条件符合给定的值
+            针对 **字符** 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -203,7 +202,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QFilterNum: (`Entities`, `Facts`) :math:`\times` (`QKey`, `QValue`, `Op`) :math:`\mapsto` (`Entities`, `Facts`)
         
         - 描述
-            筛选出实体和对应的事实，要求对应的 **事实** 具有 **数值** 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系
+            针对 **数值** 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -226,7 +225,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QFilterYear: (`Entities`, `Facts`) :math:`\times` (`QKey`, `QValue`, `Op`) :math:`\mapsto` (`Entities`, `Facts`)
         
         - 描述
-            筛选出实体和对应的事实，要求对应的 **事实** 具有 **年份** 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系
+            针对 **年份** 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -248,7 +247,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
 
     QFilterDate: (`Entities`, `Facts`) :math:`\times` (`QKey`, `QValue`, `Op`) :math:`\mapsto` (`Entities`, `Facts`)
         - 描述
-            筛选出实体和对应的事实，要求对应的 **事实** 具有 **日期** 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系
+            针对 **日期** 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -271,7 +270,8 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     Relate: (`Entities`) :math:`\times` (`Rel`, `Dir`) :math:`\mapsto` (`Entities`, `Facts`)
         
         - 描述
-            筛选出实体，要求实体和给定的实体之间具有某种关系
+            找出与输入实体有特定 **关系** 的所有实体及对应的三元组
+
 
         - 函数输入
             `Entities`: 筛选的实体集合
@@ -292,7 +292,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     And: (`Entities`, `Entities`) :math:`\times` (`Null`) :math:`\mapsto` (`Entities`)
         
         - 描述
-            计算两个实体集合的 **交集**
+            返回两个实体集合的 **交集**
 
         - 函数输入
             `Entities`: 实体的集合
@@ -306,7 +306,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     Or: (`Entities`, `Entities`) :math:`\times` (`Null`) :math:`\mapsto` (`Entities`)
         
         - 描述
-            计算两个实体集合的 **并集**
+            返回两个实体集合的 **并集**
 
         - 函数输入
             `Entities`: 实体的集合
@@ -357,7 +357,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QueryAttr: (`Entity`) :math:`\times` (`Key`) :math:`\mapsto` (`Value`) 
 
         - 描述
-            查询实体的属性的值
+            查询实体的特定属性值
 
         - 函数输入
             `Entity`: 待查询的实体
@@ -376,7 +376,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QueryAttrUnderCondition: (`Entity`) :math:`\times` (`Key`, `QKey`, `QValue`) :math:`\mapsto` (`Value`) 
 
         - 描述
-            查询实体的属性的值，要求这条事实类型的知识满足给定的限定条件
+            查询输入实体在特定修饰条件下的属性值
 
         - 函数输入
             `Entity`: 待查询的实体
@@ -398,7 +398,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QueryRelation: (`Entity`, `Entity`) :math:`\times` (`Null`) :math:`\mapsto` (`Rel`) 
 
         - 描述
-            查询两个实体之间的关系
+            查询实体之间的关系
 
         - 函数输入
             `Entity`: 待查询的属性
@@ -418,7 +418,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     SelectBetween: (`Entity`, `Entity`) :math:`\times` (`Key`, `Op`) :math:`\mapsto` (`string`) 
 
         - 描述
-            对于两个实体，给出它们在某个属性上谁大谁小
+            在两个实体中，返回特定属性值更大/更小的实体
 
         - 函数输入
             `Entity`: 待比较的两个实体
@@ -438,7 +438,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     SelectAmong: (`Entities`) :math:`\times` (`Key`, `Op`) :math:`\mapsto` (`string`) 
 
         - 描述
-            对一个实体集合，给出这个集合中某个属性值最大或者最小的那个实体
+            在一个实体集合中，返回特定属性值最大/最小的实体
 
         - 函数输入
             `Entities`: 待比较的实体集合
@@ -458,7 +458,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     VerifyStr: (`Value`) :math:`\times` (`Value`) :math:`\mapsto` (`boolean`) 
 
         - 描述
-            判断输入的 **字符串** 是否和给定的值相同
+            判断输入的 **字符串** 是否等于给定的值，通常输入的字符串是 `QueryAttr` 或 `QueryAttrUnderCondition` 函数的输出
 
         - 函数输入
             `Value`: 待比较的字符串
@@ -477,7 +477,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     VerifyNum: (`Value`) :math:`\times` (`Value`, `Op`) :math:`\mapsto` (`boolean`) 
 
         - 描述
-            判断输入的 **数值** 是否和给定的值具有某种关系
+            与 `VerifyStr` 类似，但针对数值类型，验证属性值是否满足特定条件，`Op` 指定比较运算符
 
         - 函数输入
             `Value`: 待比较的数值
@@ -497,7 +497,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     VerifyYear: (`Value`) :math:`\times` (`Value`, `Op`) :math:`\mapsto` (`boolean`) 
 
         - 描述
-            判断输入的 **年份** 是否和给定的年份具有某种关系
+            与 `VerifyNum` 类似，但针对 **年份** 类型，验证属性值是否满足特定条件，`Op` 指定比较运算符
 
         - 函数输入
             `Value`: 待比较的年份
@@ -517,7 +517,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     VerifyDate: (`Value`) :math:`\times` (`Value`, `Op`) :math:`\mapsto` (`boolean`) 
 
         - 描述
-            判断输入的 **日期** 是否和给定的日期具有某种关系
+            与 `VerifyNum` 类似，但针对 **日期** 类型，验证属性值是否满足特定条件，`Op` 指定比较运算符
 
         - 函数输入
             `Value`: 待比较的日期
@@ -537,7 +537,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QueryAttrQualifier: (`Entity`) :math:`\times` (`Key`, `Value`, `QKey`) :math:`\mapsto` (`QValue`) 
 
         - 描述
-            查询给定的 **属性** 类型事实的限定条件的值
+            查询给定实体某个 **属性** 的特定修饰值
 
         - 函数输入
             `Entity`: 待查询的事实的参与实体
@@ -558,7 +558,7 @@ KoPL 通过对这些基本函数的组合实现查询操作。
     QueryRelationQualifier: (`Entity`, `Entity`) :math:`\times` (`Rel`, `QKey`) :math:`\mapsto` (`QValue`) 
 
         - 描述
-            查询给定的 **关系** 类型事实的限定条件的值
+            查询给定实体之间 **关系** 三元组的特定修饰值
 
         - 函数输入
             `Entity`: 两个 `Entity` 分别为关系的头实体和尾实体

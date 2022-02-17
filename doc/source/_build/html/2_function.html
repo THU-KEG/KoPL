@@ -116,7 +116,7 @@
 <dl class="glossary">
 <dt id="term-FindAll-Null-times-Null-mapsto-Entities">FindAll: (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-FindAll-Null-times-Null-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>返回知识库中的所有实体</p>
+<dt>描述</dt><dd><p>返回知识库中所有实体</p>
 </dd>
 </dl>
 </li>
@@ -146,7 +146,7 @@
 </dd>
 <dt id="term-Find-Null-times-Name-mapsto-Entities">Find: (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Name</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-Find-Null-times-Name-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>返回知识库中所有名字为 <cite>Name</cite> 的实体集合</p>
+<dt>描述</dt><dd><p>找出具有特定名字的所有实体</p>
 </dd>
 </dl>
 </li>
@@ -176,7 +176,7 @@
 </dd>
 <dt id="term-FilterConcept-Entities-times-Name-mapsto-Entities">FilterConcept: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Name</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-FilterConcept-Entities-times-Name-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体，要求属于给定的概念</p>
+<dt>描述</dt><dd><p>在给定的实体集合中找出属于特定概念的所有实体</p>
 </dd>
 </dl>
 </li>
@@ -206,7 +206,7 @@
 </dd>
 <dt id="term-FilterStr-Entities-times-Key-Value-mapsto-Entities-Facts">FilterStr: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterStr-Entities-times-Key-Value-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>字符串</strong> 属性，且该属性的属性值等于给定的属性值</p>
+<dt>描述</dt><dd><p>针对 <strong>字符</strong> 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组</p>
 </dd>
 </dl>
 </li>
@@ -238,7 +238,7 @@
 </dd>
 <dt id="term-FilterNum-Entities-times-Key-Value-Op-mapsto-Entities-Facts">FilterNum: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterNum-Entities-times-Key-Value-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>数值</strong> 属性，且该属性的属性值满足和给定的属性值的某种关系</p>
+<dt>描述</dt><dd><p>针对 <strong>数值</strong> 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组</p>
 </dd>
 </dl>
 </li>
@@ -271,7 +271,7 @@
 </dd>
 <dt id="term-FilterYear-Entities-times-Key-Value-Op-mapsto-Entities-Facts">FilterYear: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterYear-Entities-times-Key-Value-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>年份</strong> 属性，且该属性的属性值满足和给定的属性值的某种关系</p>
+<dt>描述</dt><dd><p>针对 <strong>年份</strong> 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组</p>
 </dd>
 </dl>
 </li>
@@ -304,7 +304,7 @@
 </dd>
 <dt id="term-FilterDate-Entities-times-Key-Value-Op-mapsto-Entities-Facts">FilterDate: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-FilterDate-Entities-times-Key-Value-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求选出的 <strong>实体</strong> 具有 <strong>日期</strong> 属性，且该属性的属性值满足和给定的属性值的某种关系</p>
+<dt>描述</dt><dd><p>针对 <strong>日期</strong> 类型的属性，在给定实体集合中根据属性的键和值筛选出满足条件的实体，返回实体与对应的属性型三元组</p>
 </dd>
 </dl>
 </li>
@@ -337,7 +337,7 @@
 </dd>
 <dt id="term-QFilterStr-Entities-Facts-times-QKey-QValue-mapsto-Entities-Facts">QFilterStr: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterStr-Entities-Facts-times-QKey-QValue-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>字符</strong> 类型的限定条件，且该限定条件符合给定的值</p>
+<dt>描述</dt><dd><p>针对 <strong>字符</strong> 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体</p>
 </dd>
 </dl>
 </li>
@@ -370,7 +370,7 @@
 </dd>
 <dt id="term-QFilterNum-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts">QFilterNum: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterNum-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>数值</strong> 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系</p>
+<dt>描述</dt><dd><p>针对 <strong>数值</strong> 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体</p>
 </dd>
 </dl>
 </li>
@@ -404,7 +404,7 @@
 </dd>
 <dt id="term-QFilterYear-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts">QFilterYear: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterYear-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>年份</strong> 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系</p>
+<dt>描述</dt><dd><p>针对 <strong>年份</strong> 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体</p>
 </dd>
 </dl>
 </li>
@@ -438,7 +438,7 @@
 </dd>
 <dt id="term-QFilterDate-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts">QFilterDate: (<cite>Entities</cite>, <cite>Facts</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>QKey</cite>, <cite>QValue</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-QFilterDate-Entities-Facts-times-QKey-QValue-Op-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体和对应的事实，要求对应的 <strong>事实</strong> 具有 <strong>日期</strong> 类型的限定条件，且该限定条件和给定的值之间存在某种指定的关系</p>
+<dt>描述</dt><dd><p>针对 <strong>日期</strong> 类型的修饰，使用修饰键和值对三元组进行过滤，筛选出符合条件的三元组与对应的实体</p>
 </dd>
 </dl>
 </li>
@@ -472,7 +472,7 @@
 </dd>
 <dt id="term-Relate-Entities-times-Rel-Dir-mapsto-Entities-Facts">Relate: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Rel</cite>, <cite>Dir</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>, <cite>Facts</cite>)<a class="headerlink" href="#term-Relate-Entities-times-Rel-Dir-mapsto-Entities-Facts" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>筛选出实体，要求实体和给定的实体之间具有某种关系</p>
+<dt>描述</dt><dd><p>找出与输入实体有特定 <strong>关系</strong> 的所有实体及对应的三元组</p>
 </dd>
 </dl>
 </li>
@@ -504,7 +504,7 @@
 </dd>
 <dt id="term-And-Entities-Entities-times-Null-mapsto-Entities">And: (<cite>Entities</cite>, <cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-And-Entities-Entities-times-Null-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul class="simple">
 <li><dl class="simple">
-<dt>描述</dt><dd><p>计算两个实体集合的 <strong>交集</strong></p>
+<dt>描述</dt><dd><p>返回两个实体集合的 <strong>交集</strong></p>
 </dd>
 </dl>
 </li>
@@ -527,7 +527,7 @@
 </dd>
 <dt id="term-Or-Entities-Entities-times-Null-mapsto-Entities">Or: (<cite>Entities</cite>, <cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Entities</cite>)<a class="headerlink" href="#term-Or-Entities-Entities-times-Null-mapsto-Entities" title="Permalink to this term"></a></dt><dd><ul class="simple">
 <li><dl class="simple">
-<dt>描述</dt><dd><p>计算两个实体集合的 <strong>并集</strong></p>
+<dt>描述</dt><dd><p>返回两个实体集合的 <strong>并集</strong></p>
 </dd>
 </dl>
 </li>
@@ -601,7 +601,7 @@
 </dd>
 <dt id="term-QueryAttr-Entity-times-Key-mapsto-Value">QueryAttr: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Value</cite>)<a class="headerlink" href="#term-QueryAttr-Entity-times-Key-mapsto-Value" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>查询实体的属性的值</p>
+<dt>描述</dt><dd><p>查询实体的特定属性值</p>
 </dd>
 </dl>
 </li>
@@ -631,7 +631,7 @@
 </dd>
 <dt id="term-QueryAttrUnderCondition-Entity-times-Key-QKey-QValue-mapsto-Value">QueryAttrUnderCondition: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>QKey</cite>, <cite>QValue</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Value</cite>)<a class="headerlink" href="#term-QueryAttrUnderCondition-Entity-times-Key-QKey-QValue-mapsto-Value" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>查询实体的属性的值，要求这条事实类型的知识满足给定的限定条件</p>
+<dt>描述</dt><dd><p>查询输入实体在特定修饰条件下的属性值</p>
 </dd>
 </dl>
 </li>
@@ -663,7 +663,7 @@
 </dd>
 <dt id="term-QueryRelation-Entity-Entity-times-Null-mapsto-Rel">QueryRelation: (<cite>Entity</cite>, <cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Null</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>Rel</cite>)<a class="headerlink" href="#term-QueryRelation-Entity-Entity-times-Null-mapsto-Rel" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>查询两个实体之间的关系</p>
+<dt>描述</dt><dd><p>查询实体之间的关系</p>
 </dd>
 </dl>
 </li>
@@ -693,7 +693,7 @@
 </dd>
 <dt id="term-SelectBetween-Entity-Entity-times-Key-Op-mapsto-string">SelectBetween: (<cite>Entity</cite>, <cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>string</cite>)<a class="headerlink" href="#term-SelectBetween-Entity-Entity-times-Key-Op-mapsto-string" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>对于两个实体，给出它们在某个属性上谁大谁小</p>
+<dt>描述</dt><dd><p>在两个实体中，返回特定属性值更大/更小的实体</p>
 </dd>
 </dl>
 </li>
@@ -724,7 +724,7 @@
 </dd>
 <dt id="term-SelectAmong-Entities-times-Key-Op-mapsto-string">SelectAmong: (<cite>Entities</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>string</cite>)<a class="headerlink" href="#term-SelectAmong-Entities-times-Key-Op-mapsto-string" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>对一个实体集合，给出这个集合中某个属性值最大或者最小的那个实体</p>
+<dt>描述</dt><dd><p>在一个实体集合中，返回特定属性值最大/最小的实体</p>
 </dd>
 </dl>
 </li>
@@ -755,7 +755,7 @@
 </dd>
 <dt id="term-VerifyStr-Value-times-Value-mapsto-boolean">VerifyStr: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyStr-Value-times-Value-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>判断输入的 <strong>字符串</strong> 是否和给定的值相同</p>
+<dt>描述</dt><dd><p>判断输入的 <strong>字符串</strong> 是否等于给定的值，通常输入的字符串是 <cite>QueryAttr</cite> 或 <cite>QueryAttrUnderCondition</cite> 函数的输出</p>
 </dd>
 </dl>
 </li>
@@ -785,7 +785,7 @@
 </dd>
 <dt id="term-VerifyNum-Value-times-Value-Op-mapsto-boolean">VerifyNum: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyNum-Value-times-Value-Op-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>判断输入的 <strong>数值</strong> 是否和给定的值具有某种关系</p>
+<dt>描述</dt><dd><p>与 <cite>VerifyStr</cite> 类似，但针对数值类型，验证属性值是否满足特定条件，<cite>Op</cite> 指定比较运算符</p>
 </dd>
 </dl>
 </li>
@@ -816,7 +816,7 @@
 </dd>
 <dt id="term-VerifyYear-Value-times-Value-Op-mapsto-boolean">VerifyYear: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyYear-Value-times-Value-Op-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>判断输入的 <strong>年份</strong> 是否和给定的年份具有某种关系</p>
+<dt>描述</dt><dd><p>与 <cite>VerifyNum</cite> 类似，但针对 <strong>年份</strong> 类型，验证属性值是否满足特定条件，<cite>Op</cite> 指定比较运算符</p>
 </dd>
 </dl>
 </li>
@@ -847,7 +847,7 @@
 </dd>
 <dt id="term-VerifyDate-Value-times-Value-Op-mapsto-boolean">VerifyDate: (<cite>Value</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Value</cite>, <cite>Op</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>boolean</cite>)<a class="headerlink" href="#term-VerifyDate-Value-times-Value-Op-mapsto-boolean" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>判断输入的 <strong>日期</strong> 是否和给定的日期具有某种关系</p>
+<dt>描述</dt><dd><p>与 <cite>VerifyNum</cite> 类似，但针对 <strong>日期</strong> 类型，验证属性值是否满足特定条件，<cite>Op</cite> 指定比较运算符</p>
 </dd>
 </dl>
 </li>
@@ -878,7 +878,7 @@
 </dd>
 <dt id="term-QueryAttrQualifier-Entity-times-Key-Value-QKey-mapsto-QValue">QueryAttrQualifier: (<cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Key</cite>, <cite>Value</cite>, <cite>QKey</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>QValue</cite>)<a class="headerlink" href="#term-QueryAttrQualifier-Entity-times-Key-Value-QKey-mapsto-QValue" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>查询给定的 <strong>属性</strong> 类型事实的限定条件的值</p>
+<dt>描述</dt><dd><p>查询给定实体某个 <strong>属性</strong> 的特定修饰值</p>
 </dd>
 </dl>
 </li>
@@ -910,7 +910,7 @@
 </dd>
 <dt id="term-QueryRelationQualifier-Entity-Entity-times-Rel-QKey-mapsto-QValue">QueryRelationQualifier: (<cite>Entity</cite>, <cite>Entity</cite>) <span class="math notranslate nohighlight">\(\times\)</span> (<cite>Rel</cite>, <cite>QKey</cite>) <span class="math notranslate nohighlight">\(\mapsto\)</span> (<cite>QValue</cite>)<a class="headerlink" href="#term-QueryRelationQualifier-Entity-Entity-times-Rel-QKey-mapsto-QValue" title="Permalink to this term"></a></dt><dd><ul>
 <li><dl class="simple">
-<dt>描述</dt><dd><p>查询给定的 <strong>关系</strong> 类型事实的限定条件的值</p>
+<dt>描述</dt><dd><p>查询给定实体之间 <strong>关系</strong> 三元组的特定修饰值</p>
 </dd>
 </dl>
 </li>
