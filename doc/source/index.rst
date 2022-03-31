@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎！这里是KoPL的官方文档。
+KoPL-面向知识的复杂问题推理编程语言
 ================================
 .. toctree::
    :maxdepth: 1
@@ -23,7 +23,7 @@
 .. toctree::
    :maxdepth: 1
    :caption: 更多KoPL样例
-
+   
    5_example
    6_service
 

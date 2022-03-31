@@ -1,0 +1,4875 @@
+schema展示
+===========
+
+概念
+----------------------------------------------------------------
+
+`human <https://www.wikidata.org/wiki/Q5>`_
+
+`film <https://www.wikidata.org/wiki/Q11424>`_
+
+`association football club <https://www.wikidata.org/wiki/Q476028>`_
+
+`city of the United States <https://www.wikidata.org/wiki/Q1093829>`_
+
+`city <https://www.wikidata.org/wiki/Q515>`_
+
+`university <https://www.wikidata.org/wiki/Q3918>`_
+
+`television series <https://www.wikidata.org/wiki/Q5398426>`_
+
+`administrative territorial entity <https://www.wikidata.org/wiki/Q56061>`_
+
+`video game <https://www.wikidata.org/wiki/Q7889>`_
+
+`business <https://www.wikidata.org/wiki/Q4830453>`_
+
+`sovereign state <https://www.wikidata.org/wiki/Q3624078>`_
+
+`organization <https://www.wikidata.org/wiki/Q43229>`_
+
+`record label <https://www.wikidata.org/wiki/Q18127>`_
+
+`band <https://www.wikidata.org/wiki/Q215380>`_
+
+`television film <https://www.wikidata.org/wiki/Q506240>`_
+
+`award <https://www.wikidata.org/wiki/Q618779>`_
+
+`national association football team <https://www.wikidata.org/wiki/Q6979593>`_
+
+`town <https://www.wikidata.org/wiki/Q3957>`_
+
+`written work <https://www.wikidata.org/wiki/Q47461344>`_
+
+`public university <https://www.wikidata.org/wiki/Q875538>`_
+
+`animated feature film <https://www.wikidata.org/wiki/Q29168811>`_
+
+`rock band <https://www.wikidata.org/wiki/Q5741069>`_
+
+`music genre <https://www.wikidata.org/wiki/Q188451>`_
+
+`big city <https://www.wikidata.org/wiki/Q1549591>`_
+
+`Academy Awards ceremony <https://www.wikidata.org/wiki/Q16913666>`_
+
+`disease <https://www.wikidata.org/wiki/Q12136>`_
+
+`film production company <https://www.wikidata.org/wiki/Q1762059>`_
+
+`political party <https://www.wikidata.org/wiki/Q7278>`_
+
+`profession <https://www.wikidata.org/wiki/Q28640>`_
+
+`feature film <https://www.wikidata.org/wiki/Q24869>`_
+
+`first-level administrative country subdivision <https://www.wikidata.org/wiki/Q10864048>`_
+
+`sports season <https://www.wikidata.org/wiki/Q27020041>`_
+
+`miniseries <https://www.wikidata.org/wiki/Q1259759>`_
+
+`video game developer <https://www.wikidata.org/wiki/Q210167>`_
+
+`ethnic group <https://www.wikidata.org/wiki/Q41710>`_
+
+`state of the United States <https://www.wikidata.org/wiki/Q35657>`_
+
+`land-grant university <https://www.wikidata.org/wiki/Q615150>`_
+
+`geographic region <https://www.wikidata.org/wiki/Q82794>`_
+
+`award ceremony <https://www.wikidata.org/wiki/Q4504495>`_
+
+`capital <https://www.wikidata.org/wiki/Q5119>`_
+
+`ice hockey team <https://www.wikidata.org/wiki/Q4498974>`_
+
+`county of New York <https://www.wikidata.org/wiki/Q13414757>`_
+
+`language <https://www.wikidata.org/wiki/Q34770>`_
+
+`war <https://www.wikidata.org/wiki/Q198>`_
+
+`baseball team <https://www.wikidata.org/wiki/Q13027888>`_
+
+`legislative term <https://www.wikidata.org/wiki/Q15238777>`_
+
+`county of California <https://www.wikidata.org/wiki/Q13212489>`_
+
+`ceremonial county of England <https://www.wikidata.org/wiki/Q180673>`_
+
+`American football team <https://www.wikidata.org/wiki/Q17156793>`_
+
+`county of Pennsylvania <https://www.wikidata.org/wiki/Q13414763>`_
+
+`literary award <https://www.wikidata.org/wiki/Q378427>`_
+
+`basketball team <https://www.wikidata.org/wiki/Q13393265>`_
+
+`private university <https://www.wikidata.org/wiki/Q902104>`_
+
+`type of sport <https://www.wikidata.org/wiki/Q31629>`_
+
+`chemical compound <https://www.wikidata.org/wiki/Q11173>`_
+
+`television station <https://www.wikidata.org/wiki/Q1616075>`_
+
+`republic <https://www.wikidata.org/wiki/Q7270>`_
+
+`animated series <https://www.wikidata.org/wiki/Q581714>`_
+
+`film series <https://www.wikidata.org/wiki/Q24856>`_
+
+`class of instruments <https://www.wikidata.org/wiki/Q1254773>`_
+
+`Grammy Award <https://www.wikidata.org/wiki/Q41254>`_
+
+`island <https://www.wikidata.org/wiki/Q23442>`_
+
+`single <https://www.wikidata.org/wiki/Q134556>`_
+
+`animated film <https://www.wikidata.org/wiki/Q202866>`_
+
+`class of award <https://www.wikidata.org/wiki/Q38033430>`_
+
+`county of Ohio <https://www.wikidata.org/wiki/Q13414759>`_
+
+`activity <https://www.wikidata.org/wiki/Q1914636>`_
+
+`album <https://www.wikidata.org/wiki/Q482994>`_
+
+`historical country <https://www.wikidata.org/wiki/Q3024240>`_
+
+`academic discipline <https://www.wikidata.org/wiki/Q11862829>`_
+
+`film award <https://www.wikidata.org/wiki/Q4220917>`_
+
+`superhero <https://www.wikidata.org/wiki/Q188784>`_
+
+`television series episode <https://www.wikidata.org/wiki/Q21191270>`_
+
+`Summer Olympic Games <https://www.wikidata.org/wiki/Q159821>`_
+
+`Primetime Emmy Award <https://www.wikidata.org/wiki/Q1044427>`_
+
+`Academy Awards <https://www.wikidata.org/wiki/Q19020>`_
+
+`industry <https://www.wikidata.org/wiki/Q8148>`_
+
+`occupation <https://www.wikidata.org/wiki/Q12737077>`_
+
+`literary work <https://www.wikidata.org/wiki/Q7725634>`_
+
+`college of the University of Oxford <https://www.wikidata.org/wiki/Q2581649>`_
+
+`state of India <https://www.wikidata.org/wiki/Q13390680>`_
+
+`town of the United States <https://www.wikidata.org/wiki/Q15127012>`_
+
+`independent city <https://www.wikidata.org/wiki/Q1266818>`_
+
+`law school <https://www.wikidata.org/wiki/Q1321960>`_
+
+`liberal arts college <https://www.wikidata.org/wiki/Q1377182>`_
+
+`college <https://www.wikidata.org/wiki/Q189004>`_
+
+`short film <https://www.wikidata.org/wiki/Q24862>`_
+
+`film genre <https://www.wikidata.org/wiki/Q201658>`_
+
+`college of the University of Cambridge <https://www.wikidata.org/wiki/Q1055028>`_
+
+`county of New Jersey <https://www.wikidata.org/wiki/Q13414754>`_
+
+`constituency of the Rajya Sabha <https://www.wikidata.org/wiki/Q57156205>`_
+
+`county of Florida <https://www.wikidata.org/wiki/Q13410422>`_
+
+`neighborhood <https://www.wikidata.org/wiki/Q123705>`_
+
+`unitary state <https://www.wikidata.org/wiki/Q179164>`_
+
+`county of Ireland <https://www.wikidata.org/wiki/Q179872>`_
+
+`county of Illinois <https://www.wikidata.org/wiki/Q11812346>`_
+
+`film festival edition <https://www.wikidata.org/wiki/Q27787439>`_
+
+`musical <https://www.wikidata.org/wiki/Q2743>`_
+
+`region of Italy <https://www.wikidata.org/wiki/Q16110>`_
+
+`MTV Video Music Award <https://www.wikidata.org/wiki/Q223703>`_
+
+`liberal arts college in the United States <https://www.wikidata.org/wiki/Q6540832>`_
+
+`departments of France <https://www.wikidata.org/wiki/Q6465>`_
+
+`human settlement <https://www.wikidata.org/wiki/Q486972>`_
+
+`city of Pennsylvania <https://www.wikidata.org/wiki/Q21010817>`_
+
+`non-metropolitan district <https://www.wikidata.org/wiki/Q1187580>`_
+
+`theatre award <https://www.wikidata.org/wiki/Q15229229>`_
+
+`song <https://www.wikidata.org/wiki/Q7366>`_
+
+`county of Texas <https://www.wikidata.org/wiki/Q11774097>`_
+
+`rock music <https://www.wikidata.org/wiki/Q11399>`_
+
+`county of Michigan <https://www.wikidata.org/wiki/Q13410496>`_
+
+`area of London <https://www.wikidata.org/wiki/Q2755753>`_
+
+`metropolitan borough <https://www.wikidata.org/wiki/Q1002812>`_
+
+`Winter Olympic Games <https://www.wikidata.org/wiki/Q82414>`_
+
+`prefecture of Japan <https://www.wikidata.org/wiki/Q50337>`_
+
+`county of Washington <https://www.wikidata.org/wiki/Q13415369>`_
+
+`communication medium <https://www.wikidata.org/wiki/Q340169>`_
+
+`military branch <https://www.wikidata.org/wiki/Q781132>`_
+
+`county of Wisconsin <https://www.wikidata.org/wiki/Q12178928>`_
+
+`literary genre <https://www.wikidata.org/wiki/Q223393>`_
+
+`city in New Jersey <https://www.wikidata.org/wiki/Q2974552>`_
+
+`county of Virginia <https://www.wikidata.org/wiki/Q13415368>`_
+
+`metropolitan area <https://www.wikidata.org/wiki/Q1907114>`_
+
+`soundtrack album <https://www.wikidata.org/wiki/Q4176708>`_
+
+`position <https://www.wikidata.org/wiki/Q4164871>`_
+
+`province of China <https://www.wikidata.org/wiki/Q1615742>`_
+
+`jazz <https://www.wikidata.org/wiki/Q8341>`_
+
+`Screen Actors Guild Award <https://www.wikidata.org/wiki/Q268200>`_
+
+`school <https://www.wikidata.org/wiki/Q3914>`_
+
+`science award <https://www.wikidata.org/wiki/Q11448906>`_
+
+`city of New York <https://www.wikidata.org/wiki/Q15063611>`_
+
+`television program <https://www.wikidata.org/wiki/Q15416>`_
+
+`county of Oregon <https://www.wikidata.org/wiki/Q13414761>`_
+
+`sport discipline <https://www.wikidata.org/wiki/Q2312410>`_
+
+`dynasty <https://www.wikidata.org/wiki/Q164950>`_
+
+`political ideology <https://www.wikidata.org/wiki/Q14934048>`_
+
+`anime <https://www.wikidata.org/wiki/Q1107>`_
+
+`electronic music <https://www.wikidata.org/wiki/Q9778>`_
+
+`religion <https://www.wikidata.org/wiki/Q9174>`_
+
+`cemetery <https://www.wikidata.org/wiki/Q39614>`_
+
+`province of Italy <https://www.wikidata.org/wiki/Q15089>`_
+
+`county town <https://www.wikidata.org/wiki/Q1357964>`_
+
+`taxon <https://www.wikidata.org/wiki/Q16521>`_
+
+`MTV Movie Awards <https://www.wikidata.org/wiki/Q110145>`_
+
+`county of Maryland <https://www.wikidata.org/wiki/Q13410464>`_
+
+`television channel <https://www.wikidata.org/wiki/Q2001305>`_
+
+`Golden Globe Award ceremony <https://www.wikidata.org/wiki/Q19311591>`_
+
+`county of Indiana <https://www.wikidata.org/wiki/Q13410438>`_
+
+`pop music <https://www.wikidata.org/wiki/Q37073>`_
+
+`hip hop music <https://www.wikidata.org/wiki/Q11401>`_
+
+`conservatory <https://www.wikidata.org/wiki/Q184644>`_
+
+`crime <https://www.wikidata.org/wiki/Q83267>`_
+
+`art movement <https://www.wikidata.org/wiki/Q968159>`_
+
+`county of Massachusetts <https://www.wikidata.org/wiki/Q13410485>`_
+
+`former French region <https://www.wikidata.org/wiki/Q22670030>`_
+
+`television network <https://www.wikidata.org/wiki/Q1254874>`_
+
+`art school <https://www.wikidata.org/wiki/Q383092>`_
+
+`fictional human <https://www.wikidata.org/wiki/Q15632617>`_
+
+`time zone <https://www.wikidata.org/wiki/Q12143>`_
+
+`calendar month <https://www.wikidata.org/wiki/Q47018901>`_
+
+`state of Germany <https://www.wikidata.org/wiki/Q1221156>`_
+
+`Critics' Choice Movie Award <https://www.wikidata.org/wiki/Q7585305>`_
+
+`color <https://www.wikidata.org/wiki/Q1075>`_
+
+`province of the Netherlands <https://www.wikidata.org/wiki/Q134390>`_
+
+`Golden Raspberry Awards <https://www.wikidata.org/wiki/Q40237>`_
+
+`American football position <https://www.wikidata.org/wiki/Q694589>`_
+
+`Primetime Emmy Award annual ceremony <https://www.wikidata.org/wiki/Q18640746>`_
+
+`county of North Carolina <https://www.wikidata.org/wiki/Q13414758>`_
+
+`county of Arizona <https://www.wikidata.org/wiki/Q13217186>`_
+
+`male given name <https://www.wikidata.org/wiki/Q12308941>`_
+
+`municipality of the Netherlands <https://www.wikidata.org/wiki/Q2039348>`_
+
+`food <https://www.wikidata.org/wiki/Q2095>`_
+
+`heavy metal <https://www.wikidata.org/wiki/Q38848>`_
+
+`animated character <https://www.wikidata.org/wiki/Q15711870>`_
+
+`army <https://www.wikidata.org/wiki/Q37726>`_
+
+`province of Canada <https://www.wikidata.org/wiki/Q11828004>`_
+
+`public company <https://www.wikidata.org/wiki/Q891723>`_
+
+`medal <https://www.wikidata.org/wiki/Q131647>`_
+
+`county of Alabama <https://www.wikidata.org/wiki/Q13410400>`_
+
+`studio album <https://www.wikidata.org/wiki/Q208569>`_
+
+`anime television series <https://www.wikidata.org/wiki/Q11086742>`_
+
+`private not-for-profit educational institution <https://www.wikidata.org/wiki/Q23002054>`_
+
+`county of Maine <https://www.wikidata.org/wiki/Q13410454>`_
+
+`punk rock <https://www.wikidata.org/wiki/Q3071>`_
+
+`real property <https://www.wikidata.org/wiki/Q684740>`_
+
+`non-metropolitan county <https://www.wikidata.org/wiki/Q769603>`_
+
+`play <https://www.wikidata.org/wiki/Q25379>`_
+
+`ethnic community <https://www.wikidata.org/wiki/Q28790362>`_
+
+`mountain range <https://www.wikidata.org/wiki/Q46831>`_
+
+`media franchise <https://www.wikidata.org/wiki/Q196600>`_
+
+`port city <https://www.wikidata.org/wiki/Q2264924>`_
+
+`programming language <https://www.wikidata.org/wiki/Q9143>`_
+
+`river <https://www.wikidata.org/wiki/Q4022>`_
+
+`engineering <https://www.wikidata.org/wiki/Q11023>`_
+
+`alternative rock <https://www.wikidata.org/wiki/Q11366>`_
+
+`Protestantism <https://www.wikidata.org/wiki/Q23540>`_
+
+`airline <https://www.wikidata.org/wiki/Q46970>`_
+
+`novel <https://www.wikidata.org/wiki/Q8261>`_
+
+`secondary school <https://www.wikidata.org/wiki/Q159334>`_
+
+`film character <https://www.wikidata.org/wiki/Q15773347>`_
+
+`symptom <https://www.wikidata.org/wiki/Q169872>`_
+
+`academic degree <https://www.wikidata.org/wiki/Q189533>`_
+
+`architectural style <https://www.wikidata.org/wiki/Q32880>`_
+
+`business school <https://www.wikidata.org/wiki/Q1143635>`_
+
+`museum <https://www.wikidata.org/wiki/Q33506>`_
+
+`silent film <https://www.wikidata.org/wiki/Q226730>`_
+
+`family <https://www.wikidata.org/wiki/Q8436>`_
+
+`baseball position <https://www.wikidata.org/wiki/Q1151733>`_
+
+`television genre <https://www.wikidata.org/wiki/Q15961987>`_
+
+`musical composition <https://www.wikidata.org/wiki/Q207628>`_
+
+`TV production company <https://www.wikidata.org/wiki/Q10689397>`_
+
+`chemical element <https://www.wikidata.org/wiki/Q11344>`_
+
+`musical instrument <https://www.wikidata.org/wiki/Q34379>`_
+
+`artist <https://www.wikidata.org/wiki/Q483501>`_
+
+`operating system <https://www.wikidata.org/wiki/Q9135>`_
+
+`master's degree <https://www.wikidata.org/wiki/Q183816>`_
+
+`boarding school <https://www.wikidata.org/wiki/Q269770>`_
+
+`music <https://www.wikidata.org/wiki/Q638>`_
+
+`infectious disease <https://www.wikidata.org/wiki/Q18123741>`_
+
+`art <https://www.wikidata.org/wiki/Q735>`_
+
+`subsidiary company <https://www.wikidata.org/wiki/Q658255>`_
+
+`civil war <https://www.wikidata.org/wiki/Q8465>`_
+
+`sea <https://www.wikidata.org/wiki/Q165>`_
+
+`market town <https://www.wikidata.org/wiki/Q18511725>`_
+
+`country <https://www.wikidata.org/wiki/Q6256>`_
+
+`medication <https://www.wikidata.org/wiki/Q12140>`_
+
+`corporate title <https://www.wikidata.org/wiki/Q11488158>`_
+
+`census-designated place <https://www.wikidata.org/wiki/Q498162>`_
+
+`National Football League Draft <https://www.wikidata.org/wiki/Q1750919>`_
+
+`National Basketball Association Draft <https://www.wikidata.org/wiki/Q622521>`_
+
+`female given name <https://www.wikidata.org/wiki/Q11879590>`_
+
+`guitar <https://www.wikidata.org/wiki/Q6607>`_
+
+`reggae <https://www.wikidata.org/wiki/Q9794>`_
+
+`scientist <https://www.wikidata.org/wiki/Q901>`_
+
+`keyboard instrument <https://www.wikidata.org/wiki/Q52954>`_
+
+`governor <https://www.wikidata.org/wiki/Q132050>`_
+
+`governor <https://www.wikidata.org/wiki/Q889821>`_
+
+`businessperson <https://www.wikidata.org/wiki/Q43845>`_
+
+`electronic musical instrument <https://www.wikidata.org/wiki/Q1327500>`_
+
+`sport <https://www.wikidata.org/wiki/Q349>`_
+
+`philosophy <https://www.wikidata.org/wiki/Q5891>`_
+
+`social science <https://www.wikidata.org/wiki/Q34749>`_
+
+`learned society <https://www.wikidata.org/wiki/Q955824>`_
+
+`medicine <https://www.wikidata.org/wiki/Q11190>`_
+
+`house music <https://www.wikidata.org/wiki/Q20502>`_
+
+`hardcore punk <https://www.wikidata.org/wiki/Q10922>`_
+
+`science <https://www.wikidata.org/wiki/Q336>`_
+
+`dog <https://www.wikidata.org/wiki/Q144>`_
+
+`film festival <https://www.wikidata.org/wiki/Q220505>`_
+
+`software <https://www.wikidata.org/wiki/Q7397>`_
+
+`nonprofit organization <https://www.wikidata.org/wiki/Q163740>`_
+
+`comune of Italy <https://www.wikidata.org/wiki/Q747074>`_
+
+`3D film <https://www.wikidata.org/wiki/Q229390>`_
+
+`filmmaking occupation <https://www.wikidata.org/wiki/Q4220920>`_
+
+`genre <https://www.wikidata.org/wiki/Q483394>`_
+
+`independent city of Germany <https://www.wikidata.org/wiki/Q22865>`_
+
+`cable channel <https://www.wikidata.org/wiki/Q5009242>`_
+
+`religious denomination <https://www.wikidata.org/wiki/Q13414953>`_
+
+`food ingredient <https://www.wikidata.org/wiki/Q25403900>`_
+
+`administrative territorial entity of Canada <https://www.wikidata.org/wiki/Q3750285>`_
+
+`currency <https://www.wikidata.org/wiki/Q8142>`_
+
+`family name <https://www.wikidata.org/wiki/Q101352>`_
+
+`taxonomic rank <https://www.wikidata.org/wiki/Q427626>`_
+
+`national cuisine <https://www.wikidata.org/wiki/Q1968435>`_
+
+`video game console model <https://www.wikidata.org/wiki/Q56682555>`_
+
+`musician <https://www.wikidata.org/wiki/Q639669>`_
+
+`science fiction <https://www.wikidata.org/wiki/Q24925>`_
+
+`mathematics <https://www.wikidata.org/wiki/Q395>`_
+
+`red <https://www.wikidata.org/wiki/Q3142>`_
+
+`saxophone <https://www.wikidata.org/wiki/Q9798>`_
+
+`contemporary folk music <https://www.wikidata.org/wiki/Q43343>`_
+
+`constitutional monarchy <https://www.wikidata.org/wiki/Q41614>`_
+
+`soul music <https://www.wikidata.org/wiki/Q131272>`_
+
+`drama <https://www.wikidata.org/wiki/Q25372>`_
+
+`drama <https://www.wikidata.org/wiki/Q21010853>`_
+
+`death metal <https://www.wikidata.org/wiki/Q483251>`_
+
+`bowed string instrument <https://www.wikidata.org/wiki/Q192096>`_
+
+`independent record label <https://www.wikidata.org/wiki/Q1542343>`_
+
+`high school <https://www.wikidata.org/wiki/Q9826>`_
+
+`newscast <https://www.wikidata.org/wiki/Q1358344>`_
+
+`region of France <https://www.wikidata.org/wiki/Q36784>`_
+
+`video game publisher <https://www.wikidata.org/wiki/Q1137109>`_
+
+`empire <https://www.wikidata.org/wiki/Q48349>`_
+
+`research university <https://www.wikidata.org/wiki/Q15936437>`_
+
+`historic county of England <https://www.wikidata.org/wiki/Q1138494>`_
+
+`public educational institution of the United States <https://www.wikidata.org/wiki/Q23002039>`_
+
+`college town <https://www.wikidata.org/wiki/Q1187811>`_
+
+`fictional universe <https://www.wikidata.org/wiki/Q559618>`_
+
+`group of organisms known by one particular common name <https://www.wikidata.org/wiki/Q55983715>`_
+
+`drum <https://www.wikidata.org/wiki/Q11404>`_
+
+`actor <https://www.wikidata.org/wiki/Q33999>`_
+
+`English <https://www.wikidata.org/wiki/Q1860>`_
+
+`cult film <https://www.wikidata.org/wiki/Q219557>`_
+
+`progressive rock <https://www.wikidata.org/wiki/Q49451>`_
+
+`outfielder <https://www.wikidata.org/wiki/Q1142885>`_
+
+`situation comedy <https://www.wikidata.org/wiki/Q170238>`_
+
+`athlete <https://www.wikidata.org/wiki/Q2066131>`_
+
+`private school <https://www.wikidata.org/wiki/Q423208>`_
+
+`biology <https://www.wikidata.org/wiki/Q420>`_
+
+`lawyer <https://www.wikidata.org/wiki/Q40348>`_
+
+`electronic dance music <https://www.wikidata.org/wiki/Q851213>`_
+
+`national university <https://www.wikidata.org/wiki/Q265662>`_
+
+`performing arts <https://www.wikidata.org/wiki/Q184485>`_
+
+`soundtrack <https://www.wikidata.org/wiki/Q217199>`_
+
+`plucked string instrument <https://www.wikidata.org/wiki/Q230262>`_
+
+`proprietary software <https://www.wikidata.org/wiki/Q218616>`_
+
+`coach <https://www.wikidata.org/wiki/Q41583>`_
+
+`strategy video game <https://www.wikidata.org/wiki/Q472055>`_
+
+`independent school <https://www.wikidata.org/wiki/Q2418495>`_
+
+`Unix-like operating system <https://www.wikidata.org/wiki/Q14656>`_
+
+`church building <https://www.wikidata.org/wiki/Q16970>`_
+
+`official <https://www.wikidata.org/wiki/Q599151>`_
+
+`single-tier municipality <https://www.wikidata.org/wiki/Q14762300>`_
+
+`video game genre <https://www.wikidata.org/wiki/Q659563>`_
+
+`economic branch <https://www.wikidata.org/wiki/Q268592>`_
+
+`second largest city <https://www.wikidata.org/wiki/Q50330360>`_
+
+`amino acid <https://www.wikidata.org/wiki/Q8066>`_
+
+`state or insular area capital in the United States <https://www.wikidata.org/wiki/Q21518270>`_
+
+`province of the Philippines <https://www.wikidata.org/wiki/Q24746>`_
+
+`military rank <https://www.wikidata.org/wiki/Q56019>`_
+
+`body fluid <https://www.wikidata.org/wiki/Q1058795>`_
+
+`group or class of chemical substances <https://www.wikidata.org/wiki/Q17339814>`_
+
+`seminary <https://www.wikidata.org/wiki/Q233324>`_
+
+`student society <https://www.wikidata.org/wiki/Q1685451>`_
+
+`mythical creature <https://www.wikidata.org/wiki/Q2239243>`_
+
+`natural language <https://www.wikidata.org/wiki/Q33742>`_
+
+`astronomical object type <https://www.wikidata.org/wiki/Q17444909>`_
+
+`painting <https://www.wikidata.org/wiki/Q3305213>`_
+
+`fictional character <https://www.wikidata.org/wiki/Q95074>`_
+
+`inner planet <https://www.wikidata.org/wiki/Q3504248>`_
+
+`cause of death <https://www.wikidata.org/wiki/Q1931388>`_
+
+`Christianity <https://www.wikidata.org/wiki/Q5043>`_
+
+`running back <https://www.wikidata.org/wiki/Q912985>`_
+
+`prime minister <https://www.wikidata.org/wiki/Q14212>`_
+
+`synthesizer <https://www.wikidata.org/wiki/Q163829>`_
+
+`secretary of state <https://www.wikidata.org/wiki/Q736559>`_
+
+`writer <https://www.wikidata.org/wiki/Q36180>`_
+
+`Islam <https://www.wikidata.org/wiki/Q432>`_
+
+`LGBT <https://www.wikidata.org/wiki/Q17884>`_
+
+`thriller <https://www.wikidata.org/wiki/Q182015>`_
+
+`jam band <https://www.wikidata.org/wiki/Q2095173>`_
+
+`fantasy <https://www.wikidata.org/wiki/Q132311>`_
+
+`electric piano <https://www.wikidata.org/wiki/Q1136507>`_
+
+`model <https://www.wikidata.org/wiki/Q4610556>`_
+
+`documentary film <https://www.wikidata.org/wiki/Q93204>`_
+
+`Jewish people <https://www.wikidata.org/wiki/Q7325>`_
+
+`law degree <https://www.wikidata.org/wiki/Q4115013>`_
+
+`United States Congress <https://www.wikidata.org/wiki/Q11268>`_
+
+`monarch <https://www.wikidata.org/wiki/Q116>`_
+
+`return specialist <https://www.wikidata.org/wiki/Q7317272>`_
+
+`country music <https://www.wikidata.org/wiki/Q83440>`_
+
+`rhythm and blues <https://www.wikidata.org/wiki/Q45981>`_
+
+`Eastern Orthodox Church <https://www.wikidata.org/wiki/Q35032>`_
+
+`pitcher <https://www.wikidata.org/wiki/Q1048902>`_
+
+`blues <https://www.wikidata.org/wiki/Q9759>`_
+
+`education <https://www.wikidata.org/wiki/Q8434>`_
+
+`popular music <https://www.wikidata.org/wiki/Q373342>`_
+
+`woodwind instrument <https://www.wikidata.org/wiki/Q181247>`_
+
+`division <https://www.wikidata.org/wiki/Q334453>`_
+
+`Asian American <https://www.wikidata.org/wiki/Q727928>`_
+
+`state school <https://www.wikidata.org/wiki/Q1080794>`_
+
+`humour <https://www.wikidata.org/wiki/Q35874>`_
+
+`disco <https://www.wikidata.org/wiki/Q58339>`_
+
+`audio engineer <https://www.wikidata.org/wiki/Q128124>`_
+
+`gospel music <https://www.wikidata.org/wiki/Q180268>`_
+
+`Chinese <https://www.wikidata.org/wiki/Q7850>`_
+
+`newspaper <https://www.wikidata.org/wiki/Q11032>`_
+
+`monster <https://www.wikidata.org/wiki/Q276453>`_
+
+`keyboardist <https://www.wikidata.org/wiki/Q1075651>`_
+
+`physician <https://www.wikidata.org/wiki/Q39631>`_
+
+`metalcore <https://www.wikidata.org/wiki/Q183862>`_
+
+`designer <https://www.wikidata.org/wiki/Q5322166>`_
+
+`Indian classical music <https://www.wikidata.org/wiki/Q1323698>`_
+
+`Serbo-Croatian <https://www.wikidata.org/wiki/Q9301>`_
+
+`horse <https://www.wikidata.org/wiki/Q726>`_
+
+`game show <https://www.wikidata.org/wiki/Q846662>`_
+
+`technology <https://www.wikidata.org/wiki/Q11016>`_
+
+`board game <https://www.wikidata.org/wiki/Q131436>`_
+
+`imperative programming <https://www.wikidata.org/wiki/Q275596>`_
+
+`Calvinism <https://www.wikidata.org/wiki/Q101849>`_
+
+`legislator <https://www.wikidata.org/wiki/Q4175034>`_
+
+`role-playing video game <https://www.wikidata.org/wiki/Q744038>`_
+
+`shooter game <https://www.wikidata.org/wiki/Q4282636>`_
+
+`martial arts <https://www.wikidata.org/wiki/Q11417>`_
+
+`mythology <https://www.wikidata.org/wiki/Q9134>`_
+
+`Tour de France <https://www.wikidata.org/wiki/Q33881>`_
+
+`death <https://www.wikidata.org/wiki/Q4>`_
+
+`pain <https://www.wikidata.org/wiki/Q81938>`_
+
+`community college <https://www.wikidata.org/wiki/Q1336920>`_
+
+`state <https://www.wikidata.org/wiki/Q7275>`_
+
+`state <https://www.wikidata.org/wiki/Q3505845>`_
+
+`theatrical genre <https://www.wikidata.org/wiki/Q15850590>`_
+
+`city with millions of inhabitants <https://www.wikidata.org/wiki/Q1637706>`_
+
+`public office <https://www.wikidata.org/wiki/Q294414>`_
+
+`pattern of behaviour <https://www.wikidata.org/wiki/Q2515887>`_
+
+`metropolis <https://www.wikidata.org/wiki/Q200250>`_
+
+`commune of France <https://www.wikidata.org/wiki/Q484170>`_
+
+`city/town <https://www.wikidata.org/wiki/Q7930989>`_
+
+`municipality of Germany <https://www.wikidata.org/wiki/Q262166>`_
+
+`borough in the United Kingdom <https://www.wikidata.org/wiki/Q1006876>`_
+
+`specialty channel <https://www.wikidata.org/wiki/Q561068>`_
+
+`island group <https://www.wikidata.org/wiki/Q1402592>`_
+
+`educational year <https://www.wikidata.org/wiki/Q10291405>`_
+
+`music scene <https://www.wikidata.org/wiki/Q28820001>`_
+
+`lake <https://www.wikidata.org/wiki/Q23397>`_
+
+`product <https://www.wikidata.org/wiki/Q2424752>`_
+
+`modern language <https://www.wikidata.org/wiki/Q1288568>`_
+
+`census area of Alaska <https://www.wikidata.org/wiki/Q56064719>`_
+
+`chemical substance <https://www.wikidata.org/wiki/Q79529>`_
+
+`class of chemical compounds with similar source or occurence <https://www.wikidata.org/wiki/Q56256178>`_
+
+`medical specialty <https://www.wikidata.org/wiki/Q930752>`_
+
+`radio format <https://www.wikidata.org/wiki/Q589183>`_
+
+`subject of international law <https://www.wikidata.org/wiki/Q1896989>`_
+
+`phase of life <https://www.wikidata.org/wiki/Q1811014>`_
+
+`heritage designation <https://www.wikidata.org/wiki/Q30634609>`_
+
+`unitary authority of England <https://www.wikidata.org/wiki/Q1136601>`_
+
+`language family <https://www.wikidata.org/wiki/Q25295>`_
+
+`unsaturated fat <https://www.wikidata.org/wiki/Q652555>`_
+
+`religious identity <https://www.wikidata.org/wiki/Q4392985>`_
+
+`human biblical figure <https://www.wikidata.org/wiki/Q20643955>`_
+
+`land vehicle <https://www.wikidata.org/wiki/Q1301433>`_
+
+`natural disaster <https://www.wikidata.org/wiki/Q8065>`_
+
+`educational institution <https://www.wikidata.org/wiki/Q2385804>`_
+
+`special ward of Japan <https://www.wikidata.org/wiki/Q5327704>`_
+
+`front <https://www.wikidata.org/wiki/Q842332>`_
+
+`social movement <https://www.wikidata.org/wiki/Q49773>`_
+
+`paranormal <https://www.wikidata.org/wiki/Q332102>`_
+
+`cinema film format <https://www.wikidata.org/wiki/Q1414729>`_
+
+`superpower <https://www.wikidata.org/wiki/Q1047698>`_
+
+`philosophical movement <https://www.wikidata.org/wiki/Q2915955>`_
+
+`historical period <https://www.wikidata.org/wiki/Q11514315>`_
+
+`foundation <https://www.wikidata.org/wiki/Q157031>`_
+
+`drama film <https://www.wikidata.org/wiki/Q130232>`_
+
+`forward <https://www.wikidata.org/wiki/Q280658>`_
+
+`violin <https://www.wikidata.org/wiki/Q8355>`_
+
+`marriage <https://www.wikidata.org/wiki/Q8445>`_
+
+`experimental music <https://www.wikidata.org/wiki/Q1640319>`_
+
+`television <https://www.wikidata.org/wiki/Q289>`_
+
+`historical period drama <https://www.wikidata.org/wiki/Q7168625>`_
+
+`action film <https://www.wikidata.org/wiki/Q188473>`_
+
+`male organism <https://www.wikidata.org/wiki/Q44148>`_
+
+`computer science <https://www.wikidata.org/wiki/Q21198>`_
+
+`special effects <https://www.wikidata.org/wiki/Q381243>`_
+
+`voice actor <https://www.wikidata.org/wiki/Q2405480>`_
+
+`comedy <https://www.wikidata.org/wiki/Q40831>`_
+
+`vice president <https://www.wikidata.org/wiki/Q42178>`_
+
+`politics <https://www.wikidata.org/wiki/Q7163>`_
+
+`president <https://www.wikidata.org/wiki/Q30461>`_
+
+`judge <https://www.wikidata.org/wiki/Q16533>`_
+
+`pop rock <https://www.wikidata.org/wiki/Q484641>`_
+
+`Southern rock <https://www.wikidata.org/wiki/Q852767>`_
+
+`screenwriter <https://www.wikidata.org/wiki/Q28389>`_
+
+`announcer <https://www.wikidata.org/wiki/Q1371925>`_
+
+`crime fiction <https://www.wikidata.org/wiki/Q19842222>`_
+
+`chief executive officer <https://www.wikidata.org/wiki/Q484876>`_
+
+`bass guitar <https://www.wikidata.org/wiki/Q46185>`_
+
+`steel guitar <https://www.wikidata.org/wiki/Q2617520>`_
+
+`adventure film <https://www.wikidata.org/wiki/Q319221>`_
+
+`opera <https://www.wikidata.org/wiki/Q1344>`_
+
+`romance film <https://www.wikidata.org/wiki/Q1054574>`_
+
+`finance minister <https://www.wikidata.org/wiki/Q7614320>`_
+
+`volleyball <https://www.wikidata.org/wiki/Q1734>`_
+
+`funk <https://www.wikidata.org/wiki/Q164444>`_
+
+`biographical film <https://www.wikidata.org/wiki/Q645928>`_
+
+`stroke <https://www.wikidata.org/wiki/Q12202>`_
+
+`Mormonism <https://www.wikidata.org/wiki/Q747802>`_
+
+`contemporary R&B <https://www.wikidata.org/wiki/Q850412>`_
+
+`management <https://www.wikidata.org/wiki/Q2920921>`_
+
+`composer <https://www.wikidata.org/wiki/Q36834>`_
+
+`psychedelic rock <https://www.wikidata.org/wiki/Q206159>`_
+
+`songwriter <https://www.wikidata.org/wiki/Q753110>`_
+
+`guitarist <https://www.wikidata.org/wiki/Q855091>`_
+
+`history <https://www.wikidata.org/wiki/Q309>`_
+
+`television presenter <https://www.wikidata.org/wiki/Q947873>`_
+
+`political philosophy <https://www.wikidata.org/wiki/Q179805>`_
+
+`corporation <https://www.wikidata.org/wiki/Q167037>`_
+
+`zither <https://www.wikidata.org/wiki/Q76239>`_
+
+`trance <https://www.wikidata.org/wiki/Q170435>`_
+
+`clarinet <https://www.wikidata.org/wiki/Q8343>`_
+
+`brass instrument <https://www.wikidata.org/wiki/Q180744>`_
+
+`cardiovascular disease <https://www.wikidata.org/wiki/Q389735>`_
+
+`satire <https://www.wikidata.org/wiki/Q128758>`_
+
+`topology <https://www.wikidata.org/wiki/Q42989>`_
+
+`bobsleigh <https://www.wikidata.org/wiki/Q177275>`_
+
+`law <https://www.wikidata.org/wiki/Q7748>`_
+
+`vocal music <https://www.wikidata.org/wiki/Q685884>`_
+
+`literature <https://www.wikidata.org/wiki/Q8242>`_
+
+`vegetarianism <https://www.wikidata.org/wiki/Q83364>`_
+
+`Indian people <https://www.wikidata.org/wiki/Q862086>`_
+
+`marketing <https://www.wikidata.org/wiki/Q39809>`_
+
+`synth-pop <https://www.wikidata.org/wiki/Q1298934>`_
+
+`historical fiction <https://www.wikidata.org/wiki/Q1196408>`_
+
+`orange <https://www.wikidata.org/wiki/Q39338>`_
+
+`research <https://www.wikidata.org/wiki/Q42240>`_
+
+`new wave <https://www.wikidata.org/wiki/Q187760>`_
+
+`Continental Congress <https://www.wikidata.org/wiki/Q26718>`_
+
+`theater <https://www.wikidata.org/wiki/Q11635>`_
+
+`folk rock <https://www.wikidata.org/wiki/Q186472>`_
+
+`general officer <https://www.wikidata.org/wiki/Q83460>`_
+
+`bluegrass music <https://www.wikidata.org/wiki/Q213714>`_
+
+`privately held company <https://www.wikidata.org/wiki/Q1589009>`_
+
+`alternative metal <https://www.wikidata.org/wiki/Q20378>`_
+
+`mathematician <https://www.wikidata.org/wiki/Q170790>`_
+
+`techno <https://www.wikidata.org/wiki/Q170611>`_
+
+`teacher <https://www.wikidata.org/wiki/Q37226>`_
+
+`garage rock <https://www.wikidata.org/wiki/Q211573>`_
+
+`government <https://www.wikidata.org/wiki/Q7188>`_
+
+`software engineering <https://www.wikidata.org/wiki/Q80993>`_
+
+`avant-garde <https://www.wikidata.org/wiki/Q102932>`_
+
+`fiction <https://www.wikidata.org/wiki/Q8253>`_
+
+`basketball <https://www.wikidata.org/wiki/Q5372>`_
+
+`restaurant <https://www.wikidata.org/wiki/Q11707>`_
+
+`Tagalog <https://www.wikidata.org/wiki/Q34057>`_
+
+`blues rock <https://www.wikidata.org/wiki/Q193355>`_
+
+`speed skating <https://www.wikidata.org/wiki/Q192431>`_
+
+`string instrument <https://www.wikidata.org/wiki/Q1798603>`_
+
+`Malay <https://www.wikidata.org/wiki/Q9237>`_
+
+`psychosis <https://www.wikidata.org/wiki/Q170082>`_
+
+`speaker <https://www.wikidata.org/wiki/Q1758037>`_
+
+`entrepreneur <https://www.wikidata.org/wiki/Q131524>`_
+
+`politician <https://www.wikidata.org/wiki/Q82955>`_
+
+`Indo-European languages <https://www.wikidata.org/wiki/Q19860>`_
+
+`presidential system <https://www.wikidata.org/wiki/Q49892>`_
+
+`post-hardcore <https://www.wikidata.org/wiki/Q377910>`_
+
+`melodrama <https://www.wikidata.org/wiki/Q191489>`_
+
+`symphonic metal <https://www.wikidata.org/wiki/Q486415>`_
+
+`suicide <https://www.wikidata.org/wiki/Q10737>`_
+
+`political cinema <https://www.wikidata.org/wiki/Q2973201>`_
+
+`postmodernism <https://www.wikidata.org/wiki/Q47783>`_
+
+`journalist <https://www.wikidata.org/wiki/Q1930187>`_
+
+`Indigenous peoples of the Americas <https://www.wikidata.org/wiki/Q36747>`_
+
+`diabetes mellitus <https://www.wikidata.org/wiki/Q12206>`_
+
+`Christian music <https://www.wikidata.org/wiki/Q6452410>`_
+
+`homicide <https://www.wikidata.org/wiki/Q149086>`_
+
+`anthology <https://www.wikidata.org/wiki/Q105420>`_
+
+`drawing <https://www.wikidata.org/wiki/Q93184>`_
+
+`power pop <https://www.wikidata.org/wiki/Q837837>`_
+
+`speed metal <https://www.wikidata.org/wiki/Q211723>`_
+
+`tragedy <https://www.wikidata.org/wiki/Q80930>`_
+
+`thrash metal <https://www.wikidata.org/wiki/Q483352>`_
+
+`military officer <https://www.wikidata.org/wiki/Q189290>`_
+
+`rockabilly <https://www.wikidata.org/wiki/Q203720>`_
+
+`bebop <https://www.wikidata.org/wiki/Q105513>`_
+
+`winger <https://www.wikidata.org/wiki/Q1369558>`_
+
+`Latin American music <https://www.wikidata.org/wiki/Q727781>`_
+
+`independent music <https://www.wikidata.org/wiki/Q42201>`_
+
+`poetry <https://www.wikidata.org/wiki/Q482>`_
+
+`magnet school <https://www.wikidata.org/wiki/Q1703577>`_
+
+`Hispanic <https://www.wikidata.org/wiki/Q1211934>`_
+
+`detective fiction <https://www.wikidata.org/wiki/Q186424>`_
+
+`United States presidential election <https://www.wikidata.org/wiki/Q47566>`_
+
+`environmentalism <https://www.wikidata.org/wiki/Q2855609>`_
+
+`autobiography <https://www.wikidata.org/wiki/Q4184>`_
+
+`shoegazing <https://www.wikidata.org/wiki/Q272167>`_
+
+`boy band <https://www.wikidata.org/wiki/Q216337>`_
+
+`baroque music <https://www.wikidata.org/wiki/Q8361>`_
+
+`genetic disease <https://www.wikidata.org/wiki/Q200779>`_
+
+`human rights <https://www.wikidata.org/wiki/Q8458>`_
+
+`film noir <https://www.wikidata.org/wiki/Q185867>`_
+
+`respiratory system disease <https://www.wikidata.org/wiki/Q3286546>`_
+
+`jump blues <https://www.wikidata.org/wiki/Q1515757>`_
+
+`critic <https://www.wikidata.org/wiki/Q6430706>`_
+
+`financial services <https://www.wikidata.org/wiki/Q837171>`_
+
+`social issue <https://www.wikidata.org/wiki/Q1920219>`_
+
+`hardcore <https://www.wikidata.org/wiki/Q388906>`_
+
+`stop-motion <https://www.wikidata.org/wiki/Q308876>`_
+
+`university-preparatory school <https://www.wikidata.org/wiki/Q428602>`_
+
+`anthology series <https://www.wikidata.org/wiki/Q23653>`_
+
+`anarcho-punk <https://www.wikidata.org/wiki/Q486365>`_
+
+`post-industrial music <https://www.wikidata.org/wiki/Q936942>`_
+
+`action game <https://www.wikidata.org/wiki/Q270948>`_
+
+`star <https://www.wikidata.org/wiki/Q523>`_
+
+`Power Rangers <https://www.wikidata.org/wiki/Q333156>`_
+
+`glacial lake <https://www.wikidata.org/wiki/Q211302>`_
+
+`First Lady <https://www.wikidata.org/wiki/Q203184>`_
+
+`civil and political rights <https://www.wikidata.org/wiki/Q191600>`_
+
+`Nazism <https://www.wikidata.org/wiki/Q7310>`_
+
+`travel <https://www.wikidata.org/wiki/Q61509>`_
+
+`impresario <https://www.wikidata.org/wiki/Q943995>`_
+
+`palace <https://www.wikidata.org/wiki/Q16560>`_
+
+`beauty contest <https://www.wikidata.org/wiki/Q2658935>`_
+
+`bay <https://www.wikidata.org/wiki/Q39594>`_
+
+`mental disorder <https://www.wikidata.org/wiki/Q12135>`_
+
+`health care <https://www.wikidata.org/wiki/Q31207>`_
+
+`UK garage <https://www.wikidata.org/wiki/Q1165777>`_
+
+`strait <https://www.wikidata.org/wiki/Q37901>`_
+
+`humor magazine <https://www.wikidata.org/wiki/Q12298619>`_
+
+`merchant <https://www.wikidata.org/wiki/Q215536>`_
+
+`airliner <https://www.wikidata.org/wiki/Q210932>`_
+
+`suspension bridge <https://www.wikidata.org/wiki/Q12570>`_
+
+`functional programming <https://www.wikidata.org/wiki/Q193076>`_
+
+`chemist <https://www.wikidata.org/wiki/Q593644>`_
+
+`mercenary <https://www.wikidata.org/wiki/Q178197>`_
+
+`computer programming <https://www.wikidata.org/wiki/Q80006>`_
+
+`house cat <https://www.wikidata.org/wiki/Q146>`_
+
+`national park <https://www.wikidata.org/wiki/Q46169>`_
+
+`cathedral <https://www.wikidata.org/wiki/Q2977>`_
+
+`Renaissance <https://www.wikidata.org/wiki/Q4692>`_
+
+`fighting game <https://www.wikidata.org/wiki/Q846224>`_
+
+`structured programming <https://www.wikidata.org/wiki/Q223335>`_
+
+`television special <https://www.wikidata.org/wiki/Q1261214>`_
+
+`first-person shooter <https://www.wikidata.org/wiki/Q185029>`_
+
+`island nation <https://www.wikidata.org/wiki/Q112099>`_
+
+`academic major <https://www.wikidata.org/wiki/Q4671286>`_
+
+`professional sports team <https://www.wikidata.org/wiki/Q20639856>`_
+
+`British Academy Film Awards <https://www.wikidata.org/wiki/Q732997>`_
+
+`interdisciplinarity <https://www.wikidata.org/wiki/Q849359>`_
+
+`nationality <https://www.wikidata.org/wiki/Q231002>`_
+
+`enterprise <https://www.wikidata.org/wiki/Q6881511>`_
+
+`television character <https://www.wikidata.org/wiki/Q15773317>`_
+
+`comics character <https://www.wikidata.org/wiki/Q1114461>`_
+
+`district with city status <https://www.wikidata.org/wiki/Q21503295>`_
+
+`county seat <https://www.wikidata.org/wiki/Q62049>`_
+
+`campus <https://www.wikidata.org/wiki/Q209465>`_
+
+`provincial or territorial capital city in Canada <https://www.wikidata.org/wiki/Q21507383>`_
+
+`equity <https://www.wikidata.org/wiki/Q2578557>`_
+
+`head of government <https://www.wikidata.org/wiki/Q2285706>`_
+
+`crematory <https://www.wikidata.org/wiki/Q157570>`_
+
+`landform <https://www.wikidata.org/wiki/Q271669>`_
+
+`tool <https://www.wikidata.org/wiki/Q39546>`_
+
+`execution method <https://www.wikidata.org/wiki/Q15169167>`_
+
+`academic institution <https://www.wikidata.org/wiki/Q4671277>`_
+
+`Iranian musical instrument <https://www.wikidata.org/wiki/Q3152908>`_
+
+`process <https://www.wikidata.org/wiki/Q3249551>`_
+
+`experience <https://www.wikidata.org/wiki/Q1355387>`_
+
+`abjad <https://www.wikidata.org/wiki/Q185087>`_
+
+`marine propulsion <https://www.wikidata.org/wiki/Q11482290>`_
+
+`group <https://www.wikidata.org/wiki/Q16887380>`_
+
+`fictional species <https://www.wikidata.org/wiki/Q21192438>`_
+
+`village <https://www.wikidata.org/wiki/Q532>`_
+
+`family of isomeric compounds <https://www.wikidata.org/wiki/Q15711994>`_
+
+`transport accident <https://www.wikidata.org/wiki/Q11822042>`_
+
+`sectarian violence <https://www.wikidata.org/wiki/Q3774758>`_
+
+`string <https://www.wikidata.org/wiki/Q11064354>`_
+
+`urban area of Sweden <https://www.wikidata.org/wiki/Q12813115>`_
+
+`property <https://www.wikidata.org/wiki/Q937228>`_
+
+`extracellular fluid <https://www.wikidata.org/wiki/Q2914458>`_
+
+`forest <https://www.wikidata.org/wiki/Q4421>`_
+
+`decimal currency <https://www.wikidata.org/wiki/Q28795800>`_
+
+`title of Mary <https://www.wikidata.org/wiki/Q1509831>`_
+
+`type of business entity in the USA <https://www.wikidata.org/wiki/Q57653825>`_
+
+`fictional energy <https://www.wikidata.org/wiki/Q15708422>`_
+
+`emotion <https://www.wikidata.org/wiki/Q9415>`_
+
+`Private Hochschule <https://www.wikidata.org/wiki/Q963908>`_
+
+`displacement <https://www.wikidata.org/wiki/Q190291>`_
+
+`phenomenon <https://www.wikidata.org/wiki/Q483247>`_
+
+`group action <https://www.wikidata.org/wiki/Q3533467>`_
+
+`road <https://www.wikidata.org/wiki/Q34442>`_
+
+`form of government <https://www.wikidata.org/wiki/Q1307214>`_
+
+`physiological condition <https://www.wikidata.org/wiki/Q7189713>`_
+
+`doctrine <https://www.wikidata.org/wiki/Q117850>`_
+
+`pathogen <https://www.wikidata.org/wiki/Q170065>`_
+
+`editorial collection <https://www.wikidata.org/wiki/Q20655472>`_
+
+`fictional extraterrestrial <https://www.wikidata.org/wiki/Q1307329>`_
+
+`free software license <https://www.wikidata.org/wiki/Q3943414>`_
+
+`role <https://www.wikidata.org/wiki/Q1707847>`_
+
+`urban rail transit <https://www.wikidata.org/wiki/Q3491904>`_
+
+`research institute <https://www.wikidata.org/wiki/Q31855>`_
+
+`motor vehicle <https://www.wikidata.org/wiki/Q752870>`_
+
+`reserve currency <https://www.wikidata.org/wiki/Q756202>`_
+
+`rights <https://www.wikidata.org/wiki/Q780687>`_
+
+`automobile marque <https://www.wikidata.org/wiki/Q17412622>`_
+
+`special administrative region of China <https://www.wikidata.org/wiki/Q779415>`_
+
+`concept <https://www.wikidata.org/wiki/Q151885>`_
+
+`physics engine <https://www.wikidata.org/wiki/Q62505>`_
+
+`school district <https://www.wikidata.org/wiki/Q398141>`_
+
+`spirit <https://www.wikidata.org/wiki/Q193291>`_
+
+`musical instrument part <https://www.wikidata.org/wiki/Q19659292>`_
+
+`short gun <https://www.wikidata.org/wiki/Q7816242>`_
+
+`software license <https://www.wikidata.org/wiki/Q207621>`_
+
+`double act <https://www.wikidata.org/wiki/Q1141470>`_
+
+`manga <https://www.wikidata.org/wiki/Q8274>`_
+
+`method <https://www.wikidata.org/wiki/Q1799072>`_
+
+`sex <https://www.wikidata.org/wiki/Q290>`_
+
+`zone of Nepal <https://www.wikidata.org/wiki/Q876102>`_
+
+`interstellar cloud <https://www.wikidata.org/wiki/Q1054444>`_
+
+`duo <https://www.wikidata.org/wiki/Q10648343>`_
+
+`pome <https://www.wikidata.org/wiki/Q41274>`_
+
+`dead language <https://www.wikidata.org/wiki/Q45762>`_
+
+`film gauge <https://www.wikidata.org/wiki/Q86850>`_
+
+`natural satellite <https://www.wikidata.org/wiki/Q2537>`_
+
+`eye color <https://www.wikidata.org/wiki/Q23786>`_
+
+`village in the United States <https://www.wikidata.org/wiki/Q751708>`_
+
+`final <https://www.wikidata.org/wiki/Q1366722>`_
+
+`borough of Alaska <https://www.wikidata.org/wiki/Q13410522>`_
+
+`facility <https://www.wikidata.org/wiki/Q13226383>`_
+
+`type of food or dish <https://www.wikidata.org/wiki/Q19861951>`_
+
+`trademark <https://www.wikidata.org/wiki/Q167270>`_
+
+`base material <https://www.wikidata.org/wiki/Q214609>`_
+
+`therapy <https://www.wikidata.org/wiki/Q179661>`_
+
+`aptitude <https://www.wikidata.org/wiki/Q1347367>`_
+
+`sorority <https://www.wikidata.org/wiki/Q18811583>`_
+
+`cruise ship <https://www.wikidata.org/wiki/Q39804>`_
+
+`parish of Louisiana <https://www.wikidata.org/wiki/Q13410524>`_
+
+`energy <https://www.wikidata.org/wiki/Q11379>`_
+
+`chess piece <https://www.wikidata.org/wiki/Q55386374>`_
+
+`art exhibition <https://www.wikidata.org/wiki/Q667276>`_
+
+`rock <https://www.wikidata.org/wiki/Q8063>`_
+
+`print <https://www.wikidata.org/wiki/Q11060274>`_
+
+`climate change <https://www.wikidata.org/wiki/Q125928>`_
+
+`fictional government <https://www.wikidata.org/wiki/Q15238535>`_
+
+`improvised explosive device <https://www.wikidata.org/wiki/Q1249453>`_
+
+`diaspora <https://www.wikidata.org/wiki/Q133004>`_
+
+`drug <https://www.wikidata.org/wiki/Q8386>`_
+
+`Christian holy day <https://www.wikidata.org/wiki/Q60075825>`_
+
+`ancient civilization <https://www.wikidata.org/wiki/Q28171280>`_
+
+`tabletop game <https://www.wikidata.org/wiki/Q3244175>`_
+
+`ChEBI Ontology term <https://www.wikidata.org/wiki/Q41014950>`_
+
+`biological process <https://www.wikidata.org/wiki/Q2996394>`_
+
+`province of Spain <https://www.wikidata.org/wiki/Q162620>`_
+
+`circumstellar disk <https://www.wikidata.org/wiki/Q3235978>`_
+
+`Roman deity <https://www.wikidata.org/wiki/Q11688446>`_
+
+`ball <https://www.wikidata.org/wiki/Q18545>`_
+
+`clinical sign <https://www.wikidata.org/wiki/Q1441305>`_
+
+`film format <https://www.wikidata.org/wiki/Q759853>`_
+
+`electronic device <https://www.wikidata.org/wiki/Q3395171>`_
+
+`municipality of Portugal <https://www.wikidata.org/wiki/Q13217644>`_
+
+`railway station <https://www.wikidata.org/wiki/Q55488>`_
+
+`free software copyleft license <https://www.wikidata.org/wiki/Q5975031>`_
+
+`peninsula <https://www.wikidata.org/wiki/Q34763>`_
+
+`Wikimedia list article <https://www.wikidata.org/wiki/Q13406463>`_
+
+`residue <https://www.wikidata.org/wiki/Q903495>`_
+
+`Major League Baseball draft <https://www.wikidata.org/wiki/Q953813>`_
+
+`scene <https://www.wikidata.org/wiki/Q282939>`_
+
+`term <https://www.wikidata.org/wiki/Q1969448>`_
+
+`unisex given name <https://www.wikidata.org/wiki/Q3409032>`_
+
+`photograph <https://www.wikidata.org/wiki/Q125191>`_
+
+`permissive free software licence <https://www.wikidata.org/wiki/Q1437937>`_
+
+`episode <https://www.wikidata.org/wiki/Q1983062>`_
+
+`planetary system <https://www.wikidata.org/wiki/Q206717>`_
+
+`group of fictional characters <https://www.wikidata.org/wiki/Q14514600>`_
+
+`declaration of independence <https://www.wikidata.org/wiki/Q1464916>`_
+
+`data stream <https://www.wikidata.org/wiki/Q1172540>`_
+
+`alphabetic script <https://www.wikidata.org/wiki/Q11077643>`_
+
+`version, edition, or translation <https://www.wikidata.org/wiki/Q3331189>`_
+
+`fictional duck <https://www.wikidata.org/wiki/Q3247351>`_
+
+`has part <https://www.wikidata.org/wiki/Q24575087>`_
+
+`fat <https://www.wikidata.org/wiki/Q127980>`_
+
+`tennis court <https://www.wikidata.org/wiki/Q741118>`_
+
+`formula <https://www.wikidata.org/wiki/Q976981>`_
+
+`ranking <https://www.wikidata.org/wiki/Q526719>`_
+
+`alphabet <https://www.wikidata.org/wiki/Q9779>`_
+
+`piano <https://www.wikidata.org/wiki/Q5994>`_
+
+`democracy <https://www.wikidata.org/wiki/Q7174>`_
+
+`biography <https://www.wikidata.org/wiki/Q36279>`_
+
+`rock and roll <https://www.wikidata.org/wiki/Q7749>`_
+
+`bass <https://www.wikidata.org/wiki/Q810447>`_
+
+`animation <https://www.wikidata.org/wiki/Q11425>`_
+
+`author <https://www.wikidata.org/wiki/Q482980>`_
+
+`entertainment <https://www.wikidata.org/wiki/Q173799>`_
+
+`broadcasting <https://www.wikidata.org/wiki/Q15078788>`_
+
+`wind instrument <https://www.wikidata.org/wiki/Q173453>`_
+
+`filmmaking <https://www.wikidata.org/wiki/Q932586>`_
+
+`lyricist <https://www.wikidata.org/wiki/Q822146>`_
+
+`industrial music <https://www.wikidata.org/wiki/Q487965>`_
+
+`member of parliament <https://www.wikidata.org/wiki/Q486839>`_
+
+`sound <https://www.wikidata.org/wiki/Q11461>`_
+
+`symphonic rock <https://www.wikidata.org/wiki/Q719927>`_
+
+`news <https://www.wikidata.org/wiki/Q38926>`_
+
+`folklore <https://www.wikidata.org/wiki/Q36192>`_
+
+`minister <https://www.wikidata.org/wiki/Q83307>`_
+
+`researcher <https://www.wikidata.org/wiki/Q1650915>`_
+
+`animal <https://www.wikidata.org/wiki/Q729>`_
+
+`role-playing game <https://www.wikidata.org/wiki/Q160738>`_
+
+`television comedy <https://www.wikidata.org/wiki/Q7696995>`_
+
+`initialism <https://www.wikidata.org/wiki/Q918270>`_
+
+`fictional profession <https://www.wikidata.org/wiki/Q17305127>`_
+
+`legal institution <https://www.wikidata.org/wiki/Q1938208>`_
+
+`social group <https://www.wikidata.org/wiki/Q874405>`_
+
+`problem <https://www.wikidata.org/wiki/Q621184>`_
+
+`programming paradigm <https://www.wikidata.org/wiki/Q188267>`_
+
+`estate in land <https://www.wikidata.org/wiki/Q975783>`_
+
+`water area <https://www.wikidata.org/wiki/Q2507626>`_
+
+`visual artwork <https://www.wikidata.org/wiki/Q4502142>`_
+
+`manner of death <https://www.wikidata.org/wiki/Q2438541>`_
+
+`aircraft functional class <https://www.wikidata.org/wiki/Q20027953>`_
+
+`religious building <https://www.wikidata.org/wiki/Q24398318>`_
+
+`type of business entity <https://www.wikidata.org/wiki/Q1269299>`_
+
+`agent <https://www.wikidata.org/wiki/Q24229398>`_
+
+`creative work <https://www.wikidata.org/wiki/Q17537576>`_
+
+`knowledge <https://www.wikidata.org/wiki/Q9081>`_
+
+`higher education institution <https://www.wikidata.org/wiki/Q38723>`_
+
+`bridge by structural type <https://www.wikidata.org/wiki/Q17644823>`_
+
+`manifestation <https://www.wikidata.org/wiki/Q286583>`_
+
+`killing <https://www.wikidata.org/wiki/Q844482>`_
+
+`arts festival <https://www.wikidata.org/wiki/Q4801521>`_
+
+`recurring event <https://www.wikidata.org/wiki/Q15275719>`_
+
+`art form <https://www.wikidata.org/wiki/Q56055944>`_
+
+`mechanical wave <https://www.wikidata.org/wiki/Q1132631>`_
+
+`designation for an administrative territorial entity <https://www.wikidata.org/wiki/Q15617994>`_
+
+`optical illusion <https://www.wikidata.org/wiki/Q174923>`_
+
+`colleges and universities in the United States <https://www.wikidata.org/wiki/Q1849445>`_
+
+`competition <https://www.wikidata.org/wiki/Q476300>`_
+
+`association <https://www.wikidata.org/wiki/Q48204>`_
+
+`belief system <https://www.wikidata.org/wiki/Q5390013>`_
+
+
+属性
+----------------------------------------------------------------
+
+`point in time <https://www.wikidata.org/wiki/Property:P585>`_
+
+`determination method <https://www.wikidata.org/wiki/Property:P459>`_
+
+`statement is subject of <https://www.wikidata.org/wiki/Property:P805>`_
+
+`review score by <https://www.wikidata.org/wiki/Property:P447>`_
+
+`ranking <https://www.wikidata.org/wiki/Property:P1352>`_
+
+`for work <https://www.wikidata.org/wiki/Property:P1686>`_
+
+`population <https://www.wikidata.org/wiki/Property:P1082>`_
+
+`start time <https://www.wikidata.org/wiki/Property:P580>`_
+
+`end time <https://www.wikidata.org/wiki/Property:P582>`_
+
+`nominal GDP <https://www.wikidata.org/wiki/Property:P2131>`_
+
+`official website <https://www.wikidata.org/wiki/Property:P856>`_
+
+`points for <https://www.wikidata.org/wiki/Property:P1358>`_
+
+`ISNI <https://www.wikidata.org/wiki/Property:P213>`_
+
+`nominee <https://www.wikidata.org/wiki/Property:P2453>`_
+
+`publication date <https://www.wikidata.org/wiki/Property:P577>`_
+
+`demonym <https://www.wikidata.org/wiki/Property:P1549>`_
+
+`date of birth <https://www.wikidata.org/wiki/Property:P569>`_
+
+`inflation rate <https://www.wikidata.org/wiki/Property:P1279>`_
+
+`inception <https://www.wikidata.org/wiki/Property:P571>`_
+
+`character role <https://www.wikidata.org/wiki/Property:P453>`_
+
+`applies to part <https://www.wikidata.org/wiki/Property:P518>`_
+
+`language of work or name <https://www.wikidata.org/wiki/Property:P407>`_
+
+`winner <https://www.wikidata.org/wiki/Property:P1346>`_
+
+`postal code <https://www.wikidata.org/wiki/Property:P281>`_
+
+`life expectancy <https://www.wikidata.org/wiki/Property:P2250>`_
+
+`title <https://www.wikidata.org/wiki/Property:P1476>`_
+
+`number of points/goals/set scored <https://www.wikidata.org/wiki/Property:P1351>`_
+
+`total fertility rate <https://www.wikidata.org/wiki/Property:P4841>`_
+
+`number of matches played/races/starts <https://www.wikidata.org/wiki/Property:P1350>`_
+
+`place of publication <https://www.wikidata.org/wiki/Property:P291>`_
+
+`Twitter username <https://www.wikidata.org/wiki/Property:P2002>`_
+
+`duration <https://www.wikidata.org/wiki/Property:P2047>`_
+
+`area <https://www.wikidata.org/wiki/Property:P2046>`_
+
+`number of subscribers <https://www.wikidata.org/wiki/Property:P3744>`_
+
+`official name <https://www.wikidata.org/wiki/Property:P1448>`_
+
+`Human Development Index <https://www.wikidata.org/wiki/Property:P1081>`_
+
+`date of death <https://www.wikidata.org/wiki/Property:P570>`_
+
+`name in native language <https://www.wikidata.org/wiki/Property:P1559>`_
+
+`number of out-of-school children <https://www.wikidata.org/wiki/Property:P2573>`_
+
+`country <https://www.wikidata.org/wiki/Property:P17>`_
+
+`local dialing code <https://www.wikidata.org/wiki/Property:P473>`_
+
+`elevation above sea level <https://www.wikidata.org/wiki/Property:P2044>`_
+
+`CANTIC-ID <https://www.wikidata.org/wiki/Property:P1273>`_
+
+`birth name <https://www.wikidata.org/wiki/Property:P1477>`_
+
+`work period (start) <https://www.wikidata.org/wiki/Property:P2031>`_
+
+`native label <https://www.wikidata.org/wiki/Property:P1705>`_
+
+`Instagram username <https://www.wikidata.org/wiki/Property:P2003>`_
+
+`Dewey Decimal Classification <https://www.wikidata.org/wiki/Property:P1036>`_
+
+`short name <https://www.wikidata.org/wiki/Property:P1813>`_
+
+`Munzinger IBA <https://www.wikidata.org/wiki/Property:P1284>`_
+
+`diplomatic mission sent <https://www.wikidata.org/wiki/Property:P531>`_
+
+`SPLASH <https://www.wikidata.org/wiki/Property:P4964>`_
+
+`Libris-URI <https://www.wikidata.org/wiki/Property:P5587>`_
+
+`subreddit <https://www.wikidata.org/wiki/Property:P3984>`_
+
+`series ordinal <https://www.wikidata.org/wiki/Property:P1545>`_
+
+`located at street address (DEPRECATED) <https://www.wikidata.org/wiki/Property:P969>`_
+
+`located at street address <https://www.wikidata.org/wiki/Property:P6375>`_
+
+`located in the administrative territorial entity <https://www.wikidata.org/wiki/Property:P131>`_
+
+`FIPS 10-4 (countries and regions) <https://www.wikidata.org/wiki/Property:P901>`_
+
+`motto text <https://www.wikidata.org/wiki/Property:P1451>`_
+
+`number of children <https://www.wikidata.org/wiki/Property:P1971>`_
+
+`pronunciation audio <https://www.wikidata.org/wiki/Property:P443>`_
+
+`FIPS 6-4 (US counties) <https://www.wikidata.org/wiki/Property:P882>`_
+
+`nickname <https://www.wikidata.org/wiki/Property:P1449>`_
+
+`licence plate code <https://www.wikidata.org/wiki/Property:P395>`_
+
+`height <https://www.wikidata.org/wiki/Property:P2048>`_
+
+`ISO 3166-2 code <https://www.wikidata.org/wiki/Property:P300>`_
+
+`cost <https://www.wikidata.org/wiki/Property:P2130>`_
+
+`box office <https://www.wikidata.org/wiki/Property:P2142>`_
+
+`acquisition transaction <https://www.wikidata.org/wiki/Property:P1642>`_
+
+`number of episodes <https://www.wikidata.org/wiki/Property:P1113>`_
+
+`instance of <https://www.wikidata.org/wiki/Property:P31>`_
+
+`WOEID <https://www.wikidata.org/wiki/Property:P1281>`_
+
+`PermID <https://www.wikidata.org/wiki/Property:P3347>`_
+
+`British Museum person-institution <https://www.wikidata.org/wiki/Property:P1711>`_
+
+`pseudonym <https://www.wikidata.org/wiki/Property:P742>`_
+
+`academic major <https://www.wikidata.org/wiki/Property:P812>`_
+
+`number of seasons <https://www.wikidata.org/wiki/Property:P2437>`_
+
+`object has role <https://www.wikidata.org/wiki/Property:P3831>`_
+
+`patronage <https://www.wikidata.org/wiki/Property:P3872>`_
+
+`exploitation visa number <https://www.wikidata.org/wiki/Property:P2755>`_
+
+`NUTS code <https://www.wikidata.org/wiki/Property:P605>`_
+
+`academic degree <https://www.wikidata.org/wiki/Property:P512>`_
+
+`mass <https://www.wikidata.org/wiki/Property:P2067>`_
+
+`Deutsche Synchronkartei actor-ID <https://www.wikidata.org/wiki/Property:P4332>`_
+
+`employees <https://www.wikidata.org/wiki/Property:P1128>`_
+
+`dissolved, abolished or demolished <https://www.wikidata.org/wiki/Property:P576>`_
+
+`direction relative to location <https://www.wikidata.org/wiki/Property:P654>`_
+
+`number of speakers <https://www.wikidata.org/wiki/Property:P1098>`_
+
+`IPv4 routing prefix <https://www.wikidata.org/wiki/Property:P3761>`_
+
+`Nintendo GameID <https://www.wikidata.org/wiki/Property:P5838>`_
+
+`students count <https://www.wikidata.org/wiki/Property:P2196>`_
+
+`TOID <https://www.wikidata.org/wiki/Property:P3120>`_
+
+`maritime identification digits <https://www.wikidata.org/wiki/Property:P2979>`_
+
+`Giphy username <https://www.wikidata.org/wiki/Property:P4013>`_
+
+`country calling code <https://www.wikidata.org/wiki/Property:P474>`_
+
+`UMLS CUI <https://www.wikidata.org/wiki/Property:P2892>`_
+
+`frequency <https://www.wikidata.org/wiki/Property:P2144>`_
+
+`mains voltage <https://www.wikidata.org/wiki/Property:P2884>`_
+
+`ISO 3166-1 alpha-3 code <https://www.wikidata.org/wiki/Property:P298>`_
+
+`ISO 3166-1 alpha-2 code <https://www.wikidata.org/wiki/Property:P297>`_
+
+`INSEE countries and foreign territories code <https://www.wikidata.org/wiki/Property:P3422>`_
+
+`marriageable age <https://www.wikidata.org/wiki/Property:P3000>`_
+
+`ISO 3166-1 numeric code <https://www.wikidata.org/wiki/Property:P299>`_
+
+`MeSH Code <https://www.wikidata.org/wiki/Property:P672>`_
+
+`IOC country code <https://www.wikidata.org/wiki/Property:P984>`_
+
+`named as <https://www.wikidata.org/wiki/Property:P1810>`_
+
+`criterion used <https://www.wikidata.org/wiki/Property:P1013>`_
+
+`nominal GDP per capita <https://www.wikidata.org/wiki/Property:P2132>`_
+
+`has quality <https://www.wikidata.org/wiki/Property:P1552>`_
+
+`PPP GDP per capita <https://www.wikidata.org/wiki/Property:P2299>`_
+
+`ARCHON code <https://www.wikidata.org/wiki/Property:P3642>`_
+
+`replaced by <https://www.wikidata.org/wiki/Property:P1366>`_
+
+`CIVICUS Monitor country entry <https://www.wikidata.org/wiki/Property:P5180>`_
+
+`unemployment rate <https://www.wikidata.org/wiki/Property:P1198>`_
+
+`time period <https://www.wikidata.org/wiki/Property:P2348>`_
+
+`real gross domestic product growth rate <https://www.wikidata.org/wiki/Property:P2219>`_
+
+`mobile country code <https://www.wikidata.org/wiki/Property:P2258>`_
+
+`IAB code <https://www.wikidata.org/wiki/Property:P5250>`_
+
+`edition number <https://www.wikidata.org/wiki/Property:P393>`_
+
+`replaces <https://www.wikidata.org/wiki/Property:P1365>`_
+
+`GDP (PPP) <https://www.wikidata.org/wiki/Property:P4010>`_
+
+`ITU letter code <https://www.wikidata.org/wiki/Property:P3024>`_
+
+`together with <https://www.wikidata.org/wiki/Property:P1706>`_
+
+`number of households <https://www.wikidata.org/wiki/Property:P1538>`_
+
+`applies to jurisdiction <https://www.wikidata.org/wiki/Property:P1001>`_
+
+`retrieved <https://www.wikidata.org/wiki/Property:P813>`_
+
+`followed by <https://www.wikidata.org/wiki/Property:P156>`_
+
+`follows <https://www.wikidata.org/wiki/Property:P155>`_
+
+`total revenue <https://www.wikidata.org/wiki/Property:P2139>`_
+
+`IPI name number <https://www.wikidata.org/wiki/Property:P1828>`_
+
+`total reserves <https://www.wikidata.org/wiki/Property:P2134>`_
+
+`OS grid reference <https://www.wikidata.org/wiki/Property:P613>`_
+
+`name in kana <https://www.wikidata.org/wiki/Property:P1814>`_
+
+`sport number <https://www.wikidata.org/wiki/Property:P1618>`_
+
+`age of majority <https://www.wikidata.org/wiki/Property:P2997>`_
+
+`ICD-9-CM <https://www.wikidata.org/wiki/Property:P1692>`_
+
+`subject has role <https://www.wikidata.org/wiki/Property:P2868>`_
+
+`Iconclass notation <https://www.wikidata.org/wiki/Property:P1256>`_
+
+`annual number of weddings <https://www.wikidata.org/wiki/Property:P5982>`_
+
+`IPv6 routing prefix <https://www.wikidata.org/wiki/Property:P3793>`_
+
+`male population <https://www.wikidata.org/wiki/Property:P1540>`_
+
+`female population <https://www.wikidata.org/wiki/Property:P1539>`_
+
+`IPTC Newscode <https://www.wikidata.org/wiki/Property:P5429>`_
+
+`ICD-10-CM <https://www.wikidata.org/wiki/Property:P4229>`_
+
+`net profit <https://www.wikidata.org/wiki/Property:P2295>`_
+
+`place of marriage <https://www.wikidata.org/wiki/Property:P2842>`_
+
+`Stack Exchange tag <https://www.wikidata.org/wiki/Property:P1482>`_
+
+`GSS code (2011) <https://www.wikidata.org/wiki/Property:P836>`_
+
+`proportion <https://www.wikidata.org/wiki/Property:P1107>`_
+
+`prize money <https://www.wikidata.org/wiki/Property:P2121>`_
+
+`Google Doodle <https://www.wikidata.org/wiki/Property:P4431>`_
+
+`FIFA country code <https://www.wikidata.org/wiki/Property:P3441>`_
+
+`eMedicine <https://www.wikidata.org/wiki/Property:P673>`_
+
+`OCLC control number <https://www.wikidata.org/wiki/Property:P243>`_
+
+`water as percent of area <https://www.wikidata.org/wiki/Property:P2927>`_
+
+`work period (end) <https://www.wikidata.org/wiki/Property:P2032>`_
+
+`ISIN <https://www.wikidata.org/wiki/Property:P946>`_
+
+`OSM tag or key <https://www.wikidata.org/wiki/Property:P1282>`_
+
+`total assets <https://www.wikidata.org/wiki/Property:P2403>`_
+
+`location <https://www.wikidata.org/wiki/Property:P276>`_
+
+`review score <https://www.wikidata.org/wiki/Property:P444>`_
+
+`name <https://www.wikidata.org/wiki/Property:P2561>`_
+
+`time of earliest written record <https://www.wikidata.org/wiki/Property:P1249>`_
+
+`detail map <https://www.wikidata.org/wiki/Property:P1621>`_
+
+`trunk prefix <https://www.wikidata.org/wiki/Property:P3238>`_
+
+`Corporate Number (Japan) <https://www.wikidata.org/wiki/Property:P3225>`_
+
+`Regensburg Classification <https://www.wikidata.org/wiki/Property:P1150>`_
+
+`ISBN-13 <https://www.wikidata.org/wiki/Property:P212>`_
+
+`length <https://www.wikidata.org/wiki/Property:P2043>`_
+
+`ISBN-10 <https://www.wikidata.org/wiki/Property:P957>`_
+
+`valid in period <https://www.wikidata.org/wiki/Property:P1264>`_
+
+`nature of statement <https://www.wikidata.org/wiki/Property:P5102>`_
+
+`DiseasesDB <https://www.wikidata.org/wiki/Property:P557>`_
+
+`reason for deprecation <https://www.wikidata.org/wiki/Property:P2241>`_
+
+`ICD-10 <https://www.wikidata.org/wiki/Property:P494>`_
+
+`position played on team / speciality <https://www.wikidata.org/wiki/Property:P413>`_
+
+`National Heritage List for England number <https://www.wikidata.org/wiki/Property:P1216>`_
+
+`type of kinship <https://www.wikidata.org/wiki/Property:P1039>`_
+
+`sourcing circumstances <https://www.wikidata.org/wiki/Property:P1480>`_
+
+`Hornbostel-Sachs classification <https://www.wikidata.org/wiki/Property:P1762>`_
+
+`Glottolog code <https://www.wikidata.org/wiki/Property:P1394>`_
+
+`net worth <https://www.wikidata.org/wiki/Property:P2218>`_
+
+`member count <https://www.wikidata.org/wiki/Property:P2124>`_
+
+`ICD-9 <https://www.wikidata.org/wiki/Property:P493>`_
+
+`mapping relation type <https://www.wikidata.org/wiki/Property:P4390>`_
+
+`valid in place <https://www.wikidata.org/wiki/Property:P3005>`_
+
+`UIC numerical country code <https://www.wikidata.org/wiki/Property:P2982>`_
+
+`Statistics Canada Geographic code <https://www.wikidata.org/wiki/Property:P3012>`_
+
+`Snapchat username <https://www.wikidata.org/wiki/Property:P2984>`_
+
+`UK Provider Reference Number <https://www.wikidata.org/wiki/Property:P4971>`_
+
+`UN/LOCODE <https://www.wikidata.org/wiki/Property:P1937>`_
+
+`UIC alphabetical country code <https://www.wikidata.org/wiki/Property:P2981>`_
+
+`ISO 639-2 code <https://www.wikidata.org/wiki/Property:P219>`_
+
+`Name Assigning Authority Number <https://www.wikidata.org/wiki/Property:P1870>`_
+
+`date of first performance <https://www.wikidata.org/wiki/Property:P1191>`_
+
+`operating income <https://www.wikidata.org/wiki/Property:P3362>`_
+
+`SIREN number <https://www.wikidata.org/wiki/Property:P1616>`_
+
+`distribution map <https://www.wikidata.org/wiki/Property:P1846>`_
+
+`IETF language tag <https://www.wikidata.org/wiki/Property:P305>`_
+
+`KLfG Critical Dictionary of foreign contemporary literature <https://www.wikidata.org/wiki/Property:P1289>`_
+
+`GS1 country code <https://www.wikidata.org/wiki/Property:P3067>`_
+
+`WALS lect code <https://www.wikidata.org/wiki/Property:P1466>`_
+
+`UNII <https://www.wikidata.org/wiki/Property:P652>`_
+
+`compulsory education (minimum age) <https://www.wikidata.org/wiki/Property:P3270>`_
+
+`FIPS 5-2 alpha code (US states) <https://www.wikidata.org/wiki/Property:P5086>`_
+
+`FIPS 5-2 numeric code (US states) <https://www.wikidata.org/wiki/Property:P5087>`_
+
+`position held <https://www.wikidata.org/wiki/Property:P39>`_
+
+`ISO 639-3 code <https://www.wikidata.org/wiki/Property:P220>`_
+
+`literal translation <https://www.wikidata.org/wiki/Property:P2441>`_
+
+`stated as <https://www.wikidata.org/wiki/Property:P1932>`_
+
+`Wikimedia language code <https://www.wikidata.org/wiki/Property:P424>`_
+
+`Amazon author page <https://www.wikidata.org/wiki/Property:P4862>`_
+
+`Twitter hashtag <https://www.wikidata.org/wiki/Property:P2572>`_
+
+`CAS Registry Number <https://www.wikidata.org/wiki/Property:P231>`_
+
+`retirement age <https://www.wikidata.org/wiki/Property:P3001>`_
+
+`ISO 639-1 code <https://www.wikidata.org/wiki/Property:P218>`_
+
+`BMLO <https://www.wikidata.org/wiki/Property:P865>`_
+
+`USDA NDB number <https://www.wikidata.org/wiki/Property:P1978>`_
+
+`has cause <https://www.wikidata.org/wiki/Property:P828>`_
+
+`sRGB color hex triplet <https://www.wikidata.org/wiki/Property:P465>`_
+
+`budget <https://www.wikidata.org/wiki/Property:P2769>`_
+
+`audio recording of the subject's spoken voice <https://www.wikidata.org/wiki/Property:P990>`_
+
+`EC number <https://www.wikidata.org/wiki/Property:P232>`_
+
+`width <https://www.wikidata.org/wiki/Property:P2049>`_
+
+`RIA Novosti reference <https://www.wikidata.org/wiki/Property:P6081>`_
+
+`DOI prefix <https://www.wikidata.org/wiki/Property:P1662>`_
+
+`German municipality key <https://www.wikidata.org/wiki/Property:P439>`_
+
+`sex or gender <https://www.wikidata.org/wiki/Property:P21>`_
+
+`DfE URN <https://www.wikidata.org/wiki/Property:P2253>`_
+
+`PubChem CID <https://www.wikidata.org/wiki/Property:P662>`_
+
+`InChIKey <https://www.wikidata.org/wiki/Property:P235>`_
+
+`German district key <https://www.wikidata.org/wiki/Property:P440>`_
+
+`chemical formula <https://www.wikidata.org/wiki/Property:P274>`_
+
+`canonical SMILES <https://www.wikidata.org/wiki/Property:P233>`_
+
+`InChI <https://www.wikidata.org/wiki/Property:P234>`_
+
+`street number <https://www.wikidata.org/wiki/Property:P670>`_
+
+`located on street <https://www.wikidata.org/wiki/Property:P669>`_
+
+`visitors per year <https://www.wikidata.org/wiki/Property:P1174>`_
+
+`Revised Romanization <https://www.wikidata.org/wiki/Property:P2001>`_
+
+`end cause <https://www.wikidata.org/wiki/Property:P1534>`_
+
+`GOST 7.75–97 code <https://www.wikidata.org/wiki/Property:P278>`_
+
+`chemical structure <https://www.wikidata.org/wiki/Property:P117>`_
+
+`oxidation state <https://www.wikidata.org/wiki/Property:P1121>`_
+
+`performer <https://www.wikidata.org/wiki/Property:P175>`_
+
+`Reaxys registry number <https://www.wikidata.org/wiki/Property:P1579>`_
+
+`nighttime view <https://www.wikidata.org/wiki/Property:P3451>`_
+
+`RxNorm CUI <https://www.wikidata.org/wiki/Property:P3345>`_
+
+`ZVG number <https://www.wikidata.org/wiki/Property:P679>`_
+
+`subtitle <https://www.wikidata.org/wiki/Property:P1680>`_
+
+`McCune-Reischauer romanization <https://www.wikidata.org/wiki/Property:P1942>`_
+
+`Swedish Literature Bank AuthorID <https://www.wikidata.org/wiki/Property:P5101>`_
+
+`external data available at <https://www.wikidata.org/wiki/Property:P1325>`_
+
+`ISCO occupation code <https://www.wikidata.org/wiki/Property:P952>`_
+
+`NRHP reference number <https://www.wikidata.org/wiki/Property:P649>`_
+
+`compulsory education (maximum age) <https://www.wikidata.org/wiki/Property:P3271>`_
+
+`ROME Occupation Code (v3) <https://www.wikidata.org/wiki/Property:P867>`_
+
+`PhilPapers topic <https://www.wikidata.org/wiki/Property:P3235>`_
+
+`excluding <https://www.wikidata.org/wiki/Property:P1011>`_
+
+`market capitalization <https://www.wikidata.org/wiki/Property:P2226>`_
+
+`Gmelin number <https://www.wikidata.org/wiki/Property:P1578>`_
+
+`of <https://www.wikidata.org/wiki/Property:P642>`_
+
+`Pinterest username <https://www.wikidata.org/wiki/Property:P3836>`_
+
+`date of official opening <https://www.wikidata.org/wiki/Property:P1619>`_
+
+`Italian cadastre code <https://www.wikidata.org/wiki/Property:P806>`_
+
+`median income <https://www.wikidata.org/wiki/Property:P3529>`_
+
+`first line <https://www.wikidata.org/wiki/Property:P1922>`_
+
+`China administrative division code <https://www.wikidata.org/wiki/Property:P442>`_
+
+`LAU <https://www.wikidata.org/wiki/Property:P782>`_
+
+`file extension <https://www.wikidata.org/wiki/Property:P1195>`_
+
+`electorate <https://www.wikidata.org/wiki/Property:P1831>`_
+
+`price <https://www.wikidata.org/wiki/Property:P2284>`_
+
+`Ethnologue.com language code <https://www.wikidata.org/wiki/Property:P1627>`_
+
+`Universal Decimal Classification <https://www.wikidata.org/wiki/Property:P1190>`_
+
+`proxy <https://www.wikidata.org/wiki/Property:P1393>`_
+
+`KulturNav-id <https://www.wikidata.org/wiki/Property:P1248>`_
+
+`urban population <https://www.wikidata.org/wiki/Property:P6343>`_
+
+`rural population <https://www.wikidata.org/wiki/Property:P6344>`_
+
+`relief location map <https://www.wikidata.org/wiki/Property:P1944>`_
+
+`speed limit <https://www.wikidata.org/wiki/Property:P3086>`_
+
+`official blog <https://www.wikidata.org/wiki/Property:P1581>`_
+
+`dantai code <https://www.wikidata.org/wiki/Property:P429>`_
+
+`Charity Commission no. <https://www.wikidata.org/wiki/Property:P3057>`_
+
+`M.49 code <https://www.wikidata.org/wiki/Property:P2082>`_
+
+`video <https://www.wikidata.org/wiki/Property:P10>`_
+
+`spoken text audio <https://www.wikidata.org/wiki/Property:P989>`_
+
+`temperature <https://www.wikidata.org/wiki/Property:P2076>`_
+
+`separated from <https://www.wikidata.org/wiki/Property:P807>`_
+
+`catalog <https://www.wikidata.org/wiki/Property:P972>`_
+
+`publisher <https://www.wikidata.org/wiki/Property:P123>`_
+
+`melting point <https://www.wikidata.org/wiki/Property:P2101>`_
+
+`last line <https://www.wikidata.org/wiki/Property:P3132>`_
+
+`vehicles per capita (1000) <https://www.wikidata.org/wiki/Property:P5167>`_
+
+`Indian census area code (2001) <https://www.wikidata.org/wiki/Property:P3213>`_
+
+`earliest date <https://www.wikidata.org/wiki/Property:P1319>`_
+
+`quantity <https://www.wikidata.org/wiki/Property:P1114>`_
+
+`Gini coefficient <https://www.wikidata.org/wiki/Property:P1125>`_
+
+`taxon common name <https://www.wikidata.org/wiki/Property:P1843>`_
+
+`INSEE municipality code <https://www.wikidata.org/wiki/Property:P374>`_
+
+`latest date <https://www.wikidata.org/wiki/Property:P1326>`_
+
+`part of <https://www.wikidata.org/wiki/Property:P361>`_
+
+`ACM Classification Code (2012) <https://www.wikidata.org/wiki/Property:P2179>`_
+
+`Cologne phonetics <https://www.wikidata.org/wiki/Property:P3879>`_
+
+`Soundex <https://www.wikidata.org/wiki/Property:P3878>`_
+
+`Caverphone <https://www.wikidata.org/wiki/Property:P3880>`_
+
+`identity of subject in context <https://www.wikidata.org/wiki/Property:P4649>`_
+
+`ISBN publisher prefix <https://www.wikidata.org/wiki/Property:P3035>`_
+
+`Library of Congress Classification <https://www.wikidata.org/wiki/Property:P1149>`_
+
+`IRS Employer Identification Number <https://www.wikidata.org/wiki/Property:P1297>`_
+
+`VAT-rate <https://www.wikidata.org/wiki/Property:P2855>`_
+
+`runway <https://www.wikidata.org/wiki/Property:P529>`_
+
+`number of cases <https://www.wikidata.org/wiki/Property:P1603>`_
+
+`Revised Hepburn romanization <https://www.wikidata.org/wiki/Property:P2125>`_
+
+`production code <https://www.wikidata.org/wiki/Property:P2364>`_
+
+`significant event <https://www.wikidata.org/wiki/Property:P793>`_
+
+`catalog code <https://www.wikidata.org/wiki/Property:P528>`_
+
+`timezone offset <https://www.wikidata.org/wiki/Property:P2907>`_
+
+`Biografisch Portaal number <https://www.wikidata.org/wiki/Property:P651>`_
+
+`INSEE department code <https://www.wikidata.org/wiki/Property:P2586>`_
+
+`Alexa rank <https://www.wikidata.org/wiki/Property:P1661>`_
+
+`ISWC <https://www.wikidata.org/wiki/Property:P1827>`_
+
+`field of work <https://www.wikidata.org/wiki/Property:P101>`_
+
+`number of seats <https://www.wikidata.org/wiki/Property:P1342>`_
+
+`total equity <https://www.wikidata.org/wiki/Property:P2137>`_
+
+`density <https://www.wikidata.org/wiki/Property:P2054>`_
+
+`writing system <https://www.wikidata.org/wiki/Property:P282>`_
+
+`contains administrative territorial entity <https://www.wikidata.org/wiki/Property:P150>`_
+
+`platform <https://www.wikidata.org/wiki/Property:P400>`_
+
+`autonomous system number <https://www.wikidata.org/wiki/Property:P3797>`_
+
+`IPI base code <https://www.wikidata.org/wiki/Property:P3453>`_
+
+`age of consent <https://www.wikidata.org/wiki/Property:P2999>`_
+
+`transliteration <https://www.wikidata.org/wiki/Property:P2440>`_
+
+`material used <https://www.wikidata.org/wiki/Property:P186>`_
+
+`award received <https://www.wikidata.org/wiki/Property:P166>`_
+
+`direction <https://www.wikidata.org/wiki/Property:P560>`_
+
+`present in work <https://www.wikidata.org/wiki/Property:P1441>`_
+
+`Reddit username <https://www.wikidata.org/wiki/Property:P4265>`_
+
+`Classification of Instructional Programs code <https://www.wikidata.org/wiki/Property:P2357>`_
+
+`pKa <https://www.wikidata.org/wiki/Property:P1117>`_
+
+`use <https://www.wikidata.org/wiki/Property:P366>`_
+
+`GitHub username <https://www.wikidata.org/wiki/Property:P2037>`_
+
+`place name sign <https://www.wikidata.org/wiki/Property:P1766>`_
+
+`perimeter <https://www.wikidata.org/wiki/Property:P2547>`_
+
+`Erdős number <https://www.wikidata.org/wiki/Property:P2021>`_
+
+`Munzinger Sport number <https://www.wikidata.org/wiki/Property:P1285>`_
+
+`World Health Organisation International Nonproprietary Name <https://www.wikidata.org/wiki/Property:P2275>`_
+
+`German regional key <https://www.wikidata.org/wiki/Property:P1388>`_
+
+`film poster <https://www.wikidata.org/wiki/Property:P3383>`_
+
+`number of pages <https://www.wikidata.org/wiki/Property:P1104>`_
+
+`total produced <https://www.wikidata.org/wiki/Property:P1092>`_
+
+`author <https://www.wikidata.org/wiki/Property:P50>`_
+
+`statement disputed by <https://www.wikidata.org/wiki/Property:P1310>`_
+
+`elected in <https://www.wikidata.org/wiki/Property:P2715>`_
+
+`educated at <https://www.wikidata.org/wiki/Property:P69>`_
+
+`award rationale <https://www.wikidata.org/wiki/Property:P6208>`_
+
+`UNSPSC Code <https://www.wikidata.org/wiki/Property:P2167>`_
+
+`INSEE region code <https://www.wikidata.org/wiki/Property:P2585>`_
+
+`CBS municipality code <https://www.wikidata.org/wiki/Property:P382>`_
+
+`named after <https://www.wikidata.org/wiki/Property:P138>`_
+
+`radius <https://www.wikidata.org/wiki/Property:P2120>`_
+
+`number of representatives in an organization/legislature <https://www.wikidata.org/wiki/Property:P1410>`_
+
+`vertical depth <https://www.wikidata.org/wiki/Property:P4511>`_
+
+`last words <https://www.wikidata.org/wiki/Property:P3909>`_
+
+`legislative body <https://www.wikidata.org/wiki/Property:P194>`_
+
+`employer <https://www.wikidata.org/wiki/Property:P108>`_
+
+`filming location <https://www.wikidata.org/wiki/Property:P915>`_
+
+`doctoral advisor <https://www.wikidata.org/wiki/Property:P184>`_
+
+`religious order <https://www.wikidata.org/wiki/Property:P611>`_
+
+`codename <https://www.wikidata.org/wiki/Property:P1638>`_
+
+`catchphrase <https://www.wikidata.org/wiki/Property:P6251>`_
+
+`IATA airport code <https://www.wikidata.org/wiki/Property:P238>`_
+
+`parliament.uk biography pages <https://www.wikidata.org/wiki/Property:P1996>`_
+
+`EPPO Code <https://www.wikidata.org/wiki/Property:P3031>`_
+
+`MCN code <https://www.wikidata.org/wiki/Property:P1987>`_
+
+`taxon name <https://www.wikidata.org/wiki/Property:P225>`_
+
+`SOC Code (2010) <https://www.wikidata.org/wiki/Property:P919>`_
+
+`RTECS number <https://www.wikidata.org/wiki/Property:P657>`_
+
+`main regulatory text <https://www.wikidata.org/wiki/Property:P92>`_
+
+`military rank <https://www.wikidata.org/wiki/Property:P410>`_
+
+`member of political party <https://www.wikidata.org/wiki/Property:P102>`_
+
+`attendance <https://www.wikidata.org/wiki/Property:P1110>`_
+
+`number of deaths <https://www.wikidata.org/wiki/Property:P1120>`_
+
+`aircraft registration prefix <https://www.wikidata.org/wiki/Property:P2986>`_
+
+`date of baptism in early childhood <https://www.wikidata.org/wiki/Property:P1636>`_
+
+`LinkedIn personal profile URL <https://www.wikidata.org/wiki/Property:P2035>`_
+
+`frequency of event <https://www.wikidata.org/wiki/Property:P2257>`_
+
+`TeX string <https://www.wikidata.org/wiki/Property:P1993>`_
+
+`time of discovery or invention <https://www.wikidata.org/wiki/Property:P575>`_
+
+`located on terrain feature <https://www.wikidata.org/wiki/Property:P706>`_
+
+`day in year for periodic occurrence <https://www.wikidata.org/wiki/Property:P837>`_
+
+`phone number <https://www.wikidata.org/wiki/Property:P1329>`_
+
+`Linguasphere code <https://www.wikidata.org/wiki/Property:P1396>`_
+
+`Politika topic <https://www.wikidata.org/wiki/Property:P6328>`_
+
+`volume as quantity <https://www.wikidata.org/wiki/Property:P2234>`_
+
+`ICAO airline designator <https://www.wikidata.org/wiki/Property:P230>`_
+
+`IATA airline designator <https://www.wikidata.org/wiki/Property:P229>`_
+
+`tuition fee <https://www.wikidata.org/wiki/Property:P5894>`_
+
+`Ameblo username <https://www.wikidata.org/wiki/Property:P3502>`_
+
+`IRC channel <https://www.wikidata.org/wiki/Property:P1613>`_
+
+`foreign direct investment net inflow <https://www.wikidata.org/wiki/Property:P2141>`_
+
+`ITIS TSN <https://www.wikidata.org/wiki/Property:P815>`_
+
+`watershed area <https://www.wikidata.org/wiki/Property:P2053>`_
+
+`ATC code <https://www.wikidata.org/wiki/Property:P267>`_
+
+`media type <https://www.wikidata.org/wiki/Property:P1163>`_
+
+`named by <https://www.wikidata.org/wiki/Property:P3938>`_
+
+`phase of matter <https://www.wikidata.org/wiki/Property:P515>`_
+
+`quote <https://www.wikidata.org/wiki/Property:P1683>`_
+
+`Swedish Anbytarforum <https://www.wikidata.org/wiki/Property:P6303>`_
+
+`mean age <https://www.wikidata.org/wiki/Property:P4442>`_
+
+`callsign of airline <https://www.wikidata.org/wiki/Property:P432>`_
+
+`Quora username <https://www.wikidata.org/wiki/Property:P4411>`_
+
+`monogram <https://www.wikidata.org/wiki/Property:P1543>`_
+
+`public domain date <https://www.wikidata.org/wiki/Property:P3893>`_
+
+`married name <https://www.wikidata.org/wiki/Property:P2562>`_
+
+`foreign direct investment net outflow <https://www.wikidata.org/wiki/Property:P2140>`_
+
+`units sold <https://www.wikidata.org/wiki/Property:P2664>`_
+
+`doubles record <https://www.wikidata.org/wiki/Property:P555>`_
+
+`singles record <https://www.wikidata.org/wiki/Property:P564>`_
+
+`CVR number <https://www.wikidata.org/wiki/Property:P1059>`_
+
+`page(s) <https://www.wikidata.org/wiki/Property:P304>`_
+
+`discharge <https://www.wikidata.org/wiki/Property:P2225>`_
+
+`statement supported by <https://www.wikidata.org/wiki/Property:P3680>`_
+
+`year of taxon name publication <https://www.wikidata.org/wiki/Property:P574>`_
+
+`taxon author <https://www.wikidata.org/wiki/Property:P405>`_
+
+`public key fingerprint <https://www.wikidata.org/wiki/Property:P3721>`_
+
+`date of burial or cremation <https://www.wikidata.org/wiki/Property:P4602>`_
+
+`Merchant Category Code <https://www.wikidata.org/wiki/Property:P4573>`_
+
+`INE municipality code <https://www.wikidata.org/wiki/Property:P772>`_
+
+`ICD-O <https://www.wikidata.org/wiki/Property:P563>`_
+
+`minimal incubation period in humans <https://www.wikidata.org/wiki/Property:P3488>`_
+
+`maximal incubation period in humans <https://www.wikidata.org/wiki/Property:P3487>`_
+
+`atomic number <https://www.wikidata.org/wiki/Property:P1086>`_
+
+`element symbol <https://www.wikidata.org/wiki/Property:P246>`_
+
+`NBN System Key <https://www.wikidata.org/wiki/Property:P3240>`_
+
+`boiling point <https://www.wikidata.org/wiki/Property:P2102>`_
+
+`Philippine Standard Geographic Code <https://www.wikidata.org/wiki/Property:P988>`_
+
+`Dictionary of Medieval Names from European Sources entry <https://www.wikidata.org/wiki/Property:P1888>`_
+
+`author name string <https://www.wikidata.org/wiki/Property:P2093>`_
+
+`admission rate <https://www.wikidata.org/wiki/Property:P5822>`_
+
+`orbital eccentricity <https://www.wikidata.org/wiki/Property:P1096>`_
+
+`number of parts of this work of art <https://www.wikidata.org/wiki/Property:P2635>`_
+
+`e-mail address <https://www.wikidata.org/wiki/Property:P968>`_
+
+`GRIN URL <https://www.wikidata.org/wiki/Property:P1421>`_
+
+`OLAC video game genre vocabulary <https://www.wikidata.org/wiki/Property:P6352>`_
+
+`collection or exhibition size <https://www.wikidata.org/wiki/Property:P1436>`_
+
+`sport <https://www.wikidata.org/wiki/Property:P641>`_
+
+`name of the character role <https://www.wikidata.org/wiki/Property:P4633>`_
+
+`doctoral thesis <https://www.wikidata.org/wiki/Property:P1026>`_
+
+`conferred by <https://www.wikidata.org/wiki/Property:P1027>`_
+
+`conscription number <https://www.wikidata.org/wiki/Property:P4856>`_
+
+`located in or next to body of water <https://www.wikidata.org/wiki/Property:P206>`_
+
+`ISO 4217 code <https://www.wikidata.org/wiki/Property:P498>`_
+
+`distance from Earth <https://www.wikidata.org/wiki/Property:P2583>`_
+
+`semi-major axis <https://www.wikidata.org/wiki/Property:P2233>`_
+
+`airline accounting code <https://www.wikidata.org/wiki/Property:P5703>`_
+
+`ICAO airport code <https://www.wikidata.org/wiki/Property:P239>`_
+
+`KldB-2010 occupation code <https://www.wikidata.org/wiki/Property:P1021>`_
+
+`Indian census area code (2011) <https://www.wikidata.org/wiki/Property:P5578>`_
+
+`number of participants <https://www.wikidata.org/wiki/Property:P1132>`_
+
+`maximum capacity <https://www.wikidata.org/wiki/Property:P1083>`_
+
+`ISO 3166-3 <https://www.wikidata.org/wiki/Property:P773>`_
+
+`E number <https://www.wikidata.org/wiki/Property:P628>`_
+
+`time-weighted average exposure limit <https://www.wikidata.org/wiki/Property:P2404>`_
+
+`Amsterdam code <https://www.wikidata.org/wiki/Property:P6434>`_
+
+`prevalence <https://www.wikidata.org/wiki/Property:P1193>`_
+
+`Debian stable package <https://www.wikidata.org/wiki/Property:P3442>`_
+
+`bug tracking system <https://www.wikidata.org/wiki/Property:P1401>`_
+
+`inventory number <https://www.wikidata.org/wiki/Property:P217>`_
+
+`distribution <https://www.wikidata.org/wiki/Property:P437>`_
+
+`intended public <https://www.wikidata.org/wiki/Property:P2360>`_
+
+`approved by <https://www.wikidata.org/wiki/Property:P790>`_
+
+`suicide rate <https://www.wikidata.org/wiki/Property:P3864>`_
+
+`age of candidacy <https://www.wikidata.org/wiki/Property:P2998>`_
+
+`Wikitribune category <https://www.wikidata.org/wiki/Property:P4973>`_
+
+`CLARA-ID <https://www.wikidata.org/wiki/Property:P1615>`_
+
+`Brazilian municipality code <https://www.wikidata.org/wiki/Property:P1585>`_
+
+`NLC authorities <https://www.wikidata.org/wiki/Property:P1213>`_
+
+`archival creator authority record at the Archives nationales <https://www.wikidata.org/wiki/Property:P3599>`_
+
+`vapor pressure <https://www.wikidata.org/wiki/Property:P2119>`_
+
+`ISO standard <https://www.wikidata.org/wiki/Property:P503>`_
+
+`MIL-STD-2525 Symbol Identification Code <https://www.wikidata.org/wiki/Property:P4297>`_
+
+`disease burden <https://www.wikidata.org/wiki/Property:P2854>`_
+
+`Swiss municipality code <https://www.wikidata.org/wiki/Property:P771>`_
+
+`fiscal/tax revenue <https://www.wikidata.org/wiki/Property:P3087>`_
+
+`number of houses <https://www.wikidata.org/wiki/Property:P4080>`_
+
+`NIS/INS code <https://www.wikidata.org/wiki/Property:P1567>`_
+
+`full work available at <https://www.wikidata.org/wiki/Property:P953>`_
+
+`administrative code of Indonesia <https://www.wikidata.org/wiki/Property:P2588>`_
+
+`basic form of government <https://www.wikidata.org/wiki/Property:P122>`_
+
+`voice actor <https://www.wikidata.org/wiki/Property:P725>`_
+
+`burial plot reference <https://www.wikidata.org/wiki/Property:P965>`_
+
+`draft pick number <https://www.wikidata.org/wiki/Property:P1836>`_
+
+`captain <https://www.wikidata.org/wiki/Property:P634>`_
+
+`individual tax rate <https://www.wikidata.org/wiki/Property:P2834>`_
+
+`Vimeo username <https://www.wikidata.org/wiki/Property:P4015>`_
+
+`maximum number of players <https://www.wikidata.org/wiki/Property:P1873>`_
+
+`flattening <https://www.wikidata.org/wiki/Property:P1102>`_
+
+`Austrian municipality key <https://www.wikidata.org/wiki/Property:P964>`_
+
+`Finnish municipality number <https://www.wikidata.org/wiki/Property:P1203>`_
+
+`date depicted <https://www.wikidata.org/wiki/Property:P2913>`_
+
+`amateur radio callsign <https://www.wikidata.org/wiki/Property:P5143>`_
+
+`residence time of water <https://www.wikidata.org/wiki/Property:P3020>`_
+
+`Quebec municipalities geographical code <https://www.wikidata.org/wiki/Property:P3856>`_
+
+`GeoNames feature code <https://www.wikidata.org/wiki/Property:P2452>`_
+
+`ISO 639-5 code <https://www.wikidata.org/wiki/Property:P1798>`_
+
+`EU VAT number <https://www.wikidata.org/wiki/Property:P3608>`_
+
+`discontinued date <https://www.wikidata.org/wiki/Property:P2669>`_
+
+`decomposition point <https://www.wikidata.org/wiki/Property:P2107>`_
+
+`electronegativity <https://www.wikidata.org/wiki/Property:P1108>`_
+
+`standard molar entropy <https://www.wikidata.org/wiki/Property:P3071>`_
+
+`botanist author abbreviation <https://www.wikidata.org/wiki/Property:P428>`_
+
+`cash <https://www.wikidata.org/wiki/Property:P2232>`_
+
+`WoRMS-ID <https://www.wikidata.org/wiki/Property:P850>`_
+
+`Norwegian municipality number <https://www.wikidata.org/wiki/Property:P2504>`_
+
+`lowest income threshold <https://www.wikidata.org/wiki/Property:P2835>`_
+
+`relative to <https://www.wikidata.org/wiki/Property:P2210>`_
+
+`affiliation <https://www.wikidata.org/wiki/Property:P1416>`_
+
+`has immediate cause <https://www.wikidata.org/wiki/Property:P1478>`_
+
+`has part <https://www.wikidata.org/wiki/Property:P527>`_
+
+`different from <https://www.wikidata.org/wiki/Property:P1889>`_
+
+`archive date <https://www.wikidata.org/wiki/Property:P2960>`_
+
+`voltage <https://www.wikidata.org/wiki/Property:P2436>`_
+
+`NSDAP membership number (1925–1945) <https://www.wikidata.org/wiki/Property:P2298>`_
+
+`minimum number of players <https://www.wikidata.org/wiki/Property:P1872>`_
+
+`orbital period <https://www.wikidata.org/wiki/Property:P2146>`_
+
+`apoapsis <https://www.wikidata.org/wiki/Property:P2243>`_
+
+`total liabilities <https://www.wikidata.org/wiki/Property:P2138>`_
+
+`ASIN <https://www.wikidata.org/wiki/Property:P5749>`_
+
+`term length of office <https://www.wikidata.org/wiki/Property:P2097>`_
+
+`GOST 7.67 cyrillic <https://www.wikidata.org/wiki/Property:P2988>`_
+
+`fee <https://www.wikidata.org/wiki/Property:P2555>`_
+
+`Cullum number <https://www.wikidata.org/wiki/Property:P4026>`_
+
+`PubMed Health <https://www.wikidata.org/wiki/Property:P653>`_
+
+`water footprint <https://www.wikidata.org/wiki/Property:P6000>`_
+
+`Yahoo Answers category <https://www.wikidata.org/wiki/Property:P5084>`_
+
+`vocalized name <https://www.wikidata.org/wiki/Property:P4239>`_
+
+`Artists in Canada record number <https://www.wikidata.org/wiki/Property:P5239>`_
+
+`SBC-2010 occupation code <https://www.wikidata.org/wiki/Property:P1023>`_
+
+`RePEc Short-ID <https://www.wikidata.org/wiki/Property:P2428>`_
+
+`format as a regular expression <https://www.wikidata.org/wiki/Property:P1793>`_
+
+`Swedish urban area code <https://www.wikidata.org/wiki/Property:P775>`_
+
+`IDLH <https://www.wikidata.org/wiki/Property:P2129>`_
+
+`flash point <https://www.wikidata.org/wiki/Property:P2128>`_
+
+`sectional view <https://www.wikidata.org/wiki/Property:P2713>`_
+
+`Ubuntu package <https://www.wikidata.org/wiki/Property:P3473>`_
+
+`Arch Linux package <https://www.wikidata.org/wiki/Property:P3454>`_
+
+`FAA airport code <https://www.wikidata.org/wiki/Property:P240>`_
+
+`Minor Planet Center observatory code <https://www.wikidata.org/wiki/Property:P717>`_
+
+`ISSN <https://www.wikidata.org/wiki/Property:P236>`_
+
+`license <https://www.wikidata.org/wiki/Property:P275>`_
+
+`applies to people <https://www.wikidata.org/wiki/Property:P6001>`_
+
+`based on heuristic <https://www.wikidata.org/wiki/Property:P887>`_
+
+`refine date <https://www.wikidata.org/wiki/Property:P4241>`_
+
+`stated age at event <https://www.wikidata.org/wiki/Property:P3629>`_
+
+`pressure <https://www.wikidata.org/wiki/Property:P2077>`_
+
+`medical condition <https://www.wikidata.org/wiki/Property:P1050>`_
+
+`member of <https://www.wikidata.org/wiki/Property:P463>`_
+
+`conflict <https://www.wikidata.org/wiki/Property:P607>`_
+
+`military branch <https://www.wikidata.org/wiki/Property:P241>`_
+
+`head of state <https://www.wikidata.org/wiki/Property:P35>`_
+
+`image <https://www.wikidata.org/wiki/Property:P18>`_
+
+`occupation <https://www.wikidata.org/wiki/Property:P106>`_
+
+`votes received <https://www.wikidata.org/wiki/Property:P1111>`_
+
+`running mate <https://www.wikidata.org/wiki/Property:P6149>`_
+
+`instrument <https://www.wikidata.org/wiki/Property:P1303>`_
+
+`last update <https://www.wikidata.org/wiki/Property:P5017>`_
+
+`inscription <https://www.wikidata.org/wiki/Property:P1684>`_
+
+`UNDP country code <https://www.wikidata.org/wiki/Property:P2983>`_
+
+`argument of periapsis <https://www.wikidata.org/wiki/Property:P2248>`_
+
+`periapsis <https://www.wikidata.org/wiki/Property:P2244>`_
+
+`longitude of ascending node <https://www.wikidata.org/wiki/Property:P2213>`_
+
+`orbital inclination <https://www.wikidata.org/wiki/Property:P2045>`_
+
+`apparent magnitude <https://www.wikidata.org/wiki/Property:P1215>`_
+
+`KLG Kritisches Lexikon der Gegenwartsliteratur <https://www.wikidata.org/wiki/Property:P1288>`_
+
+`UAI code <https://www.wikidata.org/wiki/Property:P3202>`_
+
+`SIRET number <https://www.wikidata.org/wiki/Property:P3215>`_
+
+`sports league level <https://www.wikidata.org/wiki/Property:P3983>`_
+
+`DOI <https://www.wikidata.org/wiki/Property:P356>`_
+
+`webcam page URL <https://www.wikidata.org/wiki/Property:P4238>`_
+
+`CRICOS Provider Code <https://www.wikidata.org/wiki/Property:P2651>`_
+
+`Wikimedia username <https://www.wikidata.org/wiki/Property:P4174>`_
+
+`solubility <https://www.wikidata.org/wiki/Property:P2177>`_
+
+`ABS ASCL code <https://www.wikidata.org/wiki/Property:P1251>`_
+
+`ionization energy <https://www.wikidata.org/wiki/Property:P2260>`_
+
+`event distance <https://www.wikidata.org/wiki/Property:P3157>`_
+
+`International Standard Industrial Classification code Rev.4 <https://www.wikidata.org/wiki/Property:P1796>`_
+
+`OKPD2 code of the good or service <https://www.wikidata.org/wiki/Property:P3250>`_
+
+`Central Index Key <https://www.wikidata.org/wiki/Property:P5531>`_
+
+`time in space <https://www.wikidata.org/wiki/Property:P2873>`_
+
+`number of graves <https://www.wikidata.org/wiki/Property:P2351>`_
+
+`Australian Business Number <https://www.wikidata.org/wiki/Property:P3548>`_
+
+`Norwegian organisation number <https://www.wikidata.org/wiki/Property:P2333>`_
+
+`NACE code <https://www.wikidata.org/wiki/Property:P4496>`_
+
+`Danish urban area code <https://www.wikidata.org/wiki/Property:P1894>`_
+
+`number of constituencies <https://www.wikidata.org/wiki/Property:P4253>`_
+
+`SSR place name number <https://www.wikidata.org/wiki/Property:P1850>`_
+
+`Wine AppDB-ID <https://www.wikidata.org/wiki/Property:P600>`_
+
+`beats per minute <https://www.wikidata.org/wiki/Property:P1725>`_
+
+`foundational text <https://www.wikidata.org/wiki/Property:P457>`_
+
+`highest income threshold <https://www.wikidata.org/wiki/Property:P2836>`_
+
+`editor <https://www.wikidata.org/wiki/Property:P98>`_
+
+`operator <https://www.wikidata.org/wiki/Property:P137>`_
+
+`pinyin transliteration <https://www.wikidata.org/wiki/Property:P1721>`_
+
+`maximum age <https://www.wikidata.org/wiki/Property:P4135>`_
+
+`minimum quantity <https://www.wikidata.org/wiki/Property:P2313>`_
+
+`maximum value <https://www.wikidata.org/wiki/Property:P2312>`_
+
+`has edition <https://www.wikidata.org/wiki/Property:P747>`_
+
+`currency <https://www.wikidata.org/wiki/Property:P38>`_
+
+`heritage designation <https://www.wikidata.org/wiki/Property:P1435>`_
+
+`main subject <https://www.wikidata.org/wiki/Property:P921>`_
+
+`route of administration <https://www.wikidata.org/wiki/Property:P636>`_
+
+`solvent <https://www.wikidata.org/wiki/Property:P2178>`_
+
+`member of sports team <https://www.wikidata.org/wiki/Property:P54>`_
+
+`used by <https://www.wikidata.org/wiki/Property:P1535>`_
+
+`alternate names <https://www.wikidata.org/wiki/Property:P4970>`_
+
+`described by source <https://www.wikidata.org/wiki/Property:P1343>`_
+
+`operating system <https://www.wikidata.org/wiki/Property:P306>`_
+
+`identity of object in context <https://www.wikidata.org/wiki/Property:P4626>`_
+
+`incidence <https://www.wikidata.org/wiki/Property:P2844>`_
+
+`central government debt as a percent of GDP <https://www.wikidata.org/wiki/Property:P1689>`_
+
+`synodic period <https://www.wikidata.org/wiki/Property:P4341>`_
+
+`albedo <https://www.wikidata.org/wiki/Property:P4501>`_
+
+`diameter <https://www.wikidata.org/wiki/Property:P2386>`_
+
+`schematic <https://www.wikidata.org/wiki/Property:P5555>`_
+
+`ISO 9362 SWIFT/BIC code <https://www.wikidata.org/wiki/Property:P2627>`_
+
+`Irish Grid Reference <https://www.wikidata.org/wiki/Property:P4091>`_
+
+`total goals in career <https://www.wikidata.org/wiki/Property:P6509>`_
+
+`Common Procurement Vocabulary <https://www.wikidata.org/wiki/Property:P5417>`_
+
+`HTML entity <https://www.wikidata.org/wiki/Property:P4575>`_
+
+`GS1 Global Product Classification brick code <https://www.wikidata.org/wiki/Property:P5420>`_
+
+`United States Armed Forces service number <https://www.wikidata.org/wiki/Property:P2028>`_
+
+`Enterprise number (Belgium) <https://www.wikidata.org/wiki/Property:P3376>`_
+
+`Dictionary of New Zealand Biography <https://www.wikidata.org/wiki/Property:P2745>`_
+
+`ISO 15924 numeric code <https://www.wikidata.org/wiki/Property:P2620>`_
+
+`ISO 15924 alpha-4 code <https://www.wikidata.org/wiki/Property:P506>`_
+
+`DNB editions <https://www.wikidata.org/wiki/Property:P1292>`_
+
+`Parsons code <https://www.wikidata.org/wiki/Property:P1236>`_
+
+`Telegram username <https://www.wikidata.org/wiki/Property:P3789>`_
+
+`Minitel code <https://www.wikidata.org/wiki/Property:P2878>`_
+
+`fleet or registration number <https://www.wikidata.org/wiki/Property:P2802>`_
+
+`PlantList-ID <https://www.wikidata.org/wiki/Property:P1070>`_
+
+`Library of Congress Cultural Heritage Organizations <https://www.wikidata.org/wiki/Property:P3234>`_
+
+`Dictionary of Swedish National Biography <https://www.wikidata.org/wiki/Property:P3217>`_
+
+`WALS family code <https://www.wikidata.org/wiki/Property:P1468>`_
+
+`first flight <https://www.wikidata.org/wiki/Property:P606>`_
+
+`standard enthalpy of formation <https://www.wikidata.org/wiki/Property:P3078>`_
+
+`refractive index <https://www.wikidata.org/wiki/Property:P1109>`_
+
+`Gentoo package <https://www.wikidata.org/wiki/Property:P3499>`_
+
+`Fedora package <https://www.wikidata.org/wiki/Property:P3463>`_
+
+`PO Box <https://www.wikidata.org/wiki/Property:P2918>`_
+
+`thermal conductivity <https://www.wikidata.org/wiki/Property:P2068>`_
+
+`electrical conductivity <https://www.wikidata.org/wiki/Property:P2055>`_
+
+`EDRPOU code <https://www.wikidata.org/wiki/Property:P3125>`_
+
+`quantity buried <https://www.wikidata.org/wiki/Property:P2324>`_
+
+`Artsy gene <https://www.wikidata.org/wiki/Property:P2411>`_
+
+`NOC Occupation Code <https://www.wikidata.org/wiki/Property:P918>`_
+
+`DSM-5 classification <https://www.wikidata.org/wiki/Property:P1930>`_
+
+`UNESCO Biosphere Reserve url <https://www.wikidata.org/wiki/Property:P2520>`_
+
+`CosIng number <https://www.wikidata.org/wiki/Property:P3073>`_
+
+`TA98 Latin term <https://www.wikidata.org/wiki/Property:P3982>`_
+
+`Bulbapedia article <https://www.wikidata.org/wiki/Property:P4845>`_
+
+`TERYT municipality code <https://www.wikidata.org/wiki/Property:P1653>`_
+
+`ELSTAT geographical code <https://www.wikidata.org/wiki/Property:P1116>`_
+
+`Code of Household Registration and Conscription Information System (Taiwan) <https://www.wikidata.org/wiki/Property:P5020>`_
+
+`religious name <https://www.wikidata.org/wiki/Property:P1635>`_
+
+`heart rate <https://www.wikidata.org/wiki/Property:P3395>`_
+
+`speed <https://www.wikidata.org/wiki/Property:P2052>`_
+
+`maximum frequency of audible sound <https://www.wikidata.org/wiki/Property:P3465>`_
+
+`minimum frequency of audible sound <https://www.wikidata.org/wiki/Property:P3387>`_
+
+`MAME ROM name <https://www.wikidata.org/wiki/Property:P2451>`_
+
+`floruit <https://www.wikidata.org/wiki/Property:P1317>`_
+
+`pronunciation variety <https://www.wikidata.org/wiki/Property:P5237>`_
+
+`destination point <https://www.wikidata.org/wiki/Property:P1444>`_
+
+`start point <https://www.wikidata.org/wiki/Property:P1427>`_
+
+`subject item of this property <https://www.wikidata.org/wiki/Property:P1629>`_
+
+`highest point <https://www.wikidata.org/wiki/Property:P610>`_
+
+`located in time zone <https://www.wikidata.org/wiki/Property:P421>`_
+
+`original network <https://www.wikidata.org/wiki/Property:P449>`_
+
+`Möllendorff transliteration <https://www.wikidata.org/wiki/Property:P5139>`_
+
+`conversion to standard unit <https://www.wikidata.org/wiki/Property:P2442>`_
+
+`influenced by <https://www.wikidata.org/wiki/Property:P737>`_
+
+`grammatical gender <https://www.wikidata.org/wiki/Property:P5185>`_
+
+`memory capacity <https://www.wikidata.org/wiki/Property:P2928>`_
+
+`location of formation <https://www.wikidata.org/wiki/Property:P740>`_
+
+`applies to name <https://www.wikidata.org/wiki/Property:P5168>`_
+
+`twinned administrative body <https://www.wikidata.org/wiki/Property:P190>`_
+
+`organizer <https://www.wikidata.org/wiki/Property:P664>`_
+
+`operating area <https://www.wikidata.org/wiki/Property:P2541>`_
+
+`country of citizenship <https://www.wikidata.org/wiki/Property:P27>`_
+
+`composer <https://www.wikidata.org/wiki/Property:P86>`_
+
+`headquarters location <https://www.wikidata.org/wiki/Property:P159>`_
+
+`lyrics by <https://www.wikidata.org/wiki/Property:P676>`_
+
+`has effect <https://www.wikidata.org/wiki/Property:P1542>`_
+
+`cause of death <https://www.wikidata.org/wiki/Property:P509>`_
+
+`represented by <https://www.wikidata.org/wiki/Property:P1875>`_
+
+`penalty <https://www.wikidata.org/wiki/Property:P1596>`_
+
+`court <https://www.wikidata.org/wiki/Property:P4884>`_
+
+`number confirmed <https://www.wikidata.org/wiki/Property:P1674>`_
+
+`central bank/issuer <https://www.wikidata.org/wiki/Property:P562>`_
+
+`drafted by <https://www.wikidata.org/wiki/Property:P647>`_
+
+`EThOS thesis ID <https://www.wikidata.org/wiki/Property:P4536>`_
+
+`cabinet <https://www.wikidata.org/wiki/Property:P5054>`_
+
+`killed by <https://www.wikidata.org/wiki/Property:P157>`_
+
+`mother <https://www.wikidata.org/wiki/Property:P25>`_
+
+`appointed by <https://www.wikidata.org/wiki/Property:P748>`_
+
+`creator <https://www.wikidata.org/wiki/Property:P170>`_
+
+`tributary orientation <https://www.wikidata.org/wiki/Property:P3871>`_
+
+`genre <https://www.wikidata.org/wiki/Property:P136>`_
+
+`directions <https://www.wikidata.org/wiki/Property:P2795>`_
+
+`weather history <https://www.wikidata.org/wiki/Property:P4150>`_
+
+`magnetic moment <https://www.wikidata.org/wiki/Property:P2069>`_
+
+`mean anomaly <https://www.wikidata.org/wiki/Property:P2325>`_
+
+`production date <https://www.wikidata.org/wiki/Property:P2754>`_
+
+`streaming media URL <https://www.wikidata.org/wiki/Property:P963>`_
+
+`Medium username <https://www.wikidata.org/wiki/Property:P3899>`_
+
+`Indian census area code (1991) <https://www.wikidata.org/wiki/Property:P6503>`_
+
+`KSH code <https://www.wikidata.org/wiki/Property:P939>`_
+
+`total exports <https://www.wikidata.org/wiki/Property:P2135>`_
+
+`IDESCAT territorial code in Catalonia <https://www.wikidata.org/wiki/Property:P4335>`_
+
+`road number <https://www.wikidata.org/wiki/Property:P1824>`_
+
+`PCP reference number <https://www.wikidata.org/wiki/Property:P381>`_
+
+`base salary <https://www.wikidata.org/wiki/Property:P3618>`_
+
+`Education Institution Identification Number <https://www.wikidata.org/wiki/Property:P6390>`_
+
+`GS1 Manufacturer code <https://www.wikidata.org/wiki/Property:P3193>`_
+
+`awarded for period <https://www.wikidata.org/wiki/Property:P4566>`_
+
+`GEMS Code <https://www.wikidata.org/wiki/Property:P4695>`_
+
+`Index Herbariorum code <https://www.wikidata.org/wiki/Property:P5858>`_
+
+`average shot length <https://www.wikidata.org/wiki/Property:P2208>`_
+
+`DBU playerprofile <https://www.wikidata.org/wiki/Property:P6109>`_
+
+`PictoRight ID-Droit de suite <https://www.wikidata.org/wiki/Property:P3892>`_
+
+`minimum explosive concentration <https://www.wikidata.org/wiki/Property:P2204>`_
+
+`median lethal dose <https://www.wikidata.org/wiki/Property:P2240>`_
+
+`channel number <https://www.wikidata.org/wiki/Property:P3970>`_
+
+`Portuguese Job Code CPP-2010 <https://www.wikidata.org/wiki/Property:P1052>`_
+
+`volume <https://www.wikidata.org/wiki/Property:P478>`_
+
+`Scottish Charity number <https://www.wikidata.org/wiki/Property:P3163>`_
+
+`Catalogus Professorum Halensis <https://www.wikidata.org/wiki/Property:P2005>`_
+
+`Biographical Dictionary of Swedish Women <https://www.wikidata.org/wiki/Property:P4963>`_
+
+`time index <https://www.wikidata.org/wiki/Property:P4895>`_
+
+`SIRUTA code <https://www.wikidata.org/wiki/Property:P843>`_
+
+`Swedish municipality code <https://www.wikidata.org/wiki/Property:P525>`_
+
+`ceiling exposure limit <https://www.wikidata.org/wiki/Property:P2405>`_
+
+`short-term exposure limit <https://www.wikidata.org/wiki/Property:P2407>`_
+
+`speed of sound <https://www.wikidata.org/wiki/Property:P2075>`_
+
+`UN number <https://www.wikidata.org/wiki/Property:P695>`_
+
+`combustion enthalpy <https://www.wikidata.org/wiki/Property:P2117>`_
+
+`autoignition temperature <https://www.wikidata.org/wiki/Property:P2199>`_
+
+`upper flammable limit <https://www.wikidata.org/wiki/Property:P2203>`_
+
+`lower flammable limit <https://www.wikidata.org/wiki/Property:P2202>`_
+
+`UN class <https://www.wikidata.org/wiki/Property:P874>`_
+
+`UN packaging group <https://www.wikidata.org/wiki/Property:P876>`_
+
+`Kemler code <https://www.wikidata.org/wiki/Property:P700>`_
+
+`SIC code <https://www.wikidata.org/wiki/Property:P3242>`_
+
+`SlideShare username <https://www.wikidata.org/wiki/Property:P4016>`_
+
+`Thailand central administrative unit code <https://www.wikidata.org/wiki/Property:P1067>`_
+
+`Party Number (Taiwan) <https://www.wikidata.org/wiki/Property:P5296>`_
+
+`floors below ground <https://www.wikidata.org/wiki/Property:P1139>`_
+
+`floors above ground <https://www.wikidata.org/wiki/Property:P1101>`_
+
+`number of elevators <https://www.wikidata.org/wiki/Property:P1301>`_
+
+`Academia.edu profile URL <https://www.wikidata.org/wiki/Property:P5715>`_
+
+`Consolidated code of the electronic catalog of libraries of Belarus <https://www.wikidata.org/wiki/Property:P3390>`_
+
+`Nupill Literatura Digital - Author <https://www.wikidata.org/wiki/Property:P1473>`_
+
+`compressive modulus of elasticity <https://www.wikidata.org/wiki/Property:P5993>`_
+
+`defined daily dose <https://www.wikidata.org/wiki/Property:P4250>`_
+
+`Mastodon address <https://www.wikidata.org/wiki/Property:P4033>`_
+
+`British Museum bioID <https://www.wikidata.org/wiki/Property:P6077>`_
+
+`Swiss Football Association Club Number <https://www.wikidata.org/wiki/Property:P1241>`_
+
+`dynamic viscosity <https://www.wikidata.org/wiki/Property:P3070>`_
+
+`rotation period <https://www.wikidata.org/wiki/Property:P2147>`_
+
+`spectral class <https://www.wikidata.org/wiki/Property:P215>`_
+
+`absolute magnitude <https://www.wikidata.org/wiki/Property:P1457>`_
+
+`angular diameter <https://www.wikidata.org/wiki/Property:P5348>`_
+
+`luminosity <https://www.wikidata.org/wiki/Property:P2060>`_
+
+`metallicity <https://www.wikidata.org/wiki/Property:P2227>`_
+
+`number of spans <https://www.wikidata.org/wiki/Property:P1314>`_
+
+`clearance <https://www.wikidata.org/wiki/Property:P2793>`_
+
+`National Bridge Inventory Number <https://www.wikidata.org/wiki/Property:P3676>`_
+
+`longest span <https://www.wikidata.org/wiki/Property:P2787>`_
+
+`publication interval <https://www.wikidata.org/wiki/Property:P2896>`_
+
+`Swedish Organization Number <https://www.wikidata.org/wiki/Property:P6460>`_
+
+`total expenditure <https://www.wikidata.org/wiki/Property:P2402>`_
+
+`Dreadnought Project page <https://www.wikidata.org/wiki/Property:P4589>`_
+
+`eligible voters <https://www.wikidata.org/wiki/Property:P1867>`_
+
+`salinity <https://www.wikidata.org/wiki/Property:P4350>`_
+
+`OpenCorporates corporate grouping <https://www.wikidata.org/wiki/Property:P5256>`_
+
+`author citation (zoology) <https://www.wikidata.org/wiki/Property:P835>`_
+
+`Museofile <https://www.wikidata.org/wiki/Property:P539>`_
+
+`fax number <https://www.wikidata.org/wiki/Property:P2900>`_
+
+`SWB editions <https://www.wikidata.org/wiki/Property:P1044>`_
+
+`AISHE code <https://www.wikidata.org/wiki/Property:P6392>`_
+
+`tabular population <https://www.wikidata.org/wiki/Property:P4179>`_
+
+`embodied energy <https://www.wikidata.org/wiki/Property:P6075>`_
+
+`relative permeability <https://www.wikidata.org/wiki/Property:P5676>`_
+
+`minimum age <https://www.wikidata.org/wiki/Property:P2899>`_
+
+`post town <https://www.wikidata.org/wiki/Property:P4595>`_
+
+`Iranian National Heritage registration number <https://www.wikidata.org/wiki/Property:P1369>`_
+
+`service entry <https://www.wikidata.org/wiki/Property:P729>`_
+
+`stall speed <https://www.wikidata.org/wiki/Property:P6510>`_
+
+`charter URL <https://www.wikidata.org/wiki/Property:P6378>`_
+
+`Statistics Indonesia ethnicity code <https://www.wikidata.org/wiki/Property:P2589>`_
+
+`Norway Import Service and Registration Authority publisher code <https://www.wikidata.org/wiki/Property:P1275>`_
+
+`consumption rate per capita <https://www.wikidata.org/wiki/Property:P2662>`_
+
+`consumption rate <https://www.wikidata.org/wiki/Property:P2292>`_
+
+`Harmonized System Code <https://www.wikidata.org/wiki/Property:P5471>`_
+
+`Australian Company Number <https://www.wikidata.org/wiki/Property:P3549>`_
+
+`illiterate population <https://www.wikidata.org/wiki/Property:P6498>`_
+
+`literate population <https://www.wikidata.org/wiki/Property:P6499>`_
+
+`depicts Iconclass notation <https://www.wikidata.org/wiki/Property:P1257>`_
+
+`Sächsische Biografie <https://www.wikidata.org/wiki/Property:P1710>`_
+
+`personal best <https://www.wikidata.org/wiki/Property:P2415>`_
+
+`ResearcherID <https://www.wikidata.org/wiki/Property:P1053>`_
+
+`LIBRIS editions <https://www.wikidata.org/wiki/Property:P1182>`_
+
+`snap package <https://www.wikidata.org/wiki/Property:P4435>`_
+
+`draft <https://www.wikidata.org/wiki/Property:P2262>`_
+
+`beam <https://www.wikidata.org/wiki/Property:P2261>`_
+
+`call sign <https://www.wikidata.org/wiki/Property:P2317>`_
+
+`IMO ship number <https://www.wikidata.org/wiki/Property:P458>`_
+
+`yard number <https://www.wikidata.org/wiki/Property:P617>`_
+
+`Portable Game Notation <https://www.wikidata.org/wiki/Property:P5286>`_
+
+`IIIF manifest <https://www.wikidata.org/wiki/Property:P6108>`_
+
+`Amtrak station code <https://www.wikidata.org/wiki/Property:P4803>`_
+
+`OKPD code of the good or service <https://www.wikidata.org/wiki/Property:P3245>`_
+
+`start period <https://www.wikidata.org/wiki/Property:P3415>`_
+
+`languages spoken, written or signed <https://www.wikidata.org/wiki/Property:P1412>`_
+
+`upper limit <https://www.wikidata.org/wiki/Property:P5448>`_
+
+`lower limit <https://www.wikidata.org/wiki/Property:P5447>`_
+
+`subclass of <https://www.wikidata.org/wiki/Property:P279>`_
+
+`part of the series <https://www.wikidata.org/wiki/Property:P179>`_
+
+`donated by <https://www.wikidata.org/wiki/Property:P1028>`_
+
+`capital <https://www.wikidata.org/wiki/Property:P36>`_
+
+`applies to taxon <https://www.wikidata.org/wiki/Property:P2352>`_
+
+`published in <https://www.wikidata.org/wiki/Property:P1433>`_
+
+`addressee <https://www.wikidata.org/wiki/Property:P1817>`_
+
+`regular expression syntax <https://www.wikidata.org/wiki/Property:P4240>`_
+
+`stated in <https://www.wikidata.org/wiki/Property:P248>`_
+
+`parliamentary term <https://www.wikidata.org/wiki/Property:P2937>`_
+
+`said to be the same as <https://www.wikidata.org/wiki/Property:P460>`_
+
+`lowest point <https://www.wikidata.org/wiki/Property:P1589>`_
+
+`rating <https://www.wikidata.org/wiki/Property:P4271>`_
+
+`native language <https://www.wikidata.org/wiki/Property:P103>`_
+
+`religion <https://www.wikidata.org/wiki/Property:P140>`_
+
+`voice type <https://www.wikidata.org/wiki/Property:P412>`_
+
+`collection <https://www.wikidata.org/wiki/Property:P195>`_
+
+`spouse <https://www.wikidata.org/wiki/Property:P26>`_
+
+`manufacturer <https://www.wikidata.org/wiki/Property:P176>`_
+
+`item operated <https://www.wikidata.org/wiki/Property:P121>`_
+
+关系
+----------------------------------------------------------------
+
+`occupation <https://www.wikidata.org/wiki/Q12737077>`_
+
+`country <https://www.wikidata.org/wiki/Q6256>`_
+
+`genre <https://www.wikidata.org/wiki/Q483394>`_
+
+`ethnic group <https://www.wikidata.org/wiki/Q41710>`_
+
+`record label <https://www.wikidata.org/wiki/Q18127>`_
+
+`sport <https://www.wikidata.org/wiki/Q349>`_
+
+`composer <https://www.wikidata.org/wiki/Q36834>`_
+
+`screenwriter <https://www.wikidata.org/wiki/Q28389>`_
+
+`voice actor <https://www.wikidata.org/wiki/Q2405480>`_
+
+`cause of death <https://www.wikidata.org/wiki/Q1931388>`_
+
+`religion <https://www.wikidata.org/wiki/Q9174>`_
+
+`manner of death <https://www.wikidata.org/wiki/Q2438541>`_
+
+`capital <https://www.wikidata.org/wiki/Q5119>`_
+
+`has part <https://www.wikidata.org/wiki/Q24575087>`_
+
+`color <https://www.wikidata.org/wiki/Q1075>`_
+
+`military branch <https://www.wikidata.org/wiki/Q781132>`_
+
+`industry <https://www.wikidata.org/wiki/Q8148>`_
+
+`author <https://www.wikidata.org/wiki/Q482980>`_
+
+`eye color <https://www.wikidata.org/wiki/Q23786>`_
+
+`currency <https://www.wikidata.org/wiki/Q8142>`_
+
+`family name <https://www.wikidata.org/wiki/Q101352>`_
+
+`academic degree <https://www.wikidata.org/wiki/Q189533>`_
+
+`head of government <https://www.wikidata.org/wiki/Q2285706>`_
+
+`political ideology <https://www.wikidata.org/wiki/Q14934048>`_
+
+`military rank <https://www.wikidata.org/wiki/Q56019>`_
+
+`programming language <https://www.wikidata.org/wiki/Q9143>`_
+
+`heritage designation <https://www.wikidata.org/wiki/Q30634609>`_
+
+`operating system <https://www.wikidata.org/wiki/Q9135>`_
+
+`programming paradigm <https://www.wikidata.org/wiki/Q188267>`_
+
+`soundtrack album <https://www.wikidata.org/wiki/Q4176708>`_
+
+`family <https://www.wikidata.org/wiki/Q8436>`_
+
+`chief executive officer <https://www.wikidata.org/wiki/Q484876>`_
+
+`architectural style <https://www.wikidata.org/wiki/Q32880>`_
+
+`mountain range <https://www.wikidata.org/wiki/Q46831>`_
+
+`diaspora <https://www.wikidata.org/wiki/Q133004>`_
+
+`republic <https://www.wikidata.org/wiki/Q7270>`_
+
+`drama film <https://www.wikidata.org/wiki/Q130232>`_
+
+`forward <https://www.wikidata.org/wiki/Q280658>`_
+
+`violin <https://www.wikidata.org/wiki/Q8355>`_
+
+`marriage <https://www.wikidata.org/wiki/Q8445>`_
+
+`experimental music <https://www.wikidata.org/wiki/Q1640319>`_
+
+`Christianity <https://www.wikidata.org/wiki/Q5043>`_
+
+`television <https://www.wikidata.org/wiki/Q289>`_
+
+`historical period drama <https://www.wikidata.org/wiki/Q7168625>`_
+
+`running back <https://www.wikidata.org/wiki/Q912985>`_
+
+`prime minister <https://www.wikidata.org/wiki/Q14212>`_
+
+`drum <https://www.wikidata.org/wiki/Q11404>`_
+
+`action film <https://www.wikidata.org/wiki/Q188473>`_
+
+`guitar <https://www.wikidata.org/wiki/Q6607>`_
+
+`synthesizer <https://www.wikidata.org/wiki/Q163829>`_
+
+`male organism <https://www.wikidata.org/wiki/Q44148>`_
+
+`computer science <https://www.wikidata.org/wiki/Q21198>`_
+
+`special effects <https://www.wikidata.org/wiki/Q381243>`_
+
+`actor <https://www.wikidata.org/wiki/Q33999>`_
+
+`video game <https://www.wikidata.org/wiki/Q7889>`_
+
+`English <https://www.wikidata.org/wiki/Q1860>`_
+
+`comedy <https://www.wikidata.org/wiki/Q40831>`_
+
+`vice president <https://www.wikidata.org/wiki/Q42178>`_
+
+`cult film <https://www.wikidata.org/wiki/Q219557>`_
+
+`politics <https://www.wikidata.org/wiki/Q7163>`_
+
+`reggae <https://www.wikidata.org/wiki/Q9794>`_
+
+`engineering <https://www.wikidata.org/wiki/Q11023>`_
+
+`alternative rock <https://www.wikidata.org/wiki/Q11366>`_
+
+`piano <https://www.wikidata.org/wiki/Q5994>`_
+
+`democracy <https://www.wikidata.org/wiki/Q7174>`_
+
+`secretary of state <https://www.wikidata.org/wiki/Q736559>`_
+
+`president <https://www.wikidata.org/wiki/Q30461>`_
+
+`writer <https://www.wikidata.org/wiki/Q36180>`_
+
+`biography <https://www.wikidata.org/wiki/Q36279>`_
+
+`film <https://www.wikidata.org/wiki/Q11424>`_
+
+`rock and roll <https://www.wikidata.org/wiki/Q7749>`_
+
+`judge <https://www.wikidata.org/wiki/Q16533>`_
+
+`pop rock <https://www.wikidata.org/wiki/Q484641>`_
+
+`scientist <https://www.wikidata.org/wiki/Q901>`_
+
+`Southern rock <https://www.wikidata.org/wiki/Q852767>`_
+
+`Islam <https://www.wikidata.org/wiki/Q432>`_
+
+`jazz <https://www.wikidata.org/wiki/Q8341>`_
+
+`keyboard instrument <https://www.wikidata.org/wiki/Q52954>`_
+
+`announcer <https://www.wikidata.org/wiki/Q1371925>`_
+
+`crime fiction <https://www.wikidata.org/wiki/Q19842222>`_
+
+`progressive rock <https://www.wikidata.org/wiki/Q49451>`_
+
+`pop music <https://www.wikidata.org/wiki/Q37073>`_
+
+`bass guitar <https://www.wikidata.org/wiki/Q46185>`_
+
+`LGBT <https://www.wikidata.org/wiki/Q17884>`_
+
+`steel guitar <https://www.wikidata.org/wiki/Q2617520>`_
+
+`bass <https://www.wikidata.org/wiki/Q810447>`_
+
+`adventure film <https://www.wikidata.org/wiki/Q319221>`_
+
+`thriller <https://www.wikidata.org/wiki/Q182015>`_
+
+`musician <https://www.wikidata.org/wiki/Q639669>`_
+
+`jam band <https://www.wikidata.org/wiki/Q2095173>`_
+
+`opera <https://www.wikidata.org/wiki/Q1344>`_
+
+`governor <https://www.wikidata.org/wiki/Q889821>`_
+
+`fantasy <https://www.wikidata.org/wiki/Q132311>`_
+
+`artist <https://www.wikidata.org/wiki/Q483501>`_
+
+`Protestantism <https://www.wikidata.org/wiki/Q23540>`_
+
+`electric piano <https://www.wikidata.org/wiki/Q1136507>`_
+
+`businessperson <https://www.wikidata.org/wiki/Q43845>`_
+
+`model <https://www.wikidata.org/wiki/Q4610556>`_
+
+`science fiction <https://www.wikidata.org/wiki/Q24925>`_
+
+`documentary film <https://www.wikidata.org/wiki/Q93204>`_
+
+`romance film <https://www.wikidata.org/wiki/Q1054574>`_
+
+`finance minister <https://www.wikidata.org/wiki/Q7614320>`_
+
+`private university <https://www.wikidata.org/wiki/Q902104>`_
+
+`Jewish people <https://www.wikidata.org/wiki/Q7325>`_
+
+`rock music <https://www.wikidata.org/wiki/Q11399>`_
+
+`mathematics <https://www.wikidata.org/wiki/Q395>`_
+
+`volleyball <https://www.wikidata.org/wiki/Q1734>`_
+
+`red <https://www.wikidata.org/wiki/Q3142>`_
+
+`funk <https://www.wikidata.org/wiki/Q164444>`_
+
+`biographical film <https://www.wikidata.org/wiki/Q645928>`_
+
+`electronic musical instrument <https://www.wikidata.org/wiki/Q1327500>`_
+
+`stroke <https://www.wikidata.org/wiki/Q12202>`_
+
+`animation <https://www.wikidata.org/wiki/Q11425>`_
+
+`master's degree <https://www.wikidata.org/wiki/Q183816>`_
+
+`law degree <https://www.wikidata.org/wiki/Q4115013>`_
+
+`outfielder <https://www.wikidata.org/wiki/Q1142885>`_
+
+`college <https://www.wikidata.org/wiki/Q189004>`_
+
+`Mormonism <https://www.wikidata.org/wiki/Q747802>`_
+
+`entertainment <https://www.wikidata.org/wiki/Q173799>`_
+
+`situation comedy <https://www.wikidata.org/wiki/Q170238>`_
+
+`United States Congress <https://www.wikidata.org/wiki/Q11268>`_
+
+`land-grant university <https://www.wikidata.org/wiki/Q615150>`_
+
+`contemporary R&B <https://www.wikidata.org/wiki/Q850412>`_
+
+`management <https://www.wikidata.org/wiki/Q2920921>`_
+
+`monarch <https://www.wikidata.org/wiki/Q116>`_
+
+`athlete <https://www.wikidata.org/wiki/Q2066131>`_
+
+`boarding school <https://www.wikidata.org/wiki/Q269770>`_
+
+`airline <https://www.wikidata.org/wiki/Q46970>`_
+
+`psychedelic rock <https://www.wikidata.org/wiki/Q206159>`_
+
+`songwriter <https://www.wikidata.org/wiki/Q753110>`_
+
+`guitarist <https://www.wikidata.org/wiki/Q855091>`_
+
+`return specialist <https://www.wikidata.org/wiki/Q7317272>`_
+
+`history <https://www.wikidata.org/wiki/Q309>`_
+
+`food <https://www.wikidata.org/wiki/Q2095>`_
+
+`television presenter <https://www.wikidata.org/wiki/Q947873>`_
+
+`political philosophy <https://www.wikidata.org/wiki/Q179805>`_
+
+`miniseries <https://www.wikidata.org/wiki/Q1259759>`_
+
+`country music <https://www.wikidata.org/wiki/Q83440>`_
+
+`music <https://www.wikidata.org/wiki/Q638>`_
+
+`corporation <https://www.wikidata.org/wiki/Q167037>`_
+
+`heavy metal <https://www.wikidata.org/wiki/Q38848>`_
+
+`rhythm and blues <https://www.wikidata.org/wiki/Q45981>`_
+
+`Eastern Orthodox Church <https://www.wikidata.org/wiki/Q35032>`_
+
+`communication medium <https://www.wikidata.org/wiki/Q340169>`_
+
+`saxophone <https://www.wikidata.org/wiki/Q9798>`_
+
+`private school <https://www.wikidata.org/wiki/Q423208>`_
+
+`zither <https://www.wikidata.org/wiki/Q76239>`_
+
+`broadcasting <https://www.wikidata.org/wiki/Q15078788>`_
+
+`Grammy Award <https://www.wikidata.org/wiki/Q41254>`_
+
+`trance <https://www.wikidata.org/wiki/Q170435>`_
+
+`clarinet <https://www.wikidata.org/wiki/Q8343>`_
+
+`pitcher <https://www.wikidata.org/wiki/Q1048902>`_
+
+`blues <https://www.wikidata.org/wiki/Q9759>`_
+
+`brass instrument <https://www.wikidata.org/wiki/Q180744>`_
+
+`philosophy <https://www.wikidata.org/wiki/Q5891>`_
+
+`cardiovascular disease <https://www.wikidata.org/wiki/Q389735>`_
+
+`satire <https://www.wikidata.org/wiki/Q128758>`_
+
+`biology <https://www.wikidata.org/wiki/Q420>`_
+
+`topology <https://www.wikidata.org/wiki/Q42989>`_
+
+`education <https://www.wikidata.org/wiki/Q8434>`_
+
+`Primetime Emmy Award <https://www.wikidata.org/wiki/Q1044427>`_
+
+`bobsleigh <https://www.wikidata.org/wiki/Q177275>`_
+
+`infectious disease <https://www.wikidata.org/wiki/Q18123741>`_
+
+`social science <https://www.wikidata.org/wiki/Q34749>`_
+
+`hip hop music <https://www.wikidata.org/wiki/Q11401>`_
+
+`law <https://www.wikidata.org/wiki/Q7748>`_
+
+`human <https://www.wikidata.org/wiki/Q5>`_
+
+`vocal music <https://www.wikidata.org/wiki/Q685884>`_
+
+`learned society <https://www.wikidata.org/wiki/Q955824>`_
+
+`public university <https://www.wikidata.org/wiki/Q875538>`_
+
+`popular music <https://www.wikidata.org/wiki/Q373342>`_
+
+`contemporary folk music <https://www.wikidata.org/wiki/Q43343>`_
+
+`literature <https://www.wikidata.org/wiki/Q8242>`_
+
+`vegetarianism <https://www.wikidata.org/wiki/Q83364>`_
+
+`woodwind instrument <https://www.wikidata.org/wiki/Q181247>`_
+
+`Indian people <https://www.wikidata.org/wiki/Q862086>`_
+
+`marketing <https://www.wikidata.org/wiki/Q39809>`_
+
+`constitutional monarchy <https://www.wikidata.org/wiki/Q41614>`_
+
+`synth-pop <https://www.wikidata.org/wiki/Q1298934>`_
+
+`historical fiction <https://www.wikidata.org/wiki/Q1196408>`_
+
+`orange <https://www.wikidata.org/wiki/Q39338>`_
+
+`lawyer <https://www.wikidata.org/wiki/Q40348>`_
+
+`research <https://www.wikidata.org/wiki/Q42240>`_
+
+`new wave <https://www.wikidata.org/wiki/Q187760>`_
+
+`Continental Congress <https://www.wikidata.org/wiki/Q26718>`_
+
+`art <https://www.wikidata.org/wiki/Q735>`_
+
+`Academy Awards <https://www.wikidata.org/wiki/Q19020>`_
+
+`division <https://www.wikidata.org/wiki/Q334453>`_
+
+`punk rock <https://www.wikidata.org/wiki/Q3071>`_
+
+`theater <https://www.wikidata.org/wiki/Q11635>`_
+
+`folk rock <https://www.wikidata.org/wiki/Q186472>`_
+
+`television film <https://www.wikidata.org/wiki/Q506240>`_
+
+`general officer <https://www.wikidata.org/wiki/Q83460>`_
+
+`bluegrass music <https://www.wikidata.org/wiki/Q213714>`_
+
+`privately held company <https://www.wikidata.org/wiki/Q1589009>`_
+
+`alternative metal <https://www.wikidata.org/wiki/Q20378>`_
+
+`mathematician <https://www.wikidata.org/wiki/Q170790>`_
+
+`Asian American <https://www.wikidata.org/wiki/Q727928>`_
+
+`techno <https://www.wikidata.org/wiki/Q170611>`_
+
+`electronic dance music <https://www.wikidata.org/wiki/Q851213>`_
+
+`teacher <https://www.wikidata.org/wiki/Q37226>`_
+
+`soul music <https://www.wikidata.org/wiki/Q131272>`_
+
+`medicine <https://www.wikidata.org/wiki/Q11190>`_
+
+`state school <https://www.wikidata.org/wiki/Q1080794>`_
+
+`humour <https://www.wikidata.org/wiki/Q35874>`_
+
+`house music <https://www.wikidata.org/wiki/Q20502>`_
+
+`garage rock <https://www.wikidata.org/wiki/Q211573>`_
+
+`anime <https://www.wikidata.org/wiki/Q1107>`_
+
+`government <https://www.wikidata.org/wiki/Q7188>`_
+
+`software engineering <https://www.wikidata.org/wiki/Q80993>`_
+
+`drama <https://www.wikidata.org/wiki/Q21010853>`_
+
+`disco <https://www.wikidata.org/wiki/Q58339>`_
+
+`university <https://www.wikidata.org/wiki/Q3918>`_
+
+`unitary state <https://www.wikidata.org/wiki/Q179164>`_
+
+`avant-garde <https://www.wikidata.org/wiki/Q102932>`_
+
+`subsidiary company <https://www.wikidata.org/wiki/Q658255>`_
+
+`fiction <https://www.wikidata.org/wiki/Q8253>`_
+
+`national university <https://www.wikidata.org/wiki/Q265662>`_
+
+`basketball <https://www.wikidata.org/wiki/Q5372>`_
+
+`restaurant <https://www.wikidata.org/wiki/Q11707>`_
+
+`Tagalog <https://www.wikidata.org/wiki/Q34057>`_
+
+`wind instrument <https://www.wikidata.org/wiki/Q173453>`_
+
+`filmmaking <https://www.wikidata.org/wiki/Q932586>`_
+
+`blues rock <https://www.wikidata.org/wiki/Q193355>`_
+
+`speed skating <https://www.wikidata.org/wiki/Q192431>`_
+
+`string instrument <https://www.wikidata.org/wiki/Q1798603>`_
+
+`electronic music <https://www.wikidata.org/wiki/Q9778>`_
+
+`Malay <https://www.wikidata.org/wiki/Q9237>`_
+
+`psychosis <https://www.wikidata.org/wiki/Q170082>`_
+
+`speaker <https://www.wikidata.org/wiki/Q1758037>`_
+
+`real property <https://www.wikidata.org/wiki/Q684740>`_
+
+`audio engineer <https://www.wikidata.org/wiki/Q128124>`_
+
+`gospel music <https://www.wikidata.org/wiki/Q180268>`_
+
+`entrepreneur <https://www.wikidata.org/wiki/Q131524>`_
+
+`performing arts <https://www.wikidata.org/wiki/Q184485>`_
+
+`politician <https://www.wikidata.org/wiki/Q82955>`_
+
+`Chinese <https://www.wikidata.org/wiki/Q7850>`_
+
+`novel <https://www.wikidata.org/wiki/Q8261>`_
+
+`musical <https://www.wikidata.org/wiki/Q2743>`_
+
+`newspaper <https://www.wikidata.org/wiki/Q11032>`_
+
+`Indo-European languages <https://www.wikidata.org/wiki/Q19860>`_
+
+`monster <https://www.wikidata.org/wiki/Q276453>`_
+
+`death metal <https://www.wikidata.org/wiki/Q483251>`_
+
+`presidential system <https://www.wikidata.org/wiki/Q49892>`_
+
+`hardcore punk <https://www.wikidata.org/wiki/Q10922>`_
+
+`post-hardcore <https://www.wikidata.org/wiki/Q377910>`_
+
+`business school <https://www.wikidata.org/wiki/Q1143635>`_
+
+`lyricist <https://www.wikidata.org/wiki/Q822146>`_
+
+`melodrama <https://www.wikidata.org/wiki/Q191489>`_
+
+`keyboardist <https://www.wikidata.org/wiki/Q1075651>`_
+
+`physician <https://www.wikidata.org/wiki/Q39631>`_
+
+`symphonic metal <https://www.wikidata.org/wiki/Q486415>`_
+
+`suicide <https://www.wikidata.org/wiki/Q10737>`_
+
+`island <https://www.wikidata.org/wiki/Q23442>`_
+
+`soundtrack <https://www.wikidata.org/wiki/Q217199>`_
+
+`science <https://www.wikidata.org/wiki/Q336>`_
+
+`political cinema <https://www.wikidata.org/wiki/Q2973201>`_
+
+`industrial music <https://www.wikidata.org/wiki/Q487965>`_
+
+`postmodernism <https://www.wikidata.org/wiki/Q47783>`_
+
+`plucked string instrument <https://www.wikidata.org/wiki/Q230262>`_
+
+`journalist <https://www.wikidata.org/wiki/Q1930187>`_
+
+`Indigenous peoples of the Americas <https://www.wikidata.org/wiki/Q36747>`_
+
+`superhero <https://www.wikidata.org/wiki/Q188784>`_
+
+`metalcore <https://www.wikidata.org/wiki/Q183862>`_
+
+`animated film <https://www.wikidata.org/wiki/Q202866>`_
+
+`conservatory <https://www.wikidata.org/wiki/Q184644>`_
+
+`diabetes mellitus <https://www.wikidata.org/wiki/Q12206>`_
+
+`Christian music <https://www.wikidata.org/wiki/Q6452410>`_
+
+`business <https://www.wikidata.org/wiki/Q4830453>`_
+
+`homicide <https://www.wikidata.org/wiki/Q149086>`_
+
+`proprietary software <https://www.wikidata.org/wiki/Q218616>`_
+
+`anthology <https://www.wikidata.org/wiki/Q105420>`_
+
+`drawing <https://www.wikidata.org/wiki/Q93184>`_
+
+`power pop <https://www.wikidata.org/wiki/Q837837>`_
+
+`speed metal <https://www.wikidata.org/wiki/Q211723>`_
+
+`tragedy <https://www.wikidata.org/wiki/Q80930>`_
+
+`thrash metal <https://www.wikidata.org/wiki/Q483352>`_
+
+`dog <https://www.wikidata.org/wiki/Q144>`_
+
+`member of parliament <https://www.wikidata.org/wiki/Q486839>`_
+
+`short film <https://www.wikidata.org/wiki/Q24862>`_
+
+`sound <https://www.wikidata.org/wiki/Q11461>`_
+
+`military officer <https://www.wikidata.org/wiki/Q189290>`_
+
+`rockabilly <https://www.wikidata.org/wiki/Q203720>`_
+
+`bebop <https://www.wikidata.org/wiki/Q105513>`_
+
+`winger <https://www.wikidata.org/wiki/Q1369558>`_
+
+`Latin American music <https://www.wikidata.org/wiki/Q727781>`_
+
+`designer <https://www.wikidata.org/wiki/Q5322166>`_
+
+`independent music <https://www.wikidata.org/wiki/Q42201>`_
+
+`Indian classical music <https://www.wikidata.org/wiki/Q1323698>`_
+
+`poetry <https://www.wikidata.org/wiki/Q482>`_
+
+`magnet school <https://www.wikidata.org/wiki/Q1703577>`_
+
+`Hispanic <https://www.wikidata.org/wiki/Q1211934>`_
+
+`detective fiction <https://www.wikidata.org/wiki/Q186424>`_
+
+`United States presidential election <https://www.wikidata.org/wiki/Q47566>`_
+
+`environmentalism <https://www.wikidata.org/wiki/Q2855609>`_
+
+`autobiography <https://www.wikidata.org/wiki/Q4184>`_
+
+`bowed string instrument <https://www.wikidata.org/wiki/Q192096>`_
+
+`shoegazing <https://www.wikidata.org/wiki/Q272167>`_
+
+`museum <https://www.wikidata.org/wiki/Q33506>`_
+
+`animated series <https://www.wikidata.org/wiki/Q581714>`_
+
+`boy band <https://www.wikidata.org/wiki/Q216337>`_
+
+`coach <https://www.wikidata.org/wiki/Q41583>`_
+
+`Serbo-Croatian <https://www.wikidata.org/wiki/Q9301>`_
+
+`symphonic rock <https://www.wikidata.org/wiki/Q719927>`_
+
+`baroque music <https://www.wikidata.org/wiki/Q8361>`_
+
+`genetic disease <https://www.wikidata.org/wiki/Q200779>`_
+
+`film festival <https://www.wikidata.org/wiki/Q220505>`_
+
+`human rights <https://www.wikidata.org/wiki/Q8458>`_
+
+`film noir <https://www.wikidata.org/wiki/Q185867>`_
+
+`news <https://www.wikidata.org/wiki/Q38926>`_
+
+`folklore <https://www.wikidata.org/wiki/Q36192>`_
+
+`strategy video game <https://www.wikidata.org/wiki/Q472055>`_
+
+`software <https://www.wikidata.org/wiki/Q7397>`_
+
+`minister <https://www.wikidata.org/wiki/Q83307>`_
+
+`respiratory system disease <https://www.wikidata.org/wiki/Q3286546>`_
+
+`horse <https://www.wikidata.org/wiki/Q726>`_
+
+`crime <https://www.wikidata.org/wiki/Q83267>`_
+
+`jump blues <https://www.wikidata.org/wiki/Q1515757>`_
+
+`independent record label <https://www.wikidata.org/wiki/Q1542343>`_
+
+`liberal arts college <https://www.wikidata.org/wiki/Q1377182>`_
+
+`critic <https://www.wikidata.org/wiki/Q6430706>`_
+
+`financial services <https://www.wikidata.org/wiki/Q837171>`_
+
+`researcher <https://www.wikidata.org/wiki/Q1650915>`_
+
+`game show <https://www.wikidata.org/wiki/Q846662>`_
+
+`social issue <https://www.wikidata.org/wiki/Q1920219>`_
+
+`technology <https://www.wikidata.org/wiki/Q11016>`_
+
+`silent film <https://www.wikidata.org/wiki/Q226730>`_
+
+`hardcore <https://www.wikidata.org/wiki/Q388906>`_
+
+`stop-motion <https://www.wikidata.org/wiki/Q308876>`_
+
+`board game <https://www.wikidata.org/wiki/Q131436>`_
+
+`secondary school <https://www.wikidata.org/wiki/Q159334>`_
+
+`imperative programming <https://www.wikidata.org/wiki/Q275596>`_
+
+`university-preparatory school <https://www.wikidata.org/wiki/Q428602>`_
+
+`anthology series <https://www.wikidata.org/wiki/Q23653>`_
+
+`independent school <https://www.wikidata.org/wiki/Q2418495>`_
+
+`anarcho-punk <https://www.wikidata.org/wiki/Q486365>`_
+
+`post-industrial music <https://www.wikidata.org/wiki/Q936942>`_
+
+`animal <https://www.wikidata.org/wiki/Q729>`_
+
+`action game <https://www.wikidata.org/wiki/Q270948>`_
+
+`star <https://www.wikidata.org/wiki/Q523>`_
+
+`civil war <https://www.wikidata.org/wiki/Q8465>`_
+
+`Power Rangers <https://www.wikidata.org/wiki/Q333156>`_
+
+`glacial lake <https://www.wikidata.org/wiki/Q211302>`_
+
+`Calvinism <https://www.wikidata.org/wiki/Q101849>`_
+
+`First Lady <https://www.wikidata.org/wiki/Q203184>`_
+
+`civil and political rights <https://www.wikidata.org/wiki/Q191600>`_
+
+`sea <https://www.wikidata.org/wiki/Q165>`_
+
+`Nazism <https://www.wikidata.org/wiki/Q7310>`_
+
+`travel <https://www.wikidata.org/wiki/Q61509>`_
+
+`impresario <https://www.wikidata.org/wiki/Q943995>`_
+
+`Unix-like operating system <https://www.wikidata.org/wiki/Q14656>`_
+
+`palace <https://www.wikidata.org/wiki/Q16560>`_
+
+`legislator <https://www.wikidata.org/wiki/Q4175034>`_
+
+`beauty contest <https://www.wikidata.org/wiki/Q2658935>`_
+
+`bay <https://www.wikidata.org/wiki/Q39594>`_
+
+`mental disorder <https://www.wikidata.org/wiki/Q12135>`_
+
+`role-playing video game <https://www.wikidata.org/wiki/Q744038>`_
+
+`role-playing game <https://www.wikidata.org/wiki/Q160738>`_
+
+`health care <https://www.wikidata.org/wiki/Q31207>`_
+
+`UK garage <https://www.wikidata.org/wiki/Q1165777>`_
+
+`television comedy <https://www.wikidata.org/wiki/Q7696995>`_
+
+`church building <https://www.wikidata.org/wiki/Q16970>`_
+
+`strait <https://www.wikidata.org/wiki/Q37901>`_
+
+`high school <https://www.wikidata.org/wiki/Q9826>`_
+
+`shooter game <https://www.wikidata.org/wiki/Q4282636>`_
+
+`official <https://www.wikidata.org/wiki/Q599151>`_
+
+`martial arts <https://www.wikidata.org/wiki/Q11417>`_
+
+`mythology <https://www.wikidata.org/wiki/Q9134>`_
+
+`Tour de France <https://www.wikidata.org/wiki/Q33881>`_
+
+`death <https://www.wikidata.org/wiki/Q4>`_
+
+`humor magazine <https://www.wikidata.org/wiki/Q12298619>`_
+
+`merchant <https://www.wikidata.org/wiki/Q215536>`_
+
+`airliner <https://www.wikidata.org/wiki/Q210932>`_
+
+`suspension bridge <https://www.wikidata.org/wiki/Q12570>`_
+
+`functional programming <https://www.wikidata.org/wiki/Q193076>`_
+
+`chemist <https://www.wikidata.org/wiki/Q593644>`_
+
+`pain <https://www.wikidata.org/wiki/Q81938>`_
+
+`mercenary <https://www.wikidata.org/wiki/Q178197>`_
+
+`newscast <https://www.wikidata.org/wiki/Q1358344>`_
+
+`computer programming <https://www.wikidata.org/wiki/Q80006>`_
+
+`house cat <https://www.wikidata.org/wiki/Q146>`_
+
+`national park <https://www.wikidata.org/wiki/Q46169>`_
+
+`cathedral <https://www.wikidata.org/wiki/Q2977>`_
+
+`Renaissance <https://www.wikidata.org/wiki/Q4692>`_
+
+`fighting game <https://www.wikidata.org/wiki/Q846224>`_
+
+`structured programming <https://www.wikidata.org/wiki/Q223335>`_
+
+`nonprofit organization <https://www.wikidata.org/wiki/Q163740>`_
+
+`television special <https://www.wikidata.org/wiki/Q1261214>`_
+
+`community college <https://www.wikidata.org/wiki/Q1336920>`_
+
+`first-person shooter <https://www.wikidata.org/wiki/Q185029>`_
+
+`organization <https://www.wikidata.org/wiki/Q43229>`_
+
+`band <https://www.wikidata.org/wiki/Q215380>`_
+
+`county of Wisconsin <https://www.wikidata.org/wiki/Q12178928>`_
+
+`association football club <https://www.wikidata.org/wiki/Q476028>`_
+
+`television series <https://www.wikidata.org/wiki/Q5398426>`_
+
+`region of Italy <https://www.wikidata.org/wiki/Q16110>`_
+
+`county of New York <https://www.wikidata.org/wiki/Q13414757>`_
+
+`award ceremony <https://www.wikidata.org/wiki/Q4504495>`_
+
+`animated feature film <https://www.wikidata.org/wiki/Q29168811>`_
+
+`art movement <https://www.wikidata.org/wiki/Q968159>`_
+
+`county of Ireland <https://www.wikidata.org/wiki/Q179872>`_
+
+`state <https://www.wikidata.org/wiki/Q3505845>`_
+
+`sovereign state <https://www.wikidata.org/wiki/Q3624078>`_
+
+`city <https://www.wikidata.org/wiki/Q515>`_
+
+`state of the United States <https://www.wikidata.org/wiki/Q35657>`_
+
+`award <https://www.wikidata.org/wiki/Q618779>`_
+
+`political party <https://www.wikidata.org/wiki/Q7278>`_
+
+`written work <https://www.wikidata.org/wiki/Q47461344>`_
+
+`feature film <https://www.wikidata.org/wiki/Q24869>`_
+
+`city of the United States <https://www.wikidata.org/wiki/Q1093829>`_
+
+`administrative territorial entity <https://www.wikidata.org/wiki/Q56061>`_
+
+`cemetery <https://www.wikidata.org/wiki/Q39614>`_
+
+`Academy Awards ceremony <https://www.wikidata.org/wiki/Q16913666>`_
+
+`animated character <https://www.wikidata.org/wiki/Q15711870>`_
+
+`sports season <https://www.wikidata.org/wiki/Q27020041>`_
+
+`MTV Video Music Award <https://www.wikidata.org/wiki/Q223703>`_
+
+`music genre <https://www.wikidata.org/wiki/Q188451>`_
+
+`language <https://www.wikidata.org/wiki/Q34770>`_
+
+`American football team <https://www.wikidata.org/wiki/Q17156793>`_
+
+`county of California <https://www.wikidata.org/wiki/Q13212489>`_
+
+`type of sport <https://www.wikidata.org/wiki/Q31629>`_
+
+`television series episode <https://www.wikidata.org/wiki/Q21191270>`_
+
+`ceremonial county of England <https://www.wikidata.org/wiki/Q180673>`_
+
+`county of Massachusetts <https://www.wikidata.org/wiki/Q13410485>`_
+
+`province of Italy <https://www.wikidata.org/wiki/Q15089>`_
+
+`town <https://www.wikidata.org/wiki/Q3957>`_
+
+`ice hockey team <https://www.wikidata.org/wiki/Q4498974>`_
+
+`disease <https://www.wikidata.org/wiki/Q12136>`_
+
+`video game developer <https://www.wikidata.org/wiki/Q210167>`_
+
+`literary genre <https://www.wikidata.org/wiki/Q223393>`_
+
+`non-metropolitan county <https://www.wikidata.org/wiki/Q769603>`_
+
+`national association football team <https://www.wikidata.org/wiki/Q6979593>`_
+
+`play <https://www.wikidata.org/wiki/Q25379>`_
+
+`county of Pennsylvania <https://www.wikidata.org/wiki/Q13414763>`_
+
+`rock band <https://www.wikidata.org/wiki/Q5741069>`_
+
+`single <https://www.wikidata.org/wiki/Q134556>`_
+
+`film series <https://www.wikidata.org/wiki/Q24856>`_
+
+`Critics' Choice Movie Award <https://www.wikidata.org/wiki/Q7585305>`_
+
+`army <https://www.wikidata.org/wiki/Q37726>`_
+
+`class of award <https://www.wikidata.org/wiki/Q38033430>`_
+
+`profession <https://www.wikidata.org/wiki/Q28640>`_
+
+`chemical compound <https://www.wikidata.org/wiki/Q11173>`_
+
+`county town <https://www.wikidata.org/wiki/Q1357964>`_
+
+`war <https://www.wikidata.org/wiki/Q198>`_
+
+`independent city <https://www.wikidata.org/wiki/Q1266818>`_
+
+`province of Canada <https://www.wikidata.org/wiki/Q11828004>`_
+
+`Summer Olympic Games <https://www.wikidata.org/wiki/Q159821>`_
+
+`film production company <https://www.wikidata.org/wiki/Q1762059>`_
+
+`class of instruments <https://www.wikidata.org/wiki/Q1254773>`_
+
+`constituency of the Rajya Sabha <https://www.wikidata.org/wiki/Q57156205>`_
+
+`literary award <https://www.wikidata.org/wiki/Q378427>`_
+
+`county of Florida <https://www.wikidata.org/wiki/Q13410422>`_
+
+`baseball position <https://www.wikidata.org/wiki/Q1151733>`_
+
+`liberal arts college in the United States <https://www.wikidata.org/wiki/Q6540832>`_
+
+`geographic region <https://www.wikidata.org/wiki/Q82794>`_
+
+`basketball team <https://www.wikidata.org/wiki/Q13393265>`_
+
+`county of Michigan <https://www.wikidata.org/wiki/Q13410496>`_
+
+`single-tier municipality <https://www.wikidata.org/wiki/Q14762300>`_
+
+`Screen Actors Guild Award <https://www.wikidata.org/wiki/Q268200>`_
+
+`departments of France <https://www.wikidata.org/wiki/Q6465>`_
+
+`area of London <https://www.wikidata.org/wiki/Q2755753>`_
+
+`school <https://www.wikidata.org/wiki/Q3914>`_
+
+`public company <https://www.wikidata.org/wiki/Q891723>`_
+
+`former French region <https://www.wikidata.org/wiki/Q22670030>`_
+
+`county of Ohio <https://www.wikidata.org/wiki/Q13414759>`_
+
+`film character <https://www.wikidata.org/wiki/Q15773347>`_
+
+`human settlement <https://www.wikidata.org/wiki/Q486972>`_
+
+`medal <https://www.wikidata.org/wiki/Q131647>`_
+
+`province of the Netherlands <https://www.wikidata.org/wiki/Q134390>`_
+
+`county of Alabama <https://www.wikidata.org/wiki/Q13410400>`_
+
+`television station <https://www.wikidata.org/wiki/Q1616075>`_
+
+`film award <https://www.wikidata.org/wiki/Q4220917>`_
+
+`literary work <https://www.wikidata.org/wiki/Q7725634>`_
+
+`ethnic community <https://www.wikidata.org/wiki/Q28790362>`_
+
+`taxon <https://www.wikidata.org/wiki/Q16521>`_
+
+`city of Pennsylvania <https://www.wikidata.org/wiki/Q21010817>`_
+
+`television network <https://www.wikidata.org/wiki/Q1254874>`_
+
+`market town <https://www.wikidata.org/wiki/Q18511725>`_
+
+`science award <https://www.wikidata.org/wiki/Q11448906>`_
+
+`historical country <https://www.wikidata.org/wiki/Q3024240>`_
+
+`baseball team <https://www.wikidata.org/wiki/Q13027888>`_
+
+`first-level administrative country subdivision <https://www.wikidata.org/wiki/Q10864048>`_
+
+`legislative term <https://www.wikidata.org/wiki/Q15238777>`_
+
+`Golden Raspberry Awards <https://www.wikidata.org/wiki/Q40237>`_
+
+`county of Illinois <https://www.wikidata.org/wiki/Q11812346>`_
+
+`college of the University of Oxford <https://www.wikidata.org/wiki/Q2581649>`_
+
+`art school <https://www.wikidata.org/wiki/Q383092>`_
+
+`city in New Jersey <https://www.wikidata.org/wiki/Q2974552>`_
+
+`MTV Movie Awards <https://www.wikidata.org/wiki/Q110145>`_
+
+`television genre <https://www.wikidata.org/wiki/Q15961987>`_
+
+`non-metropolitan district <https://www.wikidata.org/wiki/Q1187580>`_
+
+`state of India <https://www.wikidata.org/wiki/Q13390680>`_
+
+`symptom <https://www.wikidata.org/wiki/Q169872>`_
+
+`theatre award <https://www.wikidata.org/wiki/Q15229229>`_
+
+`film genre <https://www.wikidata.org/wiki/Q201658>`_
+
+`county of Maryland <https://www.wikidata.org/wiki/Q13410464>`_
+
+`video game genre <https://www.wikidata.org/wiki/Q659563>`_
+
+`county of Virginia <https://www.wikidata.org/wiki/Q13415368>`_
+
+`big city <https://www.wikidata.org/wiki/Q1549591>`_
+
+`metropolitan borough <https://www.wikidata.org/wiki/Q1002812>`_
+
+`city of New York <https://www.wikidata.org/wiki/Q15063611>`_
+
+`neighborhood <https://www.wikidata.org/wiki/Q123705>`_
+
+`activity <https://www.wikidata.org/wiki/Q1914636>`_
+
+`Winter Olympic Games <https://www.wikidata.org/wiki/Q82414>`_
+
+`musical composition <https://www.wikidata.org/wiki/Q207628>`_
+
+`law school <https://www.wikidata.org/wiki/Q1321960>`_
+
+`American football position <https://www.wikidata.org/wiki/Q694589>`_
+
+`fictional human <https://www.wikidata.org/wiki/Q15632617>`_
+
+`song <https://www.wikidata.org/wiki/Q7366>`_
+
+`academic discipline <https://www.wikidata.org/wiki/Q11862829>`_
+
+`Primetime Emmy Award annual ceremony <https://www.wikidata.org/wiki/Q18640746>`_
+
+`region of France <https://www.wikidata.org/wiki/Q36784>`_
+
+`college of the University of Cambridge <https://www.wikidata.org/wiki/Q1055028>`_
+
+`prefecture of Japan <https://www.wikidata.org/wiki/Q50337>`_
+
+`time zone <https://www.wikidata.org/wiki/Q12143>`_
+
+`television channel <https://www.wikidata.org/wiki/Q2001305>`_
+
+`county of North Carolina <https://www.wikidata.org/wiki/Q13414758>`_
+
+`video game publisher <https://www.wikidata.org/wiki/Q1137109>`_
+
+`comune of Italy <https://www.wikidata.org/wiki/Q747074>`_
+
+`studio album <https://www.wikidata.org/wiki/Q208569>`_
+
+`television program <https://www.wikidata.org/wiki/Q15416>`_
+
+`calendar month <https://www.wikidata.org/wiki/Q47018901>`_
+
+`county of New Jersey <https://www.wikidata.org/wiki/Q13414754>`_
+
+`media franchise <https://www.wikidata.org/wiki/Q196600>`_
+
+`empire <https://www.wikidata.org/wiki/Q48349>`_
+
+`research university <https://www.wikidata.org/wiki/Q15936437>`_
+
+`TV production company <https://www.wikidata.org/wiki/Q10689397>`_
+
+`film festival edition <https://www.wikidata.org/wiki/Q27787439>`_
+
+`metropolitan area <https://www.wikidata.org/wiki/Q1907114>`_
+
+`3D film <https://www.wikidata.org/wiki/Q229390>`_
+
+`county of Oregon <https://www.wikidata.org/wiki/Q13414761>`_
+
+`anime television series <https://www.wikidata.org/wiki/Q11086742>`_
+
+`sport discipline <https://www.wikidata.org/wiki/Q2312410>`_
+
+`dynasty <https://www.wikidata.org/wiki/Q164950>`_
+
+`theatrical genre <https://www.wikidata.org/wiki/Q15850590>`_
+
+`town of the United States <https://www.wikidata.org/wiki/Q15127012>`_
+
+`county of Texas <https://www.wikidata.org/wiki/Q11774097>`_
+
+`county of Arizona <https://www.wikidata.org/wiki/Q13217186>`_
+
+`album <https://www.wikidata.org/wiki/Q482994>`_
+
+`filmmaking occupation <https://www.wikidata.org/wiki/Q4220920>`_
+
+`port city <https://www.wikidata.org/wiki/Q2264924>`_
+
+`Golden Globe Award ceremony <https://www.wikidata.org/wiki/Q19311591>`_
+
+`medication <https://www.wikidata.org/wiki/Q12140>`_
+
+`economic branch <https://www.wikidata.org/wiki/Q268592>`_
+
+`private not-for-profit educational institution <https://www.wikidata.org/wiki/Q23002054>`_
+
+`male given name <https://www.wikidata.org/wiki/Q12308941>`_
+
+`position <https://www.wikidata.org/wiki/Q4164871>`_
+
+`province of China <https://www.wikidata.org/wiki/Q1615742>`_
+
+`county of Washington <https://www.wikidata.org/wiki/Q13415369>`_
+
+`historic county of England <https://www.wikidata.org/wiki/Q1138494>`_
+
+`independent city of Germany <https://www.wikidata.org/wiki/Q22865>`_
+
+`cable channel <https://www.wikidata.org/wiki/Q5009242>`_
+
+`island nation <https://www.wikidata.org/wiki/Q112099>`_
+
+`city with millions of inhabitants <https://www.wikidata.org/wiki/Q1637706>`_
+
+`religious denomination <https://www.wikidata.org/wiki/Q13414953>`_
+
+`academic major <https://www.wikidata.org/wiki/Q4671286>`_
+
+`corporate title <https://www.wikidata.org/wiki/Q11488158>`_
+
+`food ingredient <https://www.wikidata.org/wiki/Q25403900>`_
+
+`county of Indiana <https://www.wikidata.org/wiki/Q13410438>`_
+
+`second largest city <https://www.wikidata.org/wiki/Q50330360>`_
+
+`public office <https://www.wikidata.org/wiki/Q294414>`_
+
+`state of Germany <https://www.wikidata.org/wiki/Q1221156>`_
+
+`administrative territorial entity of Canada <https://www.wikidata.org/wiki/Q3750285>`_
+
+`public educational institution of the United States <https://www.wikidata.org/wiki/Q23002039>`_
+
+`amino acid <https://www.wikidata.org/wiki/Q8066>`_
+
+`census-designated place <https://www.wikidata.org/wiki/Q498162>`_
+
+`state or insular area capital in the United States <https://www.wikidata.org/wiki/Q21518270>`_
+
+`professional sports team <https://www.wikidata.org/wiki/Q20639856>`_
+
+`pattern of behaviour <https://www.wikidata.org/wiki/Q2515887>`_
+
+`municipality of the Netherlands <https://www.wikidata.org/wiki/Q2039348>`_
+
+`British Academy Film Awards <https://www.wikidata.org/wiki/Q732997>`_
+
+`college town <https://www.wikidata.org/wiki/Q1187811>`_
+
+`county of Maine <https://www.wikidata.org/wiki/Q13410454>`_
+
+`metropolis <https://www.wikidata.org/wiki/Q200250>`_
+
+`commune of France <https://www.wikidata.org/wiki/Q484170>`_
+
+`city/town <https://www.wikidata.org/wiki/Q7930989>`_
+
+`municipality of Germany <https://www.wikidata.org/wiki/Q262166>`_
+
+`interdisciplinarity <https://www.wikidata.org/wiki/Q849359>`_
+
+`nationality <https://www.wikidata.org/wiki/Q231002>`_
+
+`enterprise <https://www.wikidata.org/wiki/Q6881511>`_
+
+`television character <https://www.wikidata.org/wiki/Q15773317>`_
+
+`comics character <https://www.wikidata.org/wiki/Q1114461>`_
+
+`borough in the United Kingdom <https://www.wikidata.org/wiki/Q1006876>`_
+
+`specialty channel <https://www.wikidata.org/wiki/Q561068>`_
+
+`district with city status <https://www.wikidata.org/wiki/Q21503295>`_
+
+`county seat <https://www.wikidata.org/wiki/Q62049>`_
+
+`campus <https://www.wikidata.org/wiki/Q209465>`_
+
+`provincial or territorial capital city in Canada <https://www.wikidata.org/wiki/Q21507383>`_
+
+`equity <https://www.wikidata.org/wiki/Q2578557>`_
+
+`province of the Philippines <https://www.wikidata.org/wiki/Q24746>`_
+
+`crematory <https://www.wikidata.org/wiki/Q157570>`_
+
+`landform <https://www.wikidata.org/wiki/Q271669>`_
+
+`island group <https://www.wikidata.org/wiki/Q1402592>`_
+
+`tool <https://www.wikidata.org/wiki/Q39546>`_
+
+`body fluid <https://www.wikidata.org/wiki/Q1058795>`_
+
+`execution method <https://www.wikidata.org/wiki/Q15169167>`_
+
+`academic institution <https://www.wikidata.org/wiki/Q4671277>`_
+
+`Iranian musical instrument <https://www.wikidata.org/wiki/Q3152908>`_
+
+`group or class of chemical substances <https://www.wikidata.org/wiki/Q17339814>`_
+
+`process <https://www.wikidata.org/wiki/Q3249551>`_
+
+`fictional universe <https://www.wikidata.org/wiki/Q559618>`_
+
+`initialism <https://www.wikidata.org/wiki/Q918270>`_
+
+`fictional profession <https://www.wikidata.org/wiki/Q17305127>`_
+
+`experience <https://www.wikidata.org/wiki/Q1355387>`_
+
+`educational year <https://www.wikidata.org/wiki/Q10291405>`_
+
+`legal institution <https://www.wikidata.org/wiki/Q1938208>`_
+
+`abjad <https://www.wikidata.org/wiki/Q185087>`_
+
+`marine propulsion <https://www.wikidata.org/wiki/Q11482290>`_
+
+`social group <https://www.wikidata.org/wiki/Q874405>`_
+
+`group of organisms known by one particular common name <https://www.wikidata.org/wiki/Q55983715>`_
+
+`National Football League Draft <https://www.wikidata.org/wiki/Q1750919>`_
+
+`group <https://www.wikidata.org/wiki/Q16887380>`_
+
+`chemical element <https://www.wikidata.org/wiki/Q11344>`_
+
+`fictional species <https://www.wikidata.org/wiki/Q21192438>`_
+
+`music scene <https://www.wikidata.org/wiki/Q28820001>`_
+
+`village <https://www.wikidata.org/wiki/Q532>`_
+
+`family of isomeric compounds <https://www.wikidata.org/wiki/Q15711994>`_
+
+`seminary <https://www.wikidata.org/wiki/Q233324>`_
+
+`transport accident <https://www.wikidata.org/wiki/Q11822042>`_
+
+`problem <https://www.wikidata.org/wiki/Q621184>`_
+
+`National Basketball Association Draft <https://www.wikidata.org/wiki/Q622521>`_
+
+`student society <https://www.wikidata.org/wiki/Q1685451>`_
+
+`mythical creature <https://www.wikidata.org/wiki/Q2239243>`_
+
+`lake <https://www.wikidata.org/wiki/Q23397>`_
+
+`sectarian violence <https://www.wikidata.org/wiki/Q3774758>`_
+
+`string <https://www.wikidata.org/wiki/Q11064354>`_
+
+`urban area of Sweden <https://www.wikidata.org/wiki/Q12813115>`_
+
+`property <https://www.wikidata.org/wiki/Q937228>`_
+
+`natural language <https://www.wikidata.org/wiki/Q33742>`_
+
+`extracellular fluid <https://www.wikidata.org/wiki/Q2914458>`_
+
+`forest <https://www.wikidata.org/wiki/Q4421>`_
+
+`decimal currency <https://www.wikidata.org/wiki/Q28795800>`_
+
+`river <https://www.wikidata.org/wiki/Q4022>`_
+
+`title of Mary <https://www.wikidata.org/wiki/Q1509831>`_
+
+`type of business entity in the USA <https://www.wikidata.org/wiki/Q57653825>`_
+
+`astronomical object type <https://www.wikidata.org/wiki/Q17444909>`_
+
+`product <https://www.wikidata.org/wiki/Q2424752>`_
+
+`fictional energy <https://www.wikidata.org/wiki/Q15708422>`_
+
+`modern language <https://www.wikidata.org/wiki/Q1288568>`_
+
+`census area of Alaska <https://www.wikidata.org/wiki/Q56064719>`_
+
+`emotion <https://www.wikidata.org/wiki/Q9415>`_
+
+`estate in land <https://www.wikidata.org/wiki/Q975783>`_
+
+`Private Hochschule <https://www.wikidata.org/wiki/Q963908>`_
+
+`chemical substance <https://www.wikidata.org/wiki/Q79529>`_
+
+`class of chemical compounds with similar source or occurence <https://www.wikidata.org/wiki/Q56256178>`_
+
+`painting <https://www.wikidata.org/wiki/Q3305213>`_
+
+`medical specialty <https://www.wikidata.org/wiki/Q930752>`_
+
+`water area <https://www.wikidata.org/wiki/Q2507626>`_
+
+`displacement <https://www.wikidata.org/wiki/Q190291>`_
+
+`phenomenon <https://www.wikidata.org/wiki/Q483247>`_
+
+`musical instrument <https://www.wikidata.org/wiki/Q34379>`_
+
+`group action <https://www.wikidata.org/wiki/Q3533467>`_
+
+`road <https://www.wikidata.org/wiki/Q34442>`_
+
+`taxonomic rank <https://www.wikidata.org/wiki/Q427626>`_
+
+`form of government <https://www.wikidata.org/wiki/Q1307214>`_
+
+`physiological condition <https://www.wikidata.org/wiki/Q7189713>`_
+
+`national cuisine <https://www.wikidata.org/wiki/Q1968435>`_
+
+`radio format <https://www.wikidata.org/wiki/Q589183>`_
+
+`subject of international law <https://www.wikidata.org/wiki/Q1896989>`_
+
+`doctrine <https://www.wikidata.org/wiki/Q117850>`_
+
+`pathogen <https://www.wikidata.org/wiki/Q170065>`_
+
+`video game console model <https://www.wikidata.org/wiki/Q56682555>`_
+
+`visual artwork <https://www.wikidata.org/wiki/Q4502142>`_
+
+`editorial collection <https://www.wikidata.org/wiki/Q20655472>`_
+
+`fictional extraterrestrial <https://www.wikidata.org/wiki/Q1307329>`_
+
+`free software license <https://www.wikidata.org/wiki/Q3943414>`_
+
+`phase of life <https://www.wikidata.org/wiki/Q1811014>`_
+
+`role <https://www.wikidata.org/wiki/Q1707847>`_
+
+`urban rail transit <https://www.wikidata.org/wiki/Q3491904>`_
+
+`aircraft functional class <https://www.wikidata.org/wiki/Q20027953>`_
+
+`research institute <https://www.wikidata.org/wiki/Q31855>`_
+
+`motor vehicle <https://www.wikidata.org/wiki/Q752870>`_
+
+`unitary authority of England <https://www.wikidata.org/wiki/Q1136601>`_
+
+`reserve currency <https://www.wikidata.org/wiki/Q756202>`_
+
+`rights <https://www.wikidata.org/wiki/Q780687>`_
+
+`language family <https://www.wikidata.org/wiki/Q25295>`_
+
+`automobile marque <https://www.wikidata.org/wiki/Q17412622>`_
+
+`religious building <https://www.wikidata.org/wiki/Q24398318>`_
+
+`unsaturated fat <https://www.wikidata.org/wiki/Q652555>`_
+
+`religious identity <https://www.wikidata.org/wiki/Q4392985>`_
+
+`special administrative region of China <https://www.wikidata.org/wiki/Q779415>`_
+
+`concept <https://www.wikidata.org/wiki/Q151885>`_
+
+`physics engine <https://www.wikidata.org/wiki/Q62505>`_
+
+`school district <https://www.wikidata.org/wiki/Q398141>`_
+
+`spirit <https://www.wikidata.org/wiki/Q193291>`_
+
+`type of business entity <https://www.wikidata.org/wiki/Q1269299>`_
+
+`musical instrument part <https://www.wikidata.org/wiki/Q19659292>`_
+
+`female given name <https://www.wikidata.org/wiki/Q11879590>`_
+
+`human biblical figure <https://www.wikidata.org/wiki/Q20643955>`_
+
+`short gun <https://www.wikidata.org/wiki/Q7816242>`_
+
+`software license <https://www.wikidata.org/wiki/Q207621>`_
+
+`double act <https://www.wikidata.org/wiki/Q1141470>`_
+
+`manga <https://www.wikidata.org/wiki/Q8274>`_
+
+`method <https://www.wikidata.org/wiki/Q1799072>`_
+
+`sex <https://www.wikidata.org/wiki/Q290>`_
+
+`zone of Nepal <https://www.wikidata.org/wiki/Q876102>`_
+
+`interstellar cloud <https://www.wikidata.org/wiki/Q1054444>`_
+
+`agent <https://www.wikidata.org/wiki/Q24229398>`_
+
+`creative work <https://www.wikidata.org/wiki/Q17537576>`_
+
+`duo <https://www.wikidata.org/wiki/Q10648343>`_
+
+`land vehicle <https://www.wikidata.org/wiki/Q1301433>`_
+
+`pome <https://www.wikidata.org/wiki/Q41274>`_
+
+`dead language <https://www.wikidata.org/wiki/Q45762>`_
+
+`film gauge <https://www.wikidata.org/wiki/Q86850>`_
+
+`natural disaster <https://www.wikidata.org/wiki/Q8065>`_
+
+`natural satellite <https://www.wikidata.org/wiki/Q2537>`_
+
+`knowledge <https://www.wikidata.org/wiki/Q9081>`_
+
+`fictional character <https://www.wikidata.org/wiki/Q95074>`_
+
+`educational institution <https://www.wikidata.org/wiki/Q2385804>`_
+
+`higher education institution <https://www.wikidata.org/wiki/Q38723>`_
+
+`village in the United States <https://www.wikidata.org/wiki/Q751708>`_
+
+`special ward of Japan <https://www.wikidata.org/wiki/Q5327704>`_
+
+`final <https://www.wikidata.org/wiki/Q1366722>`_
+
+`borough of Alaska <https://www.wikidata.org/wiki/Q13410522>`_
+
+`facility <https://www.wikidata.org/wiki/Q13226383>`_
+
+`type of food or dish <https://www.wikidata.org/wiki/Q19861951>`_
+
+`trademark <https://www.wikidata.org/wiki/Q167270>`_
+
+`base material <https://www.wikidata.org/wiki/Q214609>`_
+
+`therapy <https://www.wikidata.org/wiki/Q179661>`_
+
+`aptitude <https://www.wikidata.org/wiki/Q1347367>`_
+
+`bridge by structural type <https://www.wikidata.org/wiki/Q17644823>`_
+
+`sorority <https://www.wikidata.org/wiki/Q18811583>`_
+
+`cruise ship <https://www.wikidata.org/wiki/Q39804>`_
+
+`parish of Louisiana <https://www.wikidata.org/wiki/Q13410524>`_
+
+`energy <https://www.wikidata.org/wiki/Q11379>`_
+
+`chess piece <https://www.wikidata.org/wiki/Q55386374>`_
+
+`art exhibition <https://www.wikidata.org/wiki/Q667276>`_
+
+`manifestation <https://www.wikidata.org/wiki/Q286583>`_
+
+`rock <https://www.wikidata.org/wiki/Q8063>`_
+
+`print <https://www.wikidata.org/wiki/Q11060274>`_
+
+`killing <https://www.wikidata.org/wiki/Q844482>`_
+
+`front <https://www.wikidata.org/wiki/Q842332>`_
+
+`climate change <https://www.wikidata.org/wiki/Q125928>`_
+
+`inner planet <https://www.wikidata.org/wiki/Q3504248>`_
+
+`arts festival <https://www.wikidata.org/wiki/Q4801521>`_
+
+`fictional government <https://www.wikidata.org/wiki/Q15238535>`_
+
+`improvised explosive device <https://www.wikidata.org/wiki/Q1249453>`_
+
+`social movement <https://www.wikidata.org/wiki/Q49773>`_
+
+`drug <https://www.wikidata.org/wiki/Q8386>`_
+
+`Christian holy day <https://www.wikidata.org/wiki/Q60075825>`_
+
+`ancient civilization <https://www.wikidata.org/wiki/Q28171280>`_
+
+`recurring event <https://www.wikidata.org/wiki/Q15275719>`_
+
+`paranormal <https://www.wikidata.org/wiki/Q332102>`_
+
+`tabletop game <https://www.wikidata.org/wiki/Q3244175>`_
+
+`cinema film format <https://www.wikidata.org/wiki/Q1414729>`_
+
+`ChEBI Ontology term <https://www.wikidata.org/wiki/Q41014950>`_
+
+`biological process <https://www.wikidata.org/wiki/Q2996394>`_
+
+`province of Spain <https://www.wikidata.org/wiki/Q162620>`_
+
+`circumstellar disk <https://www.wikidata.org/wiki/Q3235978>`_
+
+`Roman deity <https://www.wikidata.org/wiki/Q11688446>`_
+
+`ball <https://www.wikidata.org/wiki/Q18545>`_
+
+`superpower <https://www.wikidata.org/wiki/Q1047698>`_
+
+`clinical sign <https://www.wikidata.org/wiki/Q1441305>`_
+
+`film format <https://www.wikidata.org/wiki/Q759853>`_
+
+`art form <https://www.wikidata.org/wiki/Q56055944>`_
+
+`electronic device <https://www.wikidata.org/wiki/Q3395171>`_
+
+`municipality of Portugal <https://www.wikidata.org/wiki/Q13217644>`_
+
+`philosophical movement <https://www.wikidata.org/wiki/Q2915955>`_
+
+`railway station <https://www.wikidata.org/wiki/Q55488>`_
+
+`free software copyleft license <https://www.wikidata.org/wiki/Q5975031>`_
+
+`peninsula <https://www.wikidata.org/wiki/Q34763>`_
+
+`historical period <https://www.wikidata.org/wiki/Q11514315>`_
+
+`Wikimedia list article <https://www.wikidata.org/wiki/Q13406463>`_
+
+`residue <https://www.wikidata.org/wiki/Q903495>`_
+
+`Major League Baseball draft <https://www.wikidata.org/wiki/Q953813>`_
+
+`scene <https://www.wikidata.org/wiki/Q282939>`_
+
+`term <https://www.wikidata.org/wiki/Q1969448>`_
+
+`unisex given name <https://www.wikidata.org/wiki/Q3409032>`_
+
+`foundation <https://www.wikidata.org/wiki/Q157031>`_
+
+`photograph <https://www.wikidata.org/wiki/Q125191>`_
+
+`permissive free software licence <https://www.wikidata.org/wiki/Q1437937>`_
+
+`mechanical wave <https://www.wikidata.org/wiki/Q1132631>`_
+
+`episode <https://www.wikidata.org/wiki/Q1983062>`_
+
+`planetary system <https://www.wikidata.org/wiki/Q206717>`_
+
+`group of fictional characters <https://www.wikidata.org/wiki/Q14514600>`_
+
+`designation for an administrative territorial entity <https://www.wikidata.org/wiki/Q15617994>`_
+
+`declaration of independence <https://www.wikidata.org/wiki/Q1464916>`_
+
+`optical illusion <https://www.wikidata.org/wiki/Q174923>`_
+
+`data stream <https://www.wikidata.org/wiki/Q1172540>`_
+
+`alphabetic script <https://www.wikidata.org/wiki/Q11077643>`_
+
+`version, edition, or translation <https://www.wikidata.org/wiki/Q3331189>`_
+
+`fictional duck <https://www.wikidata.org/wiki/Q3247351>`_
+
+`colleges and universities in the United States <https://www.wikidata.org/wiki/Q1849445>`_
+
+`fat <https://www.wikidata.org/wiki/Q127980>`_
+
+`tennis court <https://www.wikidata.org/wiki/Q741118>`_
+
+`competition <https://www.wikidata.org/wiki/Q476300>`_
+
+`formula <https://www.wikidata.org/wiki/Q976981>`_
+
+`ranking <https://www.wikidata.org/wiki/Q526719>`_
+
+`association <https://www.wikidata.org/wiki/Q48204>`_
+
+`alphabet <https://www.wikidata.org/wiki/Q9779>`_
+
+`belief system <https://www.wikidata.org/wiki/Q5390013>`_
+
