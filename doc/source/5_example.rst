@@ -123,7 +123,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：When did the 1985 Major League Baseball season take place?
-    1985年美国职业棒球大联盟赛季是什么时候开始的？
+    例句释义：1985年美国职业棒球大联盟赛季是什么时候开始的？
     查询结果：1985
     .. image:: demo1.png
 
@@ -139,8 +139,8 @@ MTV Video Music Award                              documentary film             
 ----------------------------------------------------------------
 .. glossary::
 
-    查询例句：Of New Jersey cities with under 350000 in population, which is biggest in terms of area?
-    在人口不到35万的新泽西州城市中，哪一个城市面积最大？
+    查询例句：When was Oscar and Lucinda published in Germany?
+    例句释义：Oscar and Lucinda什么时候在德国公映的？
     查询结果：1998-06-25
     .. image:: demo2.png
 
@@ -154,12 +154,12 @@ MTV Video Music Award                              documentary film             
         "Germany"
     )
 
-查询关系
+查询属性的修饰值
 ----------------------------------------------------------------
 .. glossary::
 
     查询例句：When did Will & Grace have 8 seasons?
-    Will & Grace什么时候有了第8季？
+    例句释义：Will & Grace什么时候有了第8季？
     查询结果：2006-05-18
     .. image:: demo3.png
 
@@ -173,12 +173,12 @@ MTV Video Music Award                              documentary film             
         "point in time"
     )
 
-查询属性的修饰值
+查询关系
 ----------------------------------------------------------------
 .. glossary::
     
     查询例句：How is Viggo Mortensen releated to the 10th Screen Actors Guild Awards?
-    Viggo Mortensen是如何获得第十届银幕演员协会奖的？
+    例句释义：Viggo Mortensen和第十届银幕演员协会奖是什么关系？
     查询结果：award received
     .. image:: demo4.png
 
@@ -195,7 +195,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：When did Mitchell Hurwitz end his education at Georgetown University?
-    Mitchell Hurwitz什么时候结束了在乔治敦大学的学业？
+    例句释义：Mitchell Hurwitz什么时候结束了在乔治敦大学的学业？
     查询结果：1985
     .. image:: demo5.png
 
@@ -216,7 +216,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：How many industry computer languages are related to UNIX?
-    有多少种工业计算机语言与UNIX相关？？
+    例句释义：有多少种工业计算机语言与UNIX相关？？
     查询结果：22
     .. image:: demo6.png
 
@@ -244,7 +244,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：Who is known for the new wave of European origin?
-    谁因欧洲起源的新浪潮而闻名？
+    例句释义：谁因欧洲起源的新浪潮而闻名？
     查询结果：Gary Numan
     .. image:: demo7.png
 
@@ -274,7 +274,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：Which show produced by Dreamworks is the longest?
-    梦工厂制作的哪个节目最长？
+    例句释义：梦工厂制作的哪个节目最长？
     查询结果：Into the West
     .. image:: demo8.png
 
@@ -297,7 +297,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：Who is taller, Kobe Bryant or LeBron James?
-    谁更高,Kobe Bryant 还是 LeBron James?
+    例句释义：谁更高，Kobe Bryant 还是 LeBron James?
     查询结果：LeBron James
     .. image:: demo9.png
 
@@ -316,9 +316,14 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：What feature film was nominated for an Academy Award for Best Supporting Actor and an Academy Award for Best Actor?
+<<<<<<< HEAD
     哪部故事片获得奥斯卡最佳男配角奖和最佳男主角奖提名？
     查询结果：Fiddler on the Roof
     .. image:: demo10.png
+=======
+    例句释义：哪部故事片获得奥斯卡最佳男配角奖和最佳男主角奖提名？
+    查询结果：Fiddler on the Roof, Pirates of the Caribbean: The Curse of the Black Pearl, The Straight Story
+>>>>>>> 5688cef5c141387c80afe169d29346d3ac7f3963
 
         
 ::
@@ -347,7 +352,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：How many symptoms indicate lung cancer or have obesity as a risk factor?
-    有多少症状表明肺癌或肥胖是一个危险因素？
+    例句释义：有多少症状表明肺癌或肥胖是危险因素？
     查询结果：4
     .. image:: demo11.png
 
@@ -380,7 +385,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：Are there less than 30000 households on the date 2011-01-01 in the big city that is an administrative division of North Brabant?
-    在2011年1月1日，北布拉班特行政区的大城市的住户是否少于30000户？
+    例句释义：在2011年1月1日，北布拉班特行政区的大城市的住户是否少于30000户？
     查询结果：yes
     .. image:: demo12.png
 
@@ -408,7 +413,7 @@ MTV Video Music Award                              documentary film             
 .. glossary::
 
     查询例句：Did the television series titled All in the Family start on 1971-01-12?
-    这部名为《All in the Family》的电视连续剧是从1971年1月12日开始的吗？
+    例句释义：这部名为《All in the Family》的电视连续剧是从1971年1月12日开始的吗？
     查询结果：yes
     .. image:: demo13.png
 

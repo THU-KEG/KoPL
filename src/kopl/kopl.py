@@ -38,6 +38,54 @@ class KoPLEngine(object):
 				value = ValueClass('year', int(value))
 		return value
 
+
+
+	def forward(self, program, inputs, 
+				ignore_error=False, show_details=False):
+		memory = []
+		program = ['<START>'] + program + ['<END>']
+		inputs = [[]] + inputs + [[]]
+		try:
+			# infer the dependency based on the function definition
+			dependency = []
+			branch_stack = []
+			for i, p in enumerate(program):
+				if p in {'<START>', '<END>', '<PAD>'}:
+					dep = []
+				elif p in {'FindAll', 'Find'}:
+					dep = []
+					branch_stack.append(i - 1)
+				elif p in {'And', 'Or', 'SelectBetween', 'QueryRelation', 'QueryRelationQualifier'}:
+					dep = [branch_stack[-1], i-1]
+					branch_stack = branch_stack[:-1]
+				else:
+					dep = [i-1]
+				dependency.append(dep)
+
+			memory = []
+			for p, dep, inp in zip(program, dependency, inputs):
+				if p == 'What':
+					p = 'QueryName'
+				if p == '<START>':
+					res = None
+				elif p == '<END>':
+					break
+				else:
+					fun_args = [memory[x] for x in dep]
+					func = getattr(self, p)
+					res = func(*fun_args, *inp)
+
+				memory.append(res)
+				if show_details:
+					print(p, dep, inp)
+					print(res)
+			return [str(_) for _ in memory[-1]] if isinstance(memory[-1], list) else str(memory[-1])
+		except Exception as e:
+			if ignore_error:
+				return None
+			else:
+				raise
+
 	def FindAll(self):
 		"""
 		返回知识库中所有实体
@@ -448,7 +496,7 @@ class KoPLEngine(object):
 				match.append(1)
 			else:
 				match.append(0)
-		if sum(match) == len(match):
+		if sum(match) >= 1 and sum(match) == len(match):
 			answer = 'yes'
 		elif sum(match) == 0:
 			answer = 'no'
