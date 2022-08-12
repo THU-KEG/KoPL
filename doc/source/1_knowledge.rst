@@ -1,62 +1,64 @@
-======================
-KoPL面向的知识元素
-======================
+==============================
+Knowledge Elements
+==============================
 
 .. image:: knowledge_element.jpg
   :width: 600
   :alt: Alternative text
 
-使用KoPL的前提是要有一个合适的目标知识库，该知识库中应该含有如下元素：
+A prepared knowledge base is the pre-requisite to execute KoPL. Such knowledge base should have the following knowledge elements:
 
-    - 实体（Entity）
-    - 概念（Concept）
-    - 关系（Relation）
-    - 属性（Attribute）
-    - 关系型知识（Relational Knowledge）
-    - 属性型知识（LiteralKnowledge）
-    - 修饰型知识（Qualifier Knowledge）
-
-实体
+    - Entity
+    - Concept
+    - Relation
+    - Attribute
+    - Relational Knowledge
+    - Literal Knowledge
+    - Qualifier Knowledge
+    
+Entity
 -----------------
 
 .. glossary::
 
-    知识库中最基本的元素，用来表示一个独一无二的事物。
+    Entities are the most basic elements in the knowledge, which are used to represent each unique object in the real world.
 
-.. admonition:: 例子 
+.. admonition:: Example
     
-    勒布朗·詹姆斯（Lebron James）和克利夫兰骑士队（Cleveland Cavaliers）都是实体。
+    - *LeBron James*, the basketball player, is an entity.
+    - *Cleveland Cavaliers*, the basketball team, is also an entity.
 
-概念
+Concept
 -----------------
 
 .. glossary::
 
-    一组具有相同特征的实体组成的集合。
+    Concepts are sets of entities with common characteristic.
 
-.. admonition:: 例子 
+.. admonition:: Example
     
-    篮球队（Basketball Team）便是一个概念。
+    - *Basketball Team* is a concept.
 
-关系
+Relation
 -----------------
 
 .. glossary::
 
-    表示两个实体之间的关系。特殊地，实体通过 instance of 关系链接到相应的概念上，概念之间通过 subclass of 关系来组织成层次结构。
+    Relation represent the relationship between entities. In particular, entities are connected to its corresponding concepts via *InstanceOf* relation, while concepts are connected with *SubclassOf* relation to construct the hierarchy.
 
-.. admonition:: 例子 
+.. admonition:: Example
     
-    父亲（father）和出生地（place of birth）都是关系。
+    - *Father* is a relation
+    - *Place of Birth* is also a relation
 
-属性
+Attribute
 -----------------
 
 .. glossary::
 
     表示实体的属性信息。又由属性键和属性值两部分组成，属性值有字符串、数字、日期和年份4种类型。其中数值类型的属性值又包含单位，如“206厘米”中的“厘米”。
 
-.. admonition:: 例子 
+.. admonition:: Example
     
     身高（height）是一个属性，206厘米是对应的属性值。
 

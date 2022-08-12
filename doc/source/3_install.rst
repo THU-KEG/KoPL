@@ -1,5 +1,6 @@
-安装
-============
+===================
+Installation
+===================
 
 KoPL支持Linux (e.g., Ubuntu/CentOS)，macOS，Windows。
 

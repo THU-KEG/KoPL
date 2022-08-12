@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-KoPL-面向知识的复杂问题推理编程语言
-================================
+KoPL-Knowledge oriented Programming Language
+==================================================
 .. toctree::
    :maxdepth: 1
-   :caption: KoPL入门
+   :caption: KoPL Basic
 
    0_intro
    1_knowledge
@@ -15,21 +15,21 @@ KoPL-面向知识的复杂问题推理编程语言
 
 .. toctree::
    :maxdepth: 1
-   :caption: 快速开始
+   :caption: Quick Start
 
    3_install
    4_helloworld
 
 .. toctree::
    :maxdepth: 1
-   :caption: 更多KoPL样例
+   :caption: More KoPL Examples
    
    5_example
    6_service
 
 .. toctree::
    :maxdepth: 1
-   :caption: API文档
+   :caption: API Documents
 
    7_kopl
    

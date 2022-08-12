@@ -1,10 +1,13 @@
-面向复杂推理问答的程序表示——KoPL
+================================================================
+KoPL: Knowledge oriented Programming Language
 ================================================================
 
-KoPL全称 Knowledge oriented Programing Language，是一个为复杂推理问答而设计的面向知识的编程语言。KoPL可以将自然语言问题表示为由27个基本函数组合而成的KoPL程序，程序运行的结果就是问题的答案。目前，KoPL的27个基本函数覆盖对多种知识元素（如概念、实体、关系、属性、修饰符等）的操作，并支持多种问题类型（如计数、事实验证、比较等）的查询。KoPL提供透明的复杂问题推理过程，易于理解和使用。
+KoPL stands for Knowledge oriented Programing Language. It is designed to provide a unified semantic representation for the semantics of natural language questions requiring complex reasoning. KoPL can represent natural language questions into combination of 27 knowledge operators. The execution of KoPL on a knowledge base will produce the answer to the natural question.
 
-KoPL的设计理念为：
+Currently, KoPL has a broad coverage on diverse knowledge elements, such as concepts, entities, relations, attributes, and qualifiers. KoPL also supports many different type of questions, such as counting, verification, and comparison. KoPL provides transparent reasoning process, and is easy to understand and use.
 
-- 显式、透明的推理过程
-- 易于理解，便于人机交互
-- 面向知识库、文本等不同形式的知识，可扩展性强
+The designing principle of KoPL is:
+
+- Preserving explicit and transparent reasoning process
+- Easy to understand and user-friendly.
+- Supporting diverse knowledge sources, including not only knowledge base but also text.

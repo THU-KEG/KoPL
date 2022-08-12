@@ -1,9 +1,12 @@
-第一个KoPL程序
-============
+The first KoPL program
+====================================
 
 
-准备知识库
------------------
+
+Knowledge Base Preparation
+----------------------------------
+
+Currently, we support the knowledge base in JSON, storing in 
 
 目前，我们支持JSON格式的知识库，其形式为:
 
