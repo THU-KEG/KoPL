@@ -1,7 +1,7 @@
-查询服务
+Query service
 ============================================================================
 
-您可以准备自己的知识库，搭建自己的KoPL引擎来实现复杂推理问答，也可以使用我们为您提供的 `查询服务 <http://166.111.68.66:33080/queryService>`_ ，快速开启KoPL之旅~
+You can prepare your own knowledge base and build your own KoPL engine to implement complex question answering. You can also use our `query service <https://viskop.xlore.cn/>`_ to start your KoPL journey quickly.
 
-我们的查询引擎基于 `Wikidata15k <https://cloud.tsinghua.edu.cn/f/ea83c57d262b4a09ab92/?dl=1>`_ , 查询示例可以参考
-:doc:`更多KoPL样例 <5_example>`。
+Our KoPL engine is based on `Wikidata15k <https://cloud.tsinghua.edu.cn/f/ea83c57d262b4a09ab92/?dl=1>`_ .
+Please ref to :doc:`KoPL example <5_example>` for more information.

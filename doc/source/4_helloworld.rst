@@ -6,21 +6,19 @@ The first KoPL program
 Knowledge Base Preparation
 ----------------------------------
 
-Currently, we support the knowledge base in JSON, storing in 
-
-目前，我们支持JSON格式的知识库，其形式为:
+Currently, we support knowledge base in JSON format in the form of:
 
 ::
 
 	{
-		# 概念
+		# Concepts
 		'concepts': {
 			'id': {
 				'name': '',
 				'subclassOf': ['<concept_id>'],
 			}
 		},
-		# 实体，确保与概念是不相交的
+		# Entities, which do not coincide with concepts
 		'entities': {
 			'id': {
 				'name': '<entity_name>',
@@ -30,12 +28,12 @@ Currently, we support the knowledge base in JSON, storing in
 						'key': '<key>',
 						'value': {
 							'type': 'string'/'quantity'/'date'/'year'
-							'value':  # quantity类型为float或int, year类型为int, date类型为'yyyy/mm/dd'
-							'unit':   # 针对quantity类型，为str, 如'height'的unit可以是'centimetre', ‘population’的unit是‘1’
+							'value':  # The type of quantity is float or int, the type of year  is int, the type of date is 'yyyy/mm/dd'
+							'unit':   # It is used for quantity, the type of it is str. For example, the unit of 'height' can be 'centimetre' and the unit of 'population' can be '1'. 
 						},
 						'qualifiers': {
 							'<qk>': [
-								<qv>, # 每个qv都是像'value'一样的字典，包括'type', 'value'和'int'
+								<qv>, # Every qv is a dictionary like 'value', including 'type', 'value' and 'int'.
 							]
 						}
 					}
@@ -47,7 +45,7 @@ Currently, we support the knowledge base in JSON, storing in
 						'object': '<object_id>',
 						'qualifiers': {
 							'<qk>': [
-								<qv>, # 每个qv都是像'value'一样的字典，包括'type', 'value'和'int'
+								<qv>, # Every qv is a dictionary like 'value', including 'type', 'value' and 'int'.
 							]
 						}
 					}
@@ -60,7 +58,7 @@ Currently, we support the knowledge base in JSON, storing in
   :width: 600
   :alt: Alternative text
 
-例如，对于上图中的知识库，知识库为:
+For example, for the knowledge base above, it is represented as
 
 ::
 
@@ -254,12 +252,10 @@ Currently, we support the knowledge base in JSON, storing in
 	}
 
 
-KoPL编程问答
+KBQA based on KoPL
 ----------------------------
 
-KoPL的实现基于python，此处演示一个示例。更多API请参考API文档
-:doc:`7_kopl`，关于KoPL基本函数的介绍可以参考
-:doc:`2_function`。
+KoPL is implemented in Python. We only give an example here. Please refer to :doc:`the page of apis  <7_kopl>` for more information. Besides, please ref to :doc:`the page of knowledge operators <2_function>` for an introduction to the basic functions of KoPL.
 
 ::
 
@@ -281,9 +277,8 @@ KoPL的实现基于python，此处演示一个示例。更多API请参考API文�
 
 	print(ans)
 
-在这个示例里，我们查询LeBron James Jr.和他的父亲谁更高，KoPL程序给出了正确的答案: LeBron James！
+In this example, we look up who is taller, LeBron James Jr. or his father, and the KoPL program gives us the correct answer: LeBron James!
 
 
-更多KoPL样例请参考
-:doc:`更多KoPL样例 <5_example>`。
+See :doc:`the example page <5_example>` for more KoPL examples.
 

@@ -1,17 +1,14 @@
 
 
-知识库下载
+How to download knowledge base
 =====================================================================================================================================================================================
-我们从Wikidata中抽取了一个高质量的稠密子集 `Wikidata15k <https://cloud.tsinghua.edu.cn/f/ea83c57d262b4a09ab92/?dl=1>`_，包含794个
-概念，16,960个实体，363个
-关系，846个
-属性。以下的样例都基于这个知识库。
+We extract a high quality dense subset from Wikidata named `Wikidata15k <https://cloud.tsinghua.edu.cn/f/ea83c57d262b4a09ab92/?dl=1>`_, which contains 794 concepts, 16,960 entities, 363 relations and 846 attributes. The following examples are all based on this subset.
 
 
-schema展示（部分）
+schema (partial)
 =====================================================================================================================================================================================
 ================================================== ============================================= =============================================
-概念                                               关系                                           属性
+Concept                                               Relation                                           Attribute
 ================================================== ============================================= =============================================
 human                                              occupation                                    point in time                                
 film                                               country                                       determination method                         
@@ -115,16 +112,15 @@ region of Italy                                    science fiction              
 MTV Video Music Award                              documentary film                              ISO 3166-1 alpha-3 code                      
 ================================================== ============================================= =============================================
 
-简单问答
+Simple question answering
 ====================================================================================================================================================
 
-查询属性
+Query attribute
 ----------------------------------------------------------------
 .. glossary::
 
-    查询例句：When did the 1985 Major League Baseball season take place?
-    例句释义：1985年美国职业棒球大联盟赛季是什么时候开始的？
-    查询结果：1985
+    Question：When did the 1985 Major League Baseball season take place?
+    Answer：1985
     .. image:: demo1.png
 
         
@@ -135,13 +131,12 @@ MTV Video Music Award                              documentary film             
         "point in time"
     )
 
-查询在修饰符限定下的属性
+Query attribute under qualifiers
 ----------------------------------------------------------------
 .. glossary::
 
-    查询例句：When was Oscar and Lucinda published in Germany?
-    例句释义：Oscar and Lucinda什么时候在德国公映的？
-    查询结果：1998-06-25
+    Question：When was Oscar and Lucinda published in Germany?
+    Answer：1998-06-25
     .. image:: demo2.png
 
         
@@ -154,13 +149,12 @@ MTV Video Music Award                              documentary film             
         "Germany"
     )
 
-查询属性的修饰值
+Query the qualifiers of the attribute
 ----------------------------------------------------------------
 .. glossary::
 
-    查询例句：When did Will & Grace have 8 seasons?
-    例句释义：Will & Grace什么时候有了第8季？
-    查询结果：2006-05-18
+    Question：When did Will & Grace have 8 seasons?
+    Answer：2006-05-18
     .. image:: demo3.png
 
         
@@ -173,13 +167,12 @@ MTV Video Music Award                              documentary film             
         "point in time"
     )
 
-查询关系
+Query relation
 ----------------------------------------------------------------
 .. glossary::
     
-    查询例句：How is Viggo Mortensen releated to the 10th Screen Actors Guild Awards?
-    例句释义：Viggo Mortensen和第十届银幕演员协会奖是什么关系？
-    查询结果：award received
+    Question：How is Viggo Mortensen releated to the 10th Screen Actors Guild Awards?
+    Answer：award received
     .. image:: demo4.png
 
         
@@ -190,13 +183,12 @@ MTV Video Music Award                              documentary film             
         engine.Find("10th Screen Actors Guild Awards")
     )
 
-查询关系的修饰值
+Query the qualifiers of the relation
 ----------------------------------------------------------------
 .. glossary::
 
-    查询例句：When did Mitchell Hurwitz end his education at Georgetown University?
-    例句释义：Mitchell Hurwitz什么时候结束了在乔治敦大学的学业？
-    查询结果：1985
+    Question：When did Mitchell Hurwitz end his education at Georgetown University?
+    Answer：1985
     .. image:: demo5.png
 
         
@@ -209,15 +201,14 @@ MTV Video Music Award                              documentary film             
         "end time"
     )
 
-复杂问答
+Complex question answering
 ====================================================================================================================================================
-多跳查询
+Multi-hop query
 ----------------------------------------------------------------
 .. glossary::
 
-    查询例句：How many industry computer languages are related to UNIX?
-    例句释义：有多少种工业计算机语言与UNIX相关？？
-    查询结果：22
+    Question：How many industry computer languages are related to UNIX?
+    Answer：22
     .. image:: demo6.png
 
         
@@ -243,9 +234,8 @@ MTV Video Music Award                              documentary film             
 
 .. glossary::
 
-    查询例句：Who is known for the new wave of European origin?
-    例句释义：谁因欧洲起源的新浪潮而闻名？
-    查询结果：Gary Numan
+    Question：Who is known for the new wave of European origin?
+    Answer：Gary Numan
     .. image:: demo7.png
 
         
@@ -269,13 +259,12 @@ MTV Video Music Award                              documentary film             
         )
     )
 
-比较
+Comparison
 ----------------------------------------------------------------
 .. glossary::
 
-    查询例句：Which show produced by Dreamworks is the longest?
-    例句释义：梦工厂制作的哪个节目最长？
-    查询结果：Into the West
+    Question：Which show produced by Dreamworks is the longest?
+    Answer：Into the West
     .. image:: demo8.png
 
         
@@ -296,9 +285,8 @@ MTV Video Music Award                              documentary film             
 
 .. glossary::
 
-    查询例句：Who is taller, Kobe Bryant or LeBron James?
-    例句释义：谁更高，Kobe Bryant 还是 LeBron James?
-    查询结果：LeBron James
+    Question：Who is taller, Kobe Bryant or LeBron James?
+    Answer：LeBron James
     .. image:: demo9.png
 
         
@@ -311,21 +299,15 @@ MTV Video Music Award                              documentary film             
         "greater"
     )
 
-逻辑操作
+Logical operations
 ----------------------------------------------------------------    
 .. glossary::
 
-    查询例句：What feature film was nominated for an Academy Award for Best Supporting Actor and an Academy Award for Best Actor?
-<<<<<<< HEAD
-    哪部故事片获得奥斯卡最佳男配角奖和最佳男主角奖提名？
-    查询结果：Fiddler on the Roof
+    Question：What feature film was nominated for an Academy Award for Best Supporting Actor and an Academy Award for Best Actor?
+    Answer：Fiddler on the Roof
     .. image:: demo10.png
-=======
-    例句释义：哪部故事片获得奥斯卡最佳男配角奖和最佳男主角奖提名？
-    查询结果：Fiddler on the Roof, Pirates of the Caribbean: The Curse of the Black Pearl, The Straight Story
->>>>>>> 5688cef5c141387c80afe169d29346d3ac7f3963
-
         
+
 ::
 
     engine.QueryName(
@@ -351,9 +333,8 @@ MTV Video Music Award                              documentary film             
 
 .. glossary::
 
-    查询例句：How many symptoms indicate lung cancer or have obesity as a risk factor?
-    例句释义：有多少症状表明肺癌或肥胖是危险因素？
-    查询结果：4
+    Question：How many symptoms indicate lung cancer or have obesity as a risk factor?
+    Answer：4
     .. image:: demo11.png
 
         
@@ -380,13 +361,12 @@ MTV Video Music Award                              documentary film             
         )
     )
 
-事实验证
+Fact verification
 ----------------------------------------------------------------    
 .. glossary::
 
-    查询例句：Are there less than 30000 households on the date 2011-01-01 in the big city that is an administrative division of North Brabant?
-    例句释义：在2011年1月1日，北布拉班特行政区的大城市的住户是否少于30000户？
-    查询结果：yes
+    Question：Are there less than 30000 households on the date 2011-01-01 in the big city that is an administrative division of North Brabant?
+    Answer：yes
     .. image:: demo12.png
 
         
@@ -412,9 +392,8 @@ MTV Video Music Award                              documentary film             
 
 .. glossary::
 
-    查询例句：Did the television series titled All in the Family start on 1971-01-12?
-    例句释义：这部名为《All in the Family》的电视连续剧是从1971年1月12日开始的吗？
-    查询结果：yes
+    Question：Did the television series titled All in the Family start on 1971-01-12?
+    Answer：yes
     .. image:: demo13.png
 
         

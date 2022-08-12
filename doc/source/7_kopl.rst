@@ -1,4 +1,4 @@
-KoPL引擎
+KoPL engine
 ===========
 
 .. automodule:: kopl.kopl
